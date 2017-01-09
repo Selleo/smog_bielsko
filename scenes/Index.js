@@ -6,7 +6,7 @@ import StationDataRenderer from '../components/StationDataRenderer'
 export default class Index extends Component {
   static get defaultProps() {
     return {
-      
+
     };
   }
 
@@ -20,7 +20,7 @@ export default class Index extends Component {
   render() {
     titles = this.state.titles
     return (
-      <StationDataRenderer stationId='6535' />
+      <StationDataRenderer stationId={this.props.stationId} />
     )
   }
 }

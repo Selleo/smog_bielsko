@@ -41,7 +41,7 @@ export default class PollutionValues extends Component {
 }
 
 const names = {
-  'pm10': 'PM10',
+  'pm10': 'Pył zawieszony',
   'o3': 'Ozon',
   'no2': 'Dwutlenek Azotu',
   'so2': 'Dwutlenek Siarki',

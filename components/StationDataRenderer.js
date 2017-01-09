@@ -9,7 +9,7 @@ import AirQualityIndex from './pollution/AirQualityIndex'
 export default class StationDataRenderer extends Component {
   static get defaultProps() {
     return {
-      title: 'Initial Scene'
+      stationId: 6535
     };
   }
 
@@ -29,7 +29,9 @@ export default class StationDataRenderer extends Component {
     titles = this.state.titles
     if (this.state.pending) {
       return (
-        <Text> Loading </Text>
+        <View style={styles.loadingContainer}>
+          <Text style={styles.loadingText}> Loading </Text>
+        </View>
       )
     } else {
       return (
@@ -59,9 +61,13 @@ export default class StationDataRenderer extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  loadingContainer: {
     flex: 1,
-    justifyContent: 'center',
-    flexDirection: 'row',
+    flexDirection: 'column',
+    justifyContent: 'space-around'
+  },
+  loadingText: {
+    fontSize: 18,
+    textAlign: 'center'
   }
 })

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View, Navigator} from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, Button, Navigator, DrawerLayoutAndroid } from 'react-native';
 
 import Index from './scenes/Index'
+import DrawerMenu from './components/nav/DrawerMenu'
 
 export default class smog_bielsko extends Component {
   constructor() {
@@ -12,40 +13,36 @@ export default class smog_bielsko extends Component {
   }
 
   render() {
-    return (
-      <Navigator
-        initialRoute={this.routes[0]}
-        initialRouteStack={this.routes}
-        renderScene={this.navigatorRenderScene.bind(this)}
+    var navigationView = (
+      <DrawerMenu
+        closeDrawer={(stationId) => this.drawer.closeDrawer() || this.nav.replace({id: 'index', stationId: stationId})}
+        getCurrentStationId={() => this.currentStationId}
       />
+    )
+    return (
+      <DrawerLayoutAndroid
+        drawerWidth={300}
+        drawerPosition={DrawerLayoutAndroid.positions.Left}
+        drawerLockMode='unlocked'
+        ref={(drawer) => { return this.drawer = drawer }}
+        renderNavigationView={() => navigationView}>
+        <Navigator
+          initialRoute={this.routes[0]}
+          initialRouteStack={this.routes}
+          renderScene={this.navigatorRenderScene.bind(this)}
+        />
+      </DrawerLayoutAndroid>
     )
   }
 
   navigatorRenderScene(route, nav) {
+    this.nav = nav;
+    this.currentStationId = route.stationId;
     switch (route.id) {
       case 'index':
-        return (<Index nav={nav} />)
+        return (<Index nav={nav} stationId={route.stationId} />)
     }
   }
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     backgroundColor: '#F5FCFF',
-//   },
-//   welcome: {
-//     fontSize: 20,
-//     textAlign: 'center',
-//     margin: 10,
-//   },
-//   instructions: {
-//     textAlign: 'center',
-//     color: '#333333',
-//     marginBottom: 5,
-//   },
-// });
 
 AppRegistry.registerComponent('smog_bielsko', () => smog_bielsko);
