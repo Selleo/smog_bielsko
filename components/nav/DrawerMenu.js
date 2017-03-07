@@ -1,20 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import DrawerCityLink from './DrawerCityLink'
 import DrawerHeader from './DrawerHeader'
 
 export default class DrawerMenu extends Component {
-  static get defaultProps() {
-    return {
-
-    };
-  }
-
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <View style={styles.container}>
@@ -30,10 +20,14 @@ export default class DrawerMenu extends Component {
       </View>
     )
   }
+  static propTypes = {
+    closeDrawer: PropTypes.func.isRequired,
+    getCurrentStationId: PropTypes.func.isRequired,
+  };
 }
 
 const styles = StyleSheet.create({
   container: {
     paddingTop: 30
   }
-})
+});
