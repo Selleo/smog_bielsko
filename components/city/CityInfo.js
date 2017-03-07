@@ -1,16 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 
 import CityName from './CityName'
 import CityDescription from './CityDescription'
 
 export default class CityInfo extends Component {
-  static get defaultProps() {
-    return {
-
-    };
-  }
-
   constructor(props) {
     super(props);
     this.state = {
@@ -30,6 +24,10 @@ export default class CityInfo extends Component {
   getCityInfo(part) {
     return this.props.city.name.split(', ')[part]
   }
+
+  static propTypes = {
+    city: PropTypes.object.isRequired,
+  };
 }
 
 const styles = StyleSheet.create({
