@@ -6,6 +6,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "test-w": "jest --watchAll",
+    "test-c": "jest --coverage",
     "test-a": "node inspect --harmony ./node_modules/jest/bin/jest.js --runInBand components/__tests__/StationDataRenderer.spec.js",
     "test-d": "npm run transform && NODE_ENV=test mocha --harmony --inspect --debug-brk lib/components/__tests__/StationDataRenderer.spec.js --recursive",
     "transform": "babel components/__tests__/StationDataRenderer.spec.js --out-dir lib"
@@ -39,6 +40,10 @@
     "sinon": "^1.17.7"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "globals": {
+      "__DEV__": true
+    },
+    "collectCoverageFrom": ["components/**/*.{js,jsx}", "!**/node_modules/**", "!**/vendor/**"]
   }
 }
