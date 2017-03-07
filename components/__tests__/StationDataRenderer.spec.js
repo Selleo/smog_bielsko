@@ -22,7 +22,14 @@ describe('StationDataRenderer', () => {
       data: {
         city: { name: 'Zywiec, ul. Rynek 2' },
         aqi: 2,
-        iaqi: 2
+        iaqi: {
+          co: {
+            v: 0.1
+          },
+          h: {
+            v: 88.2461
+          }
+        }
       }
     });
     wrapper = shallow(<StationDataRenderer {...props}/>);
@@ -39,7 +46,14 @@ describe('StationDataRenderer', () => {
       data: {
         city: { name: 'Zywiec, ul. Rynek 2' },
         aqi: 2,
-        iaqi: 2
+        iaqi: {
+          co: {
+            v: 0.1
+          },
+          h: {
+            v: 88.2461
+          }
+        }
       }
     });
     wrapper = shallow(<StationDataRenderer {...props}/>);
@@ -49,7 +63,7 @@ describe('StationDataRenderer', () => {
 
     setTimeout(() => {
       expect(wrapper.state().data).to.be.an('object');
-      expect(wrapper.state().data).to.eql({ city: { name: 'Zywiec, ul. Rynek 2' }, aqi: 2, iaqi: 2 });
+      expect(wrapper.state().data).to.eql({ city: { name: 'Zywiec, ul. Rynek 2' }, aqi: 2, iaqi: {co: {v: 0.1},h: {v: 88.2461}} });
       done();
     }, 1);
 
@@ -63,7 +77,14 @@ describe('StationDataRenderer', () => {
         data: {
           city: { name: 'Zywiec, ul. Rynek 2' },
           aqi: 2,
-          iaqi: 2
+          iaqi: {
+            co: {
+              v: 0.1
+            },
+            h: {
+              v: 88.2461
+            }
+          }
         }
       });
       wrapper = shallow(<StationDataRenderer {...props}/>);
@@ -84,7 +105,14 @@ describe('StationDataRenderer', () => {
         data: {
           city: { name: 'Zywiec, ul. Rynek 2' },
           aqi: 2,
-          iaqi: 2
+          iaqi: {
+            co: {
+              v: 0.1
+            },
+            h: {
+              v: 88.2461
+            }
+          }
         }
       });
       wrapper = shallow(<StationDataRenderer {...props}/>);
@@ -113,7 +141,14 @@ describe('StationDataRenderer', () => {
         data: {
           city: { name: 'Zywiec, ul. Rynek 2' },
           aqi: 2,
-          iaqi: 2
+          iaqi: {
+            co: {
+              v: 0.1
+            },
+            h: {
+              v: 88.2461
+            }
+          }
         }
       });
 
