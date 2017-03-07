@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1488895428630" clover="3.2.0">
+  <project timestamp="1488895428631" name="All files">
+    <metrics statements="55" coveredstatements="43" conditionals="14" coveredconditionals="14" methods="26" coveredmethods="20" elements="95" coveredelements="77" complexity="0" loc="55" ncloc="55" packages="4" files="9" classes="9">
+      <package name="components">
+        <metrics statements="12" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="7"/>
+        <file name="StationDataRenderer.js" path="/Users/Pien/Projects/smog_bielsko/components/StationDataRenderer.js">
+          <metrics statements="12" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="7"/>
+          <line num="11" count="10" type="stmt"/>
+          <line num="17" count="5" type="stmt"/>
+          <line num="18" count="5" type="stmt"/>
+          <line num="25" count="5" type="stmt"/>
+          <line num="29" count="11" type="stmt"/>
+          <line num="30" count="6" type="stmt"/>
+          <line num="36" count="5" type="stmt"/>
+          <line num="47" count="5" type="stmt"/>
+          <line num="48" count="5" type="stmt"/>
+          <line num="50" count="5" type="stmt"/>
+          <line num="53" count="0" type="stmt"/>
+          <line num="62" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.city">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+        <file name="CityDescription.js" path="/Users/Pien/Projects/smog_bielsko/components/city/CityDescription.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="19" count="3" type="stmt"/>
+        </file>
+        <file name="CityInfo.js" path="/Users/Pien/Projects/smog_bielsko/components/city/CityInfo.js">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="16" count="2" type="stmt"/>
+          <line num="25" count="4" type="stmt"/>
+          <line num="33" count="2" type="stmt"/>
+        </file>
+        <file name="CityName.js" path="/Users/Pien/Projects/smog_bielsko/components/city/CityName.js">
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="24" count="3" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.nav">
+        <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+        <file name="DrawerCityLink.js" path="/Users/Pien/Projects/smog_bielsko/components/nav/DrawerCityLink.js">
+          <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+          <line num="6" count="5" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="20" count="7" type="stmt"/>
+          <line num="30" count="2" type="stmt"/>
+        </file>
+        <file name="DrawerHeader.js" path="/Users/Pien/Projects/smog_bielsko/components/nav/DrawerHeader.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="18" count="2" type="stmt"/>
+        </file>
+        <file name="DrawerMenu.js" path="/Users/Pien/Projects/smog_bielsko/components/nav/DrawerMenu.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="29" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="components.pollution">
+        <metrics statements="25" coveredstatements="15" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="3"/>
+        <file name="AirQualityIndex.js" path="/Users/Pien/Projects/smog_bielsko/components/pollution/AirQualityIndex.js">
+          <metrics statements="11" coveredstatements="11" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
+          <line num="6" count="8" type="stmt"/>
+          <line num="7" count="8" type="stmt"/>
+          <line num="15" count="14" type="stmt"/>
+          <line num="16" count="5" type="stmt"/>
+          <line num="17" count="4" type="stmt"/>
+          <line num="18" count="3" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="28" count="2" type="stmt"/>
+          <line num="37" count="2" type="stmt"/>
+          <line num="46" count="2" type="stmt"/>
+        </file>
+        <file name="PollutionValues.js" path="/Users/Pien/Projects/smog_bielsko/components/pollution/PollutionValues.js">
+          <metrics statements="14" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
+          <line num="6" count="10" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="19" count="0" type="stmt"/>
+          <line num="20" count="0" type="stmt"/>
+          <line num="21" count="0" type="stmt"/>
+          <line num="22" count="0" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="26" count="0" type="stmt"/>
+          <line num="35" count="0" type="stmt"/>
+          <line num="39" count="0" type="stmt"/>
+          <line num="43" count="1" type="stmt"/>
+          <line num="55" count="1" type="stmt"/>
+          <line num="62" count="1" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
