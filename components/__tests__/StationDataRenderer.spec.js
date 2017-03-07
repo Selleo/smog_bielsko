@@ -15,8 +15,14 @@ let wrapper, props;
 
 describe('StationDataRenderer', () => {
   it('renders correctly', () => {
-    props = { stationId: 1 };
-    fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, { data: { city: 'Zywiec', aqi: 2, iaqi: 2 } });
+    props = {stationId: 1};
+    fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
+      data: {
+        city: 'Zywiec, ul. Rynek 2',
+        aqi: 2,
+        iaqi: 2
+      }
+    });
     wrapper = shallow(<StationDataRenderer {...props}/>);
 
     expect(wrapper).to.exist();
@@ -24,8 +30,14 @@ describe('StationDataRenderer', () => {
   });
 
   it('set in state fetched data', (done) => {
-    props = { stationId: 1 };
-    fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, { data: { city: 'Zywiec', aqi: 2, iaqi: 2 } });
+    props = {stationId: 1};
+    fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
+      data: {
+        city: 'Zywiec, ul. Rynek 2',
+        aqi: 2,
+        iaqi: 2
+      }
+    });
     wrapper = shallow(<StationDataRenderer {...props}/>);
 
     expect(wrapper.state().data).to.be.an('undefined');
@@ -33,17 +45,23 @@ describe('StationDataRenderer', () => {
 
     setTimeout(() => {
       expect(wrapper.state().data).to.be.an('object');
-      expect(wrapper.state().data).to.eql({ city: 'Zywiec', aqi: 2, iaqi: 2 });
+      expect(wrapper.state().data).to.eql({city: 'Zywiec, ul. Rynek 2', aqi: 2, iaqi: 2});
       done();
-    },1);
+    }, 1);
 
     fetchMock.restore();
   });
 
   describe('pending is false', () => {
     it('is false after download data', (done) => {
-      props = { stationId: 1 };
-      fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, { data: { city: 'Zywiec', aqi: 2, iaqi: 2 } });
+      props = {stationId: 1};
+      fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
+        data: {
+          city: 'Zywiec, ul. Rynek 2',
+          aqi: 2,
+          iaqi: 2
+        }
+      });
       wrapper = shallow(<StationDataRenderer {...props}/>);
 
       expect(wrapper.state().pending).to.equal(true);
@@ -51,14 +69,20 @@ describe('StationDataRenderer', () => {
       setTimeout(() => {
         expect(wrapper.state().pending).to.equal(false);
         done();
-      },1);
+      }, 1);
 
       fetchMock.restore();
     });
 
     it('return text "Loading"', (done) => {
-      props = { stationId: 1 };
-      fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, { data: { city: 'Zywiec', aqi: 2, iaqi: 2 } });
+      props = {stationId: 1};
+      fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
+        data: {
+          city: 'Zywiec, ul. Rynek 2',
+          aqi: 2,
+          iaqi: 2
+        }
+      });
       wrapper = shallow(<StationDataRenderer {...props}/>);
 
       expect(wrapper.state().pending).to.equal(true);
@@ -69,7 +93,7 @@ describe('StationDataRenderer', () => {
         expect(wrapper.children().children().text()).to.equal('Loading');
         expect(wrapper.children().type().name).to.equal('Component');
         done();
-      },1);
+      }, 1);
 
       fetchMock.restore();
     });
@@ -78,8 +102,14 @@ describe('StationDataRenderer', () => {
   describe('pending is true', () => {
     it('return text "Loading"', (done) => {
 
-      props = { stationId: 1 };
-      fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, { data: { city: 'Zywiec', aqi: 2, iaqi: 2 } });
+      props = {stationId: 1};
+      fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
+        data: {
+          city: 'Zywiec, ul. Rynek 2',
+          aqi: 2,
+          iaqi: 2
+        }
+      });
       wrapper = shallow(<StationDataRenderer {...props}/>);
 
       expect(wrapper.state().pending).to.equal(true);
@@ -95,7 +125,7 @@ describe('StationDataRenderer', () => {
         expect(wrapper.children().nodes[2].type.name).to.equal('PollutionValues');
 
         done();
-      },1);
+      }, 1);
 
       fetchMock.restore();
     });
