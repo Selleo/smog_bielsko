@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1488910633298" clover="3.2.0">
-  <project timestamp="1488910633298" name="All files">
-    <metrics statements="52" coveredstatements="51" conditionals="14" coveredconditionals="14" methods="24" coveredmethods="23" elements="90" coveredelements="88" complexity="0" loc="52" ncloc="52" packages="4" files="9" classes="9">
+<coverage generated="1488913395219" clover="3.2.0">
+  <project timestamp="1488913395220" name="All files">
+    <metrics statements="51" coveredstatements="51" conditionals="14" coveredconditionals="14" methods="23" coveredmethods="23" elements="88" coveredelements="88" complexity="0" loc="51" ncloc="51" packages="4" files="9" classes="9">
       <package name="components">
-        <metrics statements="12" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="7"/>
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
         <file name="StationDataRenderer.js" path="/Users/Pien/Projects/smog_bielsko/components/StationDataRenderer.js">
-          <metrics statements="12" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="7"/>
+          <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
           <line num="11" count="10" type="stmt"/>
           <line num="17" count="5" type="stmt"/>
           <line num="18" count="5" type="stmt"/>
@@ -16,8 +16,7 @@
           <line num="47" count="5" type="stmt"/>
           <line num="48" count="5" type="stmt"/>
           <line num="50" count="5" type="stmt"/>
-          <line num="53" count="0" type="stmt"/>
-          <line num="62" count="1" type="stmt"/>
+          <line num="59" count="1" type="stmt"/>
         </file>
       </package>
       <package name="components.city">

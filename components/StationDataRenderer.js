@@ -49,9 +49,6 @@ export default class StationDataRenderer extends Component {
       .then((responseJson) => {
         return this.setState({data: responseJson.data, pending: false})
       })
-      .catch((error) => {
-        console.error(error);
-      });
   }
 
   static propTypes = {
