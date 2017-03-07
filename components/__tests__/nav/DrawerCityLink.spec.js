@@ -11,25 +11,36 @@ const originalExpect = global.expect;
 
 chai.use(dirtyChai);
 
-let wrapper, props;
+let wrapper, props, closeDrawerSpy;
 
 describe('DrawerCityLink', () => {
   beforeEach(() => {
     props = {
       getCurrentStationId: () => 1,
       station: { id: 1, name: 'Zywiec' },
-      closeDrawer: () => true
+      closeDrawer: (stationId) => closeDrawerSpy = stationId
     };
 
     wrapper = shallow(<DrawerCityLink {...props}/>);
   });
+
   it('renders correctly', () => {
     originalExpect(wrapper).toMatchSnapshot();
     expect(wrapper).to.exist();
   });
 
   it('render staton name on html', () => {
+    expect(wrapper.children().length).to.equal(1);
+    expect(wrapper.children().children().length).to.equal(1);
     expect(wrapper.children().children().text()).to.equal('Zywiec')
+  });
+
+  describe('onPress', () => {
+    it('change closeDrawer', () => {
+      expect(closeDrawerSpy).to.be.an('undefined');
+      wrapper.find('TouchableHighlight').simulate('press');
+      expect(closeDrawerSpy).to.equal(1);
+    });
   });
 
   describe('#isActive', () => {
