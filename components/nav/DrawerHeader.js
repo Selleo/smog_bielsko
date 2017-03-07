@@ -1,14 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { StyleSheet, Text } from 'react-native';
 
 export default class DrawerHeader extends Component {
-  static get defaultProps() {
-  }
-
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Text style={styles.text}>
@@ -16,6 +9,10 @@ export default class DrawerHeader extends Component {
       </Text>
     )
   }
+
+  static propTypes = {
+    text: PropTypes.string.isRequired,
+  };
 }
 
 const styles = StyleSheet.create({
@@ -25,4 +22,4 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingBottom: 20
   }
-})
+});
