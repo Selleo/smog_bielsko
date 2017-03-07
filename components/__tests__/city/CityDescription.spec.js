@@ -13,14 +13,14 @@ let wrapper, props;
 
 describe('CityDescription', () => {
   it('renders correctly', () => {
-    props = {text: 'ul. Rynek 2'};
+    props = { text: 'ul. Rynek 2' };
     wrapper = shallow(<CityDescription {...props}/>);
 
     expect(wrapper).to.exist();
   });
 
   it('renders description on html', () => {
-    props = {text: 'ul. Rynek 2'};
+    props = { text: 'ul. Rynek 2' };
     wrapper = shallow(<CityDescription {...props}/>);
     expect(wrapper.children().length).to.equal(1);
 
@@ -28,4 +28,3 @@ describe('CityDescription', () => {
   });
 
 });
-

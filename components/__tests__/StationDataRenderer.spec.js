@@ -15,10 +15,10 @@ let wrapper, props;
 
 describe('StationDataRenderer', () => {
   it('renders correctly', () => {
-    props = {stationId: 1};
+    props = { stationId: 1 };
     fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
       data: {
-        city: 'Zywiec, ul. Rynek 2',
+        city: { name: 'Zywiec, ul. Rynek 2' },
         aqi: 2,
         iaqi: 2
       }
@@ -30,10 +30,10 @@ describe('StationDataRenderer', () => {
   });
 
   it('set in state fetched data', (done) => {
-    props = {stationId: 1};
+    props = { stationId: 1 };
     fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
       data: {
-        city: 'Zywiec, ul. Rynek 2',
+        city: { name: 'Zywiec, ul. Rynek 2' },
         aqi: 2,
         iaqi: 2
       }
@@ -45,7 +45,7 @@ describe('StationDataRenderer', () => {
 
     setTimeout(() => {
       expect(wrapper.state().data).to.be.an('object');
-      expect(wrapper.state().data).to.eql({city: 'Zywiec, ul. Rynek 2', aqi: 2, iaqi: 2});
+      expect(wrapper.state().data).to.eql({ city: { name: 'Zywiec, ul. Rynek 2' }, aqi: 2, iaqi: 2 });
       done();
     }, 1);
 
@@ -54,10 +54,10 @@ describe('StationDataRenderer', () => {
 
   describe('pending is false', () => {
     it('is false after download data', (done) => {
-      props = {stationId: 1};
+      props = { stationId: 1 };
       fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
         data: {
-          city: 'Zywiec, ul. Rynek 2',
+          city: { name: 'Zywiec, ul. Rynek 2' },
           aqi: 2,
           iaqi: 2
         }
@@ -75,10 +75,10 @@ describe('StationDataRenderer', () => {
     });
 
     it('return text "Loading"', (done) => {
-      props = {stationId: 1};
+      props = { stationId: 1 };
       fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
         data: {
-          city: 'Zywiec, ul. Rynek 2',
+          city: { name: 'Zywiec, ul. Rynek 2' },
           aqi: 2,
           iaqi: 2
         }
@@ -102,10 +102,10 @@ describe('StationDataRenderer', () => {
   describe('pending is true', () => {
     it('return text "Loading"', (done) => {
 
-      props = {stationId: 1};
+      props = { stationId: 1 };
       fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
         data: {
-          city: 'Zywiec, ul. Rynek 2',
+          city: { name: 'Zywiec, ul. Rynek 2' },
           aqi: 2,
           iaqi: 2
         }
