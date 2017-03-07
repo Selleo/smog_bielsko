@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 
 import Env from '../env.js'
@@ -26,11 +26,10 @@ export default class StationDataRenderer extends Component {
   }
 
   render() {
-    titles = this.state.titles
     if (this.state.pending) {
       return (
         <View style={styles.loadingContainer}>
-          <Text style={styles.loadingText}> Loading </Text>
+          <Text style={styles.loadingText}>Loading</Text>
         </View>
       )
     } else {
@@ -44,10 +43,6 @@ export default class StationDataRenderer extends Component {
     }
   }
 
-  getDataAttribute(attr) {
-    return this.state.data && this.state.data[attr];
-  }
-
   getData() {
     return fetch('http://api.waqi.info/feed/@' + this.props.stationId + '/?token=' + Env.API_KEY)
       .then((response) => response.json())
@@ -58,6 +53,10 @@ export default class StationDataRenderer extends Component {
         console.error(error);
       });
   }
+
+  static propTypes = {
+    stationId: PropTypes.number.isRequired,
+  };
 }
 
 const styles = StyleSheet.create({
@@ -70,4 +69,4 @@ const styles = StyleSheet.create({
     fontSize: 18,
     textAlign: 'center'
   }
-})
+});
