@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default class CityName extends Component {
@@ -15,6 +15,10 @@ export default class CityName extends Component {
       </View>
     )
   }
+
+  static propTypes = {
+    text: PropTypes.string.isRequired,
+  };
 }
 
 const styles = StyleSheet.create({
@@ -22,4 +26,4 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: '#363636'
   }
-})
+});
