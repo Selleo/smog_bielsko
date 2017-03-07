@@ -11,7 +11,7 @@ chai.use(dirtyChai);
 
 let wrapper, props;
 
-describe.only('AirQualityIndex', () => {
+describe('AirQualityIndex', () => {
   beforeEach(() => {
     props = {
       index: 1
