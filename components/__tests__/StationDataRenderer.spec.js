@@ -9,6 +9,8 @@ import fetchMock                      from 'fetch-mock'
 import StationDataRenderer            from '../StationDataRenderer';
 import Env                            from '../../env'
 
+const originalExpect = global.expect;
+
 chai.use(dirtyChai);
 
 let wrapper, props;
@@ -25,7 +27,9 @@ describe('StationDataRenderer', () => {
     });
     wrapper = shallow(<StationDataRenderer {...props}/>);
 
+    originalExpect(wrapper).toMatchSnapshot();
     expect(wrapper).to.exist();
+
     fetchMock.restore();
   });
 

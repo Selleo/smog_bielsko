@@ -7,6 +7,8 @@ import dirtyChai                      from 'dirty-chai';
 
 import DrawerMenu                 from '../../nav/DrawerMenu';
 
+const originalExpect = global.expect;
+
 chai.use(dirtyChai);
 
 let wrapper, props;
@@ -22,6 +24,7 @@ describe('DrawerMenu', () => {
   });
 
   it('renders correctly', () => {
+    originalExpect(wrapper).toMatchSnapshot();
     expect(wrapper).to.exist();
   });
 

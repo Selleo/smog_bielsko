@@ -7,6 +7,8 @@ import dirtyChai                      from 'dirty-chai';
 
 import DrawerCityLink                 from '../../nav/DrawerCityLink';
 
+const originalExpect = global.expect;
+
 chai.use(dirtyChai);
 
 let wrapper, props;
@@ -22,6 +24,7 @@ describe('DrawerCityLink', () => {
     wrapper = shallow(<DrawerCityLink {...props}/>);
   });
   it('renders correctly', () => {
+    originalExpect(wrapper).toMatchSnapshot();
     expect(wrapper).to.exist();
   });
 

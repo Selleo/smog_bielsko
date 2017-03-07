@@ -7,6 +7,8 @@ import dirtyChai                      from 'dirty-chai';
 
 import CityInfo                       from '../../city/CityInfo';
 
+const originalExpect = global.expect;
+
 chai.use(dirtyChai);
 
 let wrapper, props;
@@ -16,6 +18,7 @@ describe('CityInfo', () => {
     props = { city: { name: 'Zywiec, ul. Rynek 2' } };
     wrapper = shallow(<CityInfo {...props}/>);
 
+    originalExpect(wrapper).toMatchSnapshot();
     expect(wrapper).to.exist();
   });
 

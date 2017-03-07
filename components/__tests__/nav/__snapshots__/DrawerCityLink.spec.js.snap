@@ -1,0 +1,178 @@
+exports[`DrawerCityLink renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <TouchableHighlight
+    activeOpacity={0.85}
+    onPress={[Function]}
+    style={
+        Object {
+            "backgroundColor": "#aca",
+          }
+    }
+    underlayColor="#aca">
+    <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+            Object {
+                "color": "#444",
+                "fontSize": 16,
+                "paddingHorizontal": 20,
+                "paddingVertical": 10,
+              }
+        }>
+        Zywiec
+    </Text>
+</TouchableHighlight>,
+  "nodes": Array [
+    <TouchableHighlight
+      activeOpacity={0.85}
+      onPress={[Function]}
+      style={
+            Object {
+                  "backgroundColor": "#aca",
+                }
+      }
+      underlayColor="#aca">
+      <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+                  Object {
+                        "color": "#444",
+                        "fontSize": 16,
+                        "paddingHorizontal": 20,
+                        "paddingVertical": 10,
+                      }
+            }>
+            Zywiec
+      </Text>
+</TouchableHighlight>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <DrawerCityLink
+        closeDrawer={[Function]}
+        getCurrentStationId={[Function]}
+        station={
+                Object {
+                        "id": 1,
+                        "name": "Zywiec",
+                      }
+        } />,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": DrawerCityLink {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "closeDrawer": [Function],
+          "getCurrentStationId": [Function],
+          "station": Object {
+            "id": 1,
+            "name": "Zywiec",
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <TouchableHighlight
+          activeOpacity={0.85}
+          onPress={[Function]}
+          style={
+                    Object {
+                              "backgroundColor": "#aca",
+                            }
+          }
+          underlayColor="#aca">
+          <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                              Object {
+                                        "color": "#444",
+                                        "fontSize": 16,
+                                        "paddingHorizontal": 20,
+                                        "paddingVertical": 10,
+                                      }
+                    }>
+                    Zywiec
+          </Text>
+</TouchableHighlight>,
+        "_debugID": 2,
+        "_renderedOutput": <TouchableHighlight
+          activeOpacity={0.85}
+          onPress={[Function]}
+          style={
+                    Object {
+                              "backgroundColor": "#aca",
+                            }
+          }
+          underlayColor="#aca">
+          <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                              Object {
+                                        "color": "#444",
+                                        "fontSize": 16,
+                                        "paddingHorizontal": 20,
+                                        "paddingVertical": 10,
+                                      }
+                    }>
+                    Zywiec
+          </Text>
+</TouchableHighlight>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <DrawerCityLink
+    closeDrawer={[Function]}
+    getCurrentStationId={[Function]}
+    station={
+        Object {
+            "id": 1,
+            "name": "Zywiec",
+          }
+    } />,
+}
+`;

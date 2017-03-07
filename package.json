@@ -7,6 +7,7 @@
     "test": "jest",
     "test-w": "jest --watch",
     "test-c": "jest --coverage",
+    "test-u": "jest -u",
     "test-e": "enzyme enzyme-to-json",
     "test-a": "node inspect --harmony ./node_modules/jest/bin/jest.js --runInBand components/__tests__/StationDataRenderer.spec.js",
     "test-d": "npm run transform && NODE_ENV=test mocha --harmony --inspect --debug-brk lib/components/__tests__/StationDataRenderer.spec.js --recursive",
@@ -41,6 +42,7 @@
     "sinon": "^1.17.7"
   },
   "jest": {
+    "setupFiles": ["./jestsetup.js"],
     "preset": "react-native",
     "globals": {
       "__DEV__": true

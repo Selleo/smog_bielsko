@@ -7,6 +7,8 @@ import dirtyChai                      from 'dirty-chai';
 
 import AirQualityIndex                 from '../../pollution/AirQualityIndex';
 
+const originalExpect = global.expect;
+
 chai.use(dirtyChai);
 
 let wrapper, props;
@@ -21,6 +23,7 @@ describe('AirQualityIndex', () => {
   });
 
   it('renders correctly', () => {
+    originalExpect(wrapper).toMatchSnapshot();
     expect(wrapper).to.exist();
   });
 
