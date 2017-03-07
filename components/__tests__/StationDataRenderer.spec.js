@@ -89,7 +89,9 @@ describe('StationDataRenderer', () => {
       expect(wrapper.children().length).to.equal(1);
 
       setTimeout(() => {
+        wrapper.update();
         expect(wrapper.state().pending).to.equal(false);
+        wrapper.setState({ pending: true });
         expect(wrapper.children().children().text()).to.equal('Loading');
         expect(wrapper.children().type().name).to.equal('Component');
         done();
@@ -110,6 +112,7 @@ describe('StationDataRenderer', () => {
           iaqi: 2
         }
       });
+
       wrapper = shallow(<StationDataRenderer {...props}/>);
 
       expect(wrapper.state().pending).to.equal(true);
@@ -130,7 +133,5 @@ describe('StationDataRenderer', () => {
       fetchMock.restore();
     });
   });
-
-
 });
 
