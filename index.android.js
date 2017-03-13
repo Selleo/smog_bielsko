@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+  import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View, Button, Navigator, DrawerLayoutAndroid } from 'react-native';
 
 import Index from './scenes/Index'
@@ -30,6 +30,7 @@ export default class smog_bielsko extends Component {
           initialRoute={this.routes[0]}
           initialRouteStack={this.routes}
           renderScene={this.navigatorRenderScene.bind(this)}
+          configureScene={(route, routeStack) => Navigator.SceneConfigs.FloatFromBottom}
         />
       </DrawerLayoutAndroid>
     )
