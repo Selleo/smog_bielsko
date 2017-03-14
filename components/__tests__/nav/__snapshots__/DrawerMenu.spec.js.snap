@@ -1,0 +1,390 @@
+exports[`DrawerMenu renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <View
+    style={
+        Object {
+            "paddingTop": 30,
+          }
+    }>
+    <DrawerHeader
+        text="Wybierz miejscowość:" />
+    <DrawerCityLink
+        closeDrawer={[Function]}
+        getCurrentStationId={[Function]}
+        station={
+            Object {
+                "id": 6535,
+                "name": "Bielsko-Biała",
+              }
+        } />
+    <DrawerCityLink
+        closeDrawer={[Function]}
+        getCurrentStationId={[Function]}
+        station={
+            Object {
+                "id": 8281,
+                "name": "Żywiec",
+              }
+        } />
+    <DrawerCityLink
+        closeDrawer={[Function]}
+        getCurrentStationId={[Function]}
+        station={
+            Object {
+                "id": 6548,
+                "name": "Ustroń",
+              }
+        } />
+    <DrawerCityLink
+        closeDrawer={[Function]}
+        getCurrentStationId={[Function]}
+        station={
+            Object {
+                "id": 6547,
+                "name": "Tychy",
+              }
+        } />
+    <DrawerCityLink
+        closeDrawer={[Function]}
+        getCurrentStationId={[Function]}
+        station={
+            Object {
+                "id": 6540,
+                "name": "Katowice",
+              }
+        } />
+    <DrawerCityLink
+        closeDrawer={[Function]}
+        getCurrentStationId={[Function]}
+        station={
+            Object {
+                "id": 6544,
+                "name": "Wodzisław Śląski",
+              }
+        } />
+    <DrawerCityLink
+        closeDrawer={[Function]}
+        getCurrentStationId={[Function]}
+        station={
+            Object {
+                "id": 6542,
+                "name": "Rybnik",
+              }
+        } />
+    <DrawerCityLink
+        closeDrawer={[Function]}
+        getCurrentStationId={[Function]}
+        station={
+            Object {
+                "id": 2793,
+                "name": "Biały Krzyż (Czechy)",
+              }
+        } />
+</View>,
+  "nodes": Array [
+    <View
+      style={
+            Object {
+                  "paddingTop": 30,
+                }
+      }>
+      <DrawerHeader
+            text="Wybierz miejscowość:" />
+      <DrawerCityLink
+            closeDrawer={[Function]}
+            getCurrentStationId={[Function]}
+            station={
+                  Object {
+                        "id": 6535,
+                        "name": "Bielsko-Biała",
+                      }
+            } />
+      <DrawerCityLink
+            closeDrawer={[Function]}
+            getCurrentStationId={[Function]}
+            station={
+                  Object {
+                        "id": 8281,
+                        "name": "Żywiec",
+                      }
+            } />
+      <DrawerCityLink
+            closeDrawer={[Function]}
+            getCurrentStationId={[Function]}
+            station={
+                  Object {
+                        "id": 6548,
+                        "name": "Ustroń",
+                      }
+            } />
+      <DrawerCityLink
+            closeDrawer={[Function]}
+            getCurrentStationId={[Function]}
+            station={
+                  Object {
+                        "id": 6547,
+                        "name": "Tychy",
+                      }
+            } />
+      <DrawerCityLink
+            closeDrawer={[Function]}
+            getCurrentStationId={[Function]}
+            station={
+                  Object {
+                        "id": 6540,
+                        "name": "Katowice",
+                      }
+            } />
+      <DrawerCityLink
+            closeDrawer={[Function]}
+            getCurrentStationId={[Function]}
+            station={
+                  Object {
+                        "id": 6544,
+                        "name": "Wodzisław Śląski",
+                      }
+            } />
+      <DrawerCityLink
+            closeDrawer={[Function]}
+            getCurrentStationId={[Function]}
+            station={
+                  Object {
+                        "id": 6542,
+                        "name": "Rybnik",
+                      }
+            } />
+      <DrawerCityLink
+            closeDrawer={[Function]}
+            getCurrentStationId={[Function]}
+            station={
+                  Object {
+                        "id": 2793,
+                        "name": "Biały Krzyż (Czechy)",
+                      }
+            } />
+</View>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <DrawerMenu
+        closeDrawer={[Function]}
+        getCurrentStationId={[Function]} />,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": DrawerMenu {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "closeDrawer": [Function],
+          "getCurrentStationId": [Function],
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <View
+          style={
+                    Object {
+                              "paddingTop": 30,
+                            }
+          }>
+          <DrawerHeader
+                    text="Wybierz miejscowość:" />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 6535,
+                                        "name": "Bielsko-Biała",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 8281,
+                                        "name": "Żywiec",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 6548,
+                                        "name": "Ustroń",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 6547,
+                                        "name": "Tychy",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 6540,
+                                        "name": "Katowice",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 6544,
+                                        "name": "Wodzisław Śląski",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 6542,
+                                        "name": "Rybnik",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 2793,
+                                        "name": "Biały Krzyż (Czechy)",
+                                      }
+                    } />
+</View>,
+        "_debugID": 2,
+        "_renderedOutput": <View
+          style={
+                    Object {
+                              "paddingTop": 30,
+                            }
+          }>
+          <DrawerHeader
+                    text="Wybierz miejscowość:" />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 6535,
+                                        "name": "Bielsko-Biała",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 8281,
+                                        "name": "Żywiec",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 6548,
+                                        "name": "Ustroń",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 6547,
+                                        "name": "Tychy",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 6540,
+                                        "name": "Katowice",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 6544,
+                                        "name": "Wodzisław Śląski",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 6542,
+                                        "name": "Rybnik",
+                                      }
+                    } />
+          <DrawerCityLink
+                    closeDrawer={[Function]}
+                    getCurrentStationId={[Function]}
+                    station={
+                              Object {
+                                        "id": 2793,
+                                        "name": "Biały Krzyż (Czechy)",
+                                      }
+                    } />
+</View>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <DrawerMenu
+    closeDrawer={[Function]}
+    getCurrentStationId={[Function]} />,
+}
+`;

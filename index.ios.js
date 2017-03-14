@@ -1,53 +1,44 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { AppRegistry, StyleSheet, Text, View, Button, Navigator } from 'react-native';
+
+import Index from './scenes/Index'
+import DrawerMenu from './components/nav/DrawerMenu'
 
 export default class smog_bielsko extends Component {
+  constructor() {
+    super();
+    this.routes = [
+      { id: 'index' }
+    ]
+  }
+
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
+    var navigationView = (
+      <DrawerMenu
+        closeDrawer={(stationId) => this.drawer.closeDrawer() || this.nav.replace({
+          id: 'index',
+          stationId: stationId
+        })}
+        getCurrentStationId={() => this.currentStationId}
+      />
     );
+    return (
+      <Navigator
+        initialRoute={this.routes[0]}
+        initialRouteStack={this.routes}
+        renderScene={this.navigatorRenderScene.bind(this)}
+      />
+    )
+  }
+
+  navigatorRenderScene(route, nav) {
+    this.nav = nav;
+    this.currentStationId = route.stationId;
+    switch (route.id) {
+      case 'index':
+        return (<Index nav={nav} stationId={route.stationId}/>)
+    }
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 AppRegistry.registerComponent('smog_bielsko', () => smog_bielsko);

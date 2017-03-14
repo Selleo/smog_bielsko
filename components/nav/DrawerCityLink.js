@@ -1,14 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { StyleSheet, TouchableHighlight, Text } from 'react-native';
 
 export default class DrawerCityLink extends Component {
-  static get defaultProps() {
-  }
-
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <TouchableHighlight
@@ -26,6 +19,12 @@ export default class DrawerCityLink extends Component {
   isActive() {
     return this.props.station.id == this.props.getCurrentStationId();
   }
+
+  static propTypes = {
+    closeDrawer: PropTypes.func.isRequired,
+    getCurrentStationId: PropTypes.func.isRequired,
+    station: PropTypes.object.isRequired
+  };
 }
 
 const styles = StyleSheet.create({
@@ -38,4 +37,4 @@ const styles = StyleSheet.create({
   active: {
     backgroundColor: '#aca'
   }
-})
+});

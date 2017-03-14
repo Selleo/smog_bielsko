@@ -1,25 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 
 export default class AirQualityIndex extends Component {
-  static get defaultProps() {
-    return {
-
-    };
-  }
-
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    };
-  }
-
   render() {
     var index = this.getAirConditionIndex(this.props.index);
     return (
       <View style={styles.container} backgroundColor={colors[index]}>
-        <Text style={styles.text}> Jakość powietrza: {names[index]} </Text>
+        <Text style={styles.text}>Jakość powietrza: {names[index]}</Text>
       </View>
     )
   }
@@ -32,6 +19,10 @@ export default class AirQualityIndex extends Component {
     if (aqi < 300) { return 4 }
     return 5
   }
+
+  static propTypes = {
+    index: PropTypes.number.isRequired
+  };
 }
 
 const names = [
@@ -41,7 +32,7 @@ const names = [
   'Zła',
   'Bardzo zła',
   'Zagrożenie życia'
-]
+];
 
 const colors = [
   '#2DB338',
@@ -50,7 +41,7 @@ const colors = [
   '#B5753E',
   '#B34F2D',
   '#7D6363'
-]
+];
 
 const styles = StyleSheet.create({
   container: {
@@ -62,4 +53,4 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
     color: '#111'
   }
-})
+});

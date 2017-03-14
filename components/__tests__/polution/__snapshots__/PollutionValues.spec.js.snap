@@ -1,0 +1,240 @@
+exports[`PollutionValues renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <View
+    style={Object {}}>
+    <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+            Object {
+                "backgroundColor": "#ccc",
+                "color": "#363636",
+                "fontSize": 16,
+                "paddingHorizontal": 10,
+                "paddingVertical": 6,
+              }
+        }>
+        Tlenek Węgla
+        : 
+        0.1
+    </Text>
+    <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+            Object {
+                "backgroundColor": "#ccc",
+                "color": "#363636",
+                "fontSize": 16,
+                "paddingHorizontal": 10,
+                "paddingVertical": 6,
+              }
+        }>
+        Wilgotność
+        : 
+        88.2461
+        %
+    </Text>
+</View>,
+  "nodes": Array [
+    <View
+      style={Object {}}>
+      <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+                  Object {
+                        "backgroundColor": "#ccc",
+                        "color": "#363636",
+                        "fontSize": 16,
+                        "paddingHorizontal": 10,
+                        "paddingVertical": 6,
+                      }
+            }>
+            Tlenek Węgla
+            : 
+            0.1
+      </Text>
+      <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+                  Object {
+                        "backgroundColor": "#ccc",
+                        "color": "#363636",
+                        "fontSize": 16,
+                        "paddingHorizontal": 10,
+                        "paddingVertical": 6,
+                      }
+            }>
+            Wilgotność
+            : 
+            88.2461
+            %
+      </Text>
+</View>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <PollutionValues
+        dataset={
+                Object {
+                        "co": Object {
+                          "v": 0.1,
+                        },
+                        "h": Object {
+                          "v": 88.2461,
+                        },
+                      }
+        } />,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": PollutionValues {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "dataset": Object {
+            "co": Object {
+              "v": 0.1,
+            },
+            "h": Object {
+              "v": 88.2461,
+            },
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <View
+          style={Object {}}>
+          <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                              Object {
+                                        "backgroundColor": "#ccc",
+                                        "color": "#363636",
+                                        "fontSize": 16,
+                                        "paddingHorizontal": 10,
+                                        "paddingVertical": 6,
+                                      }
+                    }>
+                    Tlenek Węgla
+                    : 
+                    0.1
+          </Text>
+          <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                              Object {
+                                        "backgroundColor": "#ccc",
+                                        "color": "#363636",
+                                        "fontSize": 16,
+                                        "paddingHorizontal": 10,
+                                        "paddingVertical": 6,
+                                      }
+                    }>
+                    Wilgotność
+                    : 
+                    88.2461
+                    %
+          </Text>
+</View>,
+        "_debugID": 2,
+        "_renderedOutput": <View
+          style={Object {}}>
+          <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                              Object {
+                                        "backgroundColor": "#ccc",
+                                        "color": "#363636",
+                                        "fontSize": 16,
+                                        "paddingHorizontal": 10,
+                                        "paddingVertical": 6,
+                                      }
+                    }>
+                    Tlenek Węgla
+                    : 
+                    0.1
+          </Text>
+          <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                              Object {
+                                        "backgroundColor": "#ccc",
+                                        "color": "#363636",
+                                        "fontSize": 16,
+                                        "paddingHorizontal": 10,
+                                        "paddingVertical": 6,
+                                      }
+                    }>
+                    Wilgotność
+                    : 
+                    88.2461
+                    %
+          </Text>
+</View>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <PollutionValues
+    dataset={
+        Object {
+            "co": Object {
+              "v": 0.1,
+            },
+            "h": Object {
+              "v": 88.2461,
+            },
+          }
+    } />,
+}
+`;

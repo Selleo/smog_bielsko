@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default class CityDescription extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <View>
@@ -15,10 +11,13 @@ export default class CityDescription extends Component {
       </View>
     )
   }
+  static propTypes = {
+    text: PropTypes.string.isRequired,
+  };
 }
 
 const styles = StyleSheet.create({
   text: {
     fontSize: 14
   }
-})
+});
