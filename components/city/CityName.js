@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import header from '../stylesheets/header'
 
 export default class CityName extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export default class CityName extends Component {
   render() {
     return (
       <View>
-        <Text style={styles.text}>
+        <Text style={header.title}>
           {this.props.text}
         </Text>
       </View>
@@ -20,10 +21,3 @@ export default class CityName extends Component {
     text: PropTypes.string.isRequired,
   };
 }
-
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 30,
-    color: '#363636'
-  }
-});

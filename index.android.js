@@ -15,16 +15,21 @@ export default class smog_bielsko extends Component {
   render() {
     var navigationView = (
       <DrawerMenu
-        closeDrawer={(stationId) => this.drawer.closeDrawer() || this.nav.replace({id: 'index', stationId: stationId})}
+        closeDrawer={(stationId) => this.drawer.closeDrawer() || this.nav.replace({
+          id: 'index',
+          stationId: stationId
+        })}
         getCurrentStationId={() => this.currentStationId}
       />
-    )
+    );
     return (
       <DrawerLayoutAndroid
         drawerWidth={300}
         drawerPosition={DrawerLayoutAndroid.positions.Left}
         drawerLockMode='unlocked'
-        ref={(drawer) => { return this.drawer = drawer }}
+        ref={(drawer) => {
+          return this.drawer = drawer
+        }}
         renderNavigationView={() => navigationView}>
         <Navigator
           initialRoute={this.routes[0]}
@@ -40,7 +45,7 @@ export default class smog_bielsko extends Component {
     this.currentStationId = route.stationId;
     switch (route.id) {
       case 'index':
-        return (<Index nav={nav} stationId={route.stationId} />)
+        return (<Index nav={nav} stationId={route.stationId}/>)
     }
   }
 }

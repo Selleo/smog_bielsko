@@ -11,11 +11,13 @@
     "test-e": "enzyme enzyme-to-json",
     "test-a": "node inspect --harmony ./node_modules/jest/bin/jest.js --runInBand components/__tests__/StationDataRenderer.spec.js",
     "test-d": "npm run transform && NODE_ENV=test mocha --harmony --inspect --debug-brk lib/components/__tests__/StationDataRenderer.spec.js --recursive",
-    "transform": "babel components/__tests__/StationDataRenderer.spec.js --out-dir lib"
+    "transform": "babel components/__tests__/StationDataRenderer.spec.js --out-dir lib",
+    "postinstall": "rndebugger-open"
   },
   "dependencies": {
     "react": "15.4.2",
-    "react-native": "0.40.0"
+    "react-native": "0.42.0",
+    "react-native-extensible-stylesheet": "0.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
@@ -33,11 +35,14 @@
     "jsdom": "^9.11.0",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-native-debugger-open": "^0.3.2",
     "react-native-mock": "^0.3.1",
     "react-test-renderer": "15.4.2"
   },
   "jest": {
-    "setupFiles": ["./jestsetup.js"],
+    "setupFiles": [
+      "./jestsetup.js"
+    ],
     "preset": "react-native",
     "globals": {
       "__DEV__": true
