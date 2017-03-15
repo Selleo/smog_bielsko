@@ -23,7 +23,6 @@ export default class CityInfo extends Component {
     fetchBgr('Zywiec city')
       .then((response) => {
         this.setState({ bgr: response.link });
-        this.setState({ fetched: true });
       })
       .catch((response) => {
         console.log(response);

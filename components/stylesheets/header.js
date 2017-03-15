@@ -2,36 +2,38 @@ import StyleSheet from 'react-native-extensible-stylesheet'
 
 export default StyleSheet.create({
   container: {
-    width: undefined,
     height: 120,
     position: 'relative',
+    width: undefined,
   },
   title: {
-    fontSize: 22,
-    color: 'white',
     backgroundColor: 'transparent',
+    color: 'white',
+    fontSize: 22,
+    marginLeft: 30,
     marginTop: 30,
+    position: 'relative',
     zIndex: 1,
-    position: 'relative'
   },
   description: {
-    color: 'white',
     backgroundColor: 'transparent',
+    color: 'white',
+    marginLeft: 30,
+    position: 'relative',
     zIndex: 1,
-    position: 'relative'
   },
   bgr: {
-    backgroundColor: 'transparent',
-    width: undefined,
-    height: 120,
-    borderWidth: 0,
-    padding: 0,
-    margin: 0,
-    top: 0,
-    flex: 1,
     alignSelf: 'stretch',
+    backgroundColor: 'transparent',
+    borderWidth: 0,
+    flex: 1,
     flexDirection: 'column',
+    height: 120,
     justifyContent: 'center',
+    margin: 0,
+    padding: 0,
+    top: 0,
+    width: undefined,
   },
   bgr2: {
     alignSelf: 'center',
