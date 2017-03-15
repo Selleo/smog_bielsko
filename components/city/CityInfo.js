@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Text, Image, ActivityIndicator, Dimensions, StyleSheet } from 'react-native';
+import { View, Text, Image, ActivityIndicator, Dimensions, StyleSheet, Animated } from 'react-native';
 let {height, width} = Dimensions.get('window');
 
 import CityName from './CityName'
@@ -12,6 +12,7 @@ export default class CityInfo extends Component {
     super(props);
     this.state = {
       fetched: false,
+      fadeAnim: new Animated.Value(0),
       layout: {
         width: width,
         height: height
@@ -23,10 +24,33 @@ export default class CityInfo extends Component {
     fetchBgr('Zywiec city')
       .then((response) => {
         this.setState({ bgr: response.link });
+        Animated.timing(
+          this.state.fadeAnim,
+          {
+            toValue: 1,
+            duration: 700
+          }
+        ).start();
       })
       .catch((response) => {
         console.log(response);
       })
+  }
+
+  secondUmageStyles() {
+    return {
+      alignSelf: 'center',
+      backgroundColor: 'transparent',
+      borderWidth: 0,
+      flex: 1,
+      flexDirection: 'column',
+      justifyContent: 'center',
+      margin: 0,
+      opacity: this.state.fadeAnim,
+      padding: 0,
+      resizeMode: 'cover',
+      ...StyleSheet.absoluteFillObject
+    }
   }
 
   render() {
@@ -34,7 +58,7 @@ export default class CityInfo extends Component {
     return (
       <View style={header.container}>
           <Image source={require('./../images/header.jpg')} style={header.bgr}>
-            <Image source={{ uri: bgr }} style={[header.bgr, header.bgr2]} />
+            <Animated.Image source={{ uri: bgr }} style={this.secondUmageStyles()} />
             <View>
               <CityName text={this.getCityInfo(0)}/>
               <CityDescription text={this.getCityInfo(1)}/>
