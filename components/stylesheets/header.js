@@ -1,14 +1,16 @@
 import StyleSheet from 'react-native-extensible-stylesheet'
 
 export default StyleSheet.create({
+  $colorWhite: 'white',
+  $headerHeight: 120,
   container: {
-    height: 120,
+    height: '$headerHeight',
     position: 'relative',
     width: undefined,
   },
   title: {
     backgroundColor: 'transparent',
-    color: 'white',
+    color: '$colorWhite',
     fontSize: 22,
     marginLeft: 30,
     marginTop: 30,
@@ -17,7 +19,7 @@ export default StyleSheet.create({
   },
   description: {
     backgroundColor: 'transparent',
-    color: 'white',
+    color: '$colorWhite',
     marginLeft: 30,
     position: 'relative',
     zIndex: 1,
@@ -28,7 +30,7 @@ export default StyleSheet.create({
     borderWidth: 0,
     flex: 1,
     flexDirection: 'column',
-    height: 120,
+    height: '$headerHeight',
     justifyContent: 'center',
     margin: 0,
     padding: 0,
@@ -36,10 +38,9 @@ export default StyleSheet.create({
     width: undefined,
   },
   bgr2: {
-    alignSelf: 'center',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    resizeMode: 'cover',
-    ...StyleSheet.absoluteFillObject
+    height: '$headerHeight',
+    resizeMode: 'stretch',
+    ...StyleSheet.absoluteFillObject,
+    top: -20,
   }
 });

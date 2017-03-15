@@ -60,6 +60,7 @@ export default class CityInfo extends Component {
           <Image source={require('./../images/header.jpg')} style={header.bgr}>
             <Animated.Image source={{ uri: bgr }} style={this.secondUmageStyles()} />
             <View>
+              <Image source={require('./../images/header_overlay.png')} style={[header.bgr, header.bgr2]} />
               <CityName text={this.getCityInfo(0)}/>
               <CityDescription text={this.getCityInfo(1)}/>
             </View>
