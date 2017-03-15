@@ -44,9 +44,6 @@ const colors = [
 ];
 
 const styles = StyleSheet.create({
-  container: {
-    marginTop: 16
-  },
   text: {
     fontSize: 16,
     paddingHorizontal: 10,
