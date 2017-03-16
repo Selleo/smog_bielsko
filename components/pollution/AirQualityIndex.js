@@ -1,5 +1,5 @@
-import React, { Component, PropTypes } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import React, { Component, PropTypes } from 'react'
+import { View, StyleSheet, Text }      from 'react-native'
 
 export default class AirQualityIndex extends Component {
   render() {

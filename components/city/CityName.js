@@ -1,6 +1,7 @@
-import React, { Component, PropTypes } from 'react';
-import { Text, View } from 'react-native';
-import header from '../stylesheets/header'
+import React, { Component, PropTypes } from 'react'
+import { Text, View }                  from 'react-native'
+
+import header                          from '../stylesheets/Header'
 
 export default class CityName extends Component {
   constructor(props) {

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View, Button, Navigator } from 'react-native';
+import React, { Component }                                       from 'react'
+import { AppRegistry, StyleSheet, Text, View, Button, Navigator } from 'react-native'
 
-import Index from './scenes/Index'
-import DrawerMenu from './components/nav/DrawerMenu'
+import Index                                                      from './components/scenes/Index'
+import DrawerMenu                                                 from './components/nav/DrawerMenu'
 
 export default class smog_bielsko extends Component {
   constructor() {

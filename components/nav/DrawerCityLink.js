@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes }          from 'react';
 import { StyleSheet, TouchableHighlight, Text } from 'react-native';
 
 export default class DrawerCityLink extends Component {

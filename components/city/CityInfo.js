@@ -1,11 +1,10 @@
-import React, { Component, PropTypes } from 'react';
-import { View, Text, Image, ActivityIndicator, Dimensions, StyleSheet, Animated } from 'react-native';
-let {height, width} = Dimensions.get('window');
+import React, { Component, PropTypes }       from 'react';
+import { View, Image, StyleSheet, Animated } from 'react-native';
 
-import CityName from './CityName'
-import CityDescription from './CityDescription'
-import { fetchBgr } from './../sharing/extends'
-import header from '../stylesheets/header'
+import CityDescription                       from './CityDescription'
+import CityName                              from './CityName'
+import header                                from '../stylesheets/Header'
+import { fetchBgr }                          from './../sharing/Extends'
 
 export default class CityInfo extends Component {
   constructor(props) {
@@ -13,10 +12,6 @@ export default class CityInfo extends Component {
     this.state = {
       fetched: false,
       fadeAnim: new Animated.Value(0),
-      layout: {
-        width: width,
-        height: height
-      }
     }
   }
 
@@ -54,17 +49,17 @@ export default class CityInfo extends Component {
   }
 
   render() {
-    let {bgr, layout} = this.state;
+    let { bgr } = this.state;
     return (
       <View style={header.container}>
-          <Image source={require('./../images/header.jpg')} style={header.bgr}>
-            <Animated.Image source={{ uri: bgr }} style={this.secondUmageStyles()} />
-            <View>
-              <Image source={require('./../images/header_overlay.png')} style={[header.bgr, header.bgr2]} />
-              <CityName text={this.getCityInfo(0)}/>
-              <CityDescription text={this.getCityInfo(1)}/>
-            </View>
-          </Image>
+        <Image source={require('./../images/header.jpg')} style={header.bgr}>
+          <Animated.Image source={{ uri: bgr }} style={this.secondUmageStyles()}/>
+          <View>
+            <Image source={require('./../images/header_overlay.png')} style={[header.bgr, header.bgr2]}/>
+            <CityName text={this.getCityInfo(0)}/>
+            <CityDescription text={this.getCityInfo(1)}/>
+          </View>
+        </Image>
       </View>
     )
   }
