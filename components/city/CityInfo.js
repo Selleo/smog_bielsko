@@ -18,8 +18,8 @@ export default class CityInfo extends Component {
   componentDidMount() {
     let queryName;
 
-    if (this.props.stationName == undefined) queryName = this.getCityInfo(0) + ' city';
-    else queryName = this.props.stationName + ' city';
+    if (this.props.stationName == undefined) queryName = this.getCityInfo(0) + ' town';
+    else queryName = this.props.stationName + ' town';
 
     fetchBgr(queryName)
       .then((response) => {
