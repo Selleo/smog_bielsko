@@ -53,7 +53,6 @@ export default class smog_bielsko extends Component {
           id: 'index',
           stationId: stationId
         });
-        this.setState({ pendingView: true });
         this.fetchData(stationId);
       }}
       getCurrentStationId={() => {
@@ -91,8 +90,7 @@ export default class smog_bielsko extends Component {
     this.currentStationId = route.stationId;
     switch (route.id) {
       case 'index':
-        return (<Index nav={nav} stationId={route.stationId} dataStations={this.state.dataStations}
-                       pendingView={this.state.pendingView}/>)
+        return (<Index nav={nav} stationId={route.stationId} dataStations={this.state.dataStations}/>)
     }
   }
 }
