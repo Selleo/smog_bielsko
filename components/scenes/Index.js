@@ -5,7 +5,8 @@ import StationDataRenderer  from './../StationDataRenderer'
 export default class Index extends Component {
   render() {
     return (
-      <StationDataRenderer stationId={this.props.stationId} dataStations={this.props.dataStations} />
+      <StationDataRenderer stationId={this.props.stationId} dataStations={this.props.dataStations}
+                           pendingView={this.props.pendingView}/>
     )
   }
 }

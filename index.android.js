@@ -15,13 +15,18 @@ export default class smog_bielsko extends Component {
     this.routes = [{ id: 'index' }];
     this.state = {
       isOpen: false,
-      pending: true
+      pendingApp: true
     }
   }
 
   componentWillMount() {
-    getData().then((responseJson) => {
-      return this.setState({ dataStations: responseJson.data, pending: false })
+    this.fetchData(stationId)
+  }
+
+  fetchData(stationId) {
+    getData(stationId).then((responseJson) => {
+      this.hideMenu();
+      return this.setState({ dataStations: responseJson.data, pendingApp: false, pendingView: false })
     });
   }
 
@@ -29,11 +34,11 @@ export default class smog_bielsko extends Component {
     this.setState({ isOpen, });
   }
 
-  onMenuItemSelected = () => {
+  hideMenu() {
     this.setState({
       isOpen: false,
     });
-  };
+  }
 
   toggle() {
     this.setState({
@@ -43,15 +48,20 @@ export default class smog_bielsko extends Component {
 
   render() {
     const menuNav = <DrawerMenu
-      closeDrawer={(stationId) =>
-      this.nav.replace({
-        id: 'index',
-        stationId: stationId
-      }) && this.onMenuItemSelected()
-      }
-      getCurrentStationId={() => this.currentStationId}
+      closeDrawer={(stationId) => {
+        this.nav.replace({
+          id: 'index',
+          stationId: stationId
+        });
+        this.setState({ pendingView: true });
+        this.fetchData(stationId);
+      }}
+      getCurrentStationId={() => {
+        return this.currentStationId
+      }}
     />;
-    if (this.state.pending) {
+
+    if (this.state.pendingApp) {
       return (
         <View style={loading.loadingContainer}>
           <Text style={loading.loadingText}>Loading</Text>
@@ -65,7 +75,6 @@ export default class smog_bielsko extends Component {
           onChange={(isOpen) => this.updateMenuState(isOpen)}>
           <Navigator
             initialRoute={this.routes[0]}
-            initialRouteStack={this.routes}
             renderScene={this.navigatorRenderScene.bind(this)}
           />
           <Button style={menu.button} onPress={() => this.toggle()} title={'test'}>
@@ -82,7 +91,8 @@ export default class smog_bielsko extends Component {
     this.currentStationId = route.stationId;
     switch (route.id) {
       case 'index':
-        return (<Index nav={nav} stationId={route.stationId} dataStations={this.state.dataStations}/>)
+        return (<Index nav={nav} stationId={route.stationId} dataStations={this.state.dataStations}
+                       pendingView={this.state.pendingView}/>)
     }
   }
 }
