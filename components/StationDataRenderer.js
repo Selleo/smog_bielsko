@@ -8,7 +8,7 @@ import PollutionValues                 from './pollution/PollutionValues'
 export default class StationDataRenderer extends Component {
   render() {
       return (
-        <View style={{ flex: 1, backgroundColor: '#ccc' }}>
+        <View style={{ flex: 1, backgroundColor: '#fefefe' }}>
           <CityInfo city={this.props.dataStations.city} stationName={this.props.stationName} />
           <AirQualityIndex index={this.props.dataStations.aqi}/>
           <PollutionValues dataset={this.props.dataStations.iaqi}/>
