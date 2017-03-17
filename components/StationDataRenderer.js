@@ -9,7 +9,7 @@ export default class StationDataRenderer extends Component {
   render() {
       return (
         <View style={{ flex: 1, backgroundColor: '#ccc' }}>
-          <CityInfo city={this.props.dataStations.city}/>
+          <CityInfo city={this.props.dataStations.city} stationName={this.props.stationName} />
           <AirQualityIndex index={this.props.dataStations.aqi}/>
           <PollutionValues dataset={this.props.dataStations.iaqi}/>
         </View>

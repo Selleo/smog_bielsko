@@ -48,10 +48,11 @@ export default class smog_bielsko extends Component {
 
   render() {
     const menuNav = <DrawerMenu
-      closeDrawer={(stationId) => {
+      closeDrawer={(stationId, stationName) => {
         this.nav.replace({
           id: 'index',
-          stationId: stationId
+          stationId: stationId,
+          stationName: stationName
         });
         this.fetchData(stationId);
       }}
@@ -88,9 +89,10 @@ export default class smog_bielsko extends Component {
   navigatorRenderScene(route, nav) {
     this.nav = nav;
     this.currentStationId = route.stationId;
+    this.stationName = route.stationName;
     switch (route.id) {
       case 'index':
-        return (<Index nav={nav} stationId={route.stationId} dataStations={this.state.dataStations}/>)
+        return (<Index nav={nav} stationId={route.stationId} dataStations={this.state.dataStations} stationName={this.stationName} />)
     }
   }
 }

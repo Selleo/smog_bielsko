@@ -16,7 +16,12 @@ export default class CityInfo extends Component {
   }
 
   componentDidMount() {
-    fetchBgr('Zywiec city')
+    let queryName;
+
+    if (this.props.stationName == undefined) queryName = this.getCityInfo(0) + ' city';
+    else queryName = this.props.stationName + ' city';
+
+    fetchBgr(queryName)
       .then((response) => {
         this.setState({ bgr: response.link });
         Animated.timing(
