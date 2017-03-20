@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { View }                        from 'react-native'
+import { View, ScrollView }                        from 'react-native'
 
 import AirQualityIndex                 from './pollution/AirQualityIndex'
 import CityInfo                        from './city/CityInfo'
@@ -10,8 +10,10 @@ export default class StationDataRenderer extends Component {
       return (
         <View style={{ flex: 1, backgroundColor: '#fefefe' }}>
           <CityInfo city={this.props.dataStations.city} stationName={this.props.stationName} />
-          <AirQualityIndex index={this.props.dataStations.aqi}/>
-          <PollutionValues dataset={this.props.dataStations.iaqi}/>
+          <ScrollView>
+            <AirQualityIndex index={this.props.dataStations.aqi}/>
+            <PollutionValues dataset={this.props.dataStations.iaqi}/>
+          </ScrollView>
         </View>
       );
   }

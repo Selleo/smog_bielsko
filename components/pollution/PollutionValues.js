@@ -15,8 +15,7 @@ export default class PollutionValues extends Component {
 
   bigComponent(number){
     return (
-      <View style={{ backgroundColor: 'white', marginVertical: 15, marginHorizontal: 30,
-        height: 50 }}>
+      <View style={styles.bigComponent}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
           <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
             <Text>{names[this.getDatasetKeys()[number]]}</Text>
@@ -32,11 +31,7 @@ export default class PollutionValues extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <View >
-          <Text style={styles.oneComponent}>Jakoś powietrza</Text>
-          <Text style={styles.oneComponent}>test</Text>
-        </View>
+      <View>
         { this.getDatasetKeys()[5] && this.singleComponent(5) }
         { this.getDatasetKeys()[2] && this.singleComponent(2) }
         { this.getDatasetKeys()[6] && this.singleComponent(6) }
@@ -84,11 +79,25 @@ const suffices = {
 };
 
 const styles = StyleSheet.create({
-    container: {},
     oneComponent: {
       flex: 1,
     },
     twoComponents: {
       flex: 0.5
+    },
+    bigComponent: {
+      backgroundColor: 'white',
+      borderRadius: 3,
+      height: 50,
+      marginHorizontal: 30,
+      marginVertical: 15,
+      shadowColor: "#000000",
+      shadowOffset: {
+        height: 4,
+        width: 4
+      },
+      shadowOpacity: 0.8,
+      shadowRadius: 2,
+      width: 200,
     }
 });

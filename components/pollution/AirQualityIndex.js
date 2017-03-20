@@ -5,8 +5,13 @@ export default class AirQualityIndex extends Component {
   render() {
     var index = this.getAirConditionIndex(this.props.index);
     return (
-      <View style={styles.container} backgroundColor={colors[index]}>
-        <Text style={styles.text}>Jakość powietrza: {names[index]}</Text>
+      <View style={styles.container}>
+        <Text style={styles.text}>Jakość powietrza:</Text>
+        <View style={styles.titleContainer}>
+          <Text backgroundColor={colors[index]} style={styles.circle}></Text>
+          <Text style={styles.text}>{names[index]}</Text>
+          <Text backgroundColor={colors[index]} style={styles.circle}></Text>
+        </View>
       </View>
     )
   }
@@ -44,10 +49,28 @@ const colors = [
 ];
 
 const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'white',
+    marginVertical: 15,
+    alignItems: 'center',
+  },
+  titleContainer: {
+    flex: 1,
+    alignItems: 'center',
+    flexDirection: 'row',
+    flexWrap: 'nowrap',
+    justifyContent: 'center',
+  },
   text: {
+    color: '#111',
     fontSize: 16,
     paddingHorizontal: 10,
     paddingVertical: 6,
-    color: '#111'
+  },
+  circle: {
+    borderRadius: 30,
+    backgroundColor: 'red',
+    height: 10,
+    width: 10,
   }
 });
