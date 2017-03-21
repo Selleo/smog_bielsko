@@ -7,7 +7,7 @@ export default class PollutionValues extends Component {
   singleComponent(number) {
     return (
       <View style={header.withShadow}>
-        <ElevatedView elevation={2} style={header.elevatedView}>
+        <ElevatedView elevation={4} style={header.elevatedView}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10, alignItems: 'center' }}>
             <Text>{names[this.getDatasetKeys()[number]]}</Text>
             <Text style={{fontSize: 18}}>{this.getDatasetItem(number).v} {suffices[this.getDatasetKeys()[number]] }</Text>
@@ -20,7 +20,7 @@ export default class PollutionValues extends Component {
   bigComponent(number) {
     return (
       <View style={[styles.bigComponent, header.withShadow]}>
-        <ElevatedView elevation={2} style={header.elevatedView}>
+        <ElevatedView elevation={4} style={header.elevatedView}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10 }}>
             <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
               <Text>{names[this.getDatasetKeys()[number]]}</Text>
