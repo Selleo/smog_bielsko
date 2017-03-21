@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { View, ScrollView }                        from 'react-native'
+import { View, ScrollView, StyleSheet }                        from 'react-native'
 
 import AirQualityIndex                 from './pollution/AirQualityIndex'
 import CityInfo                        from './city/CityInfo'
@@ -9,10 +9,11 @@ export default class StationDataRenderer extends Component {
   render() {
       return (
         <View style={{ flex: 1, backgroundColor: '#fefefe' }}>
-          <CityInfo city={this.props.dataStations.city} stationName={this.props.stationName} />
           <ScrollView>
-            <AirQualityIndex index={this.props.dataStations.aqi}/>
-            <PollutionValues dataset={this.props.dataStations.iaqi}/>
+            <CityInfo city={this.props.dataStations.city} stationName={this.props.stationName} />
+
+            <AirQualityIndex index={this.props.dataStations.aqi} style={styles.withShadow}/>
+            <PollutionValues dataset={this.props.dataStations.iaqi} style={{ marginHorizontal:30 }}/>
           </ScrollView>
         </View>
       );
@@ -23,3 +24,12 @@ export default class StationDataRenderer extends Component {
     pendingView: PropTypes.bool
   };
 }
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    flex: 1,
+    justifyContent: 'center',
+  }
+});

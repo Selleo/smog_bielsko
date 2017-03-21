@@ -1,30 +1,36 @@
 import React, { Component, PropTypes } from 'react';
 import { View, StyleSheet, Text }      from 'react-native';
+import header from '../stylesheets/Header'
+import ElevatedView from 'react-native-elevated-view'
 
 export default class PollutionValues extends Component {
-  singleComponent(number){
+  singleComponent(number) {
     return (
-      <View style={{ backgroundColor: 'white', marginVertical: 15, marginHorizontal: 30 }}>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-          <Text>{names[this.getDatasetKeys()[number]]}</Text>
-          <Text>{this.getDatasetItem(number).v} {suffices[this.getDatasetKeys()[number]] }</Text>
+      <View style={header.withShadow}>
+        <ElevatedView elevation={2} style={header.elevatedView}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10 }}>
+            <Text>{names[this.getDatasetKeys()[number]]}</Text>
+            <Text>{this.getDatasetItem(number).v} {suffices[this.getDatasetKeys()[number]] }</Text>
           </View>
+        </ElevatedView>
       </View>
     )
   }
 
-  bigComponent(number){
+  bigComponent(number) {
     return (
-      <View style={styles.bigComponent}>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-          <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
-            <Text>{names[this.getDatasetKeys()[number]]}</Text>
-            <Text>{this.getDatasetItem(number).v} {suffices[this.getDatasetKeys()[number]] }</Text>
+      <View style={[styles.bigComponent, header.withShadow]}>
+        <ElevatedView elevation={2} style={header.elevatedView}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10 }}>
+            <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+              <Text>{names[this.getDatasetKeys()[number]]}</Text>
+              <Text>{this.getDatasetItem(number).v} {suffices[this.getDatasetKeys()[number]] }</Text>
+            </View>
+            <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+              <Text>Icon</Text>
+            </View>
           </View>
-          <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-            <Text>Icon</Text>
-          </View>
-        </View>
+        </ElevatedView>
       </View>
     )
   }
@@ -79,25 +85,14 @@ const suffices = {
 };
 
 const styles = StyleSheet.create({
-    oneComponent: {
-      flex: 1,
-    },
-    twoComponents: {
-      flex: 0.5
-    },
-    bigComponent: {
-      backgroundColor: 'white',
-      borderRadius: 3,
-      height: 50,
-      marginHorizontal: 30,
-      marginVertical: 15,
-      shadowColor: "#000000",
-      shadowOffset: {
-        height: 4,
-        width: 4
-      },
-      shadowOpacity: 0.8,
-      shadowRadius: 2,
-      width: 200,
-    }
+  oneComponent: {
+    flex: 1,
+  },
+  twoComponents: {
+    flex: 0.5,
+  },
+  bigComponent: {
+    backgroundColor: 'white',
+    height: 50,
+  }
 });

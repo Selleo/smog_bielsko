@@ -1,8 +1,11 @@
+import { Dimensions } from 'react-native';
+
 import StyleSheet from 'react-native-extensible-stylesheet'
+const window = Dimensions.get('window');
 
 export default StyleSheet.create({
   $colorWhite: 'white',
-  $headerHeight: 120,
+  $headerHeight: 180,
   container: {
     height: '$headerHeight',
     position: 'relative',
@@ -11,9 +14,9 @@ export default StyleSheet.create({
   title: {
     backgroundColor: 'transparent',
     color: '$colorWhite',
-    fontSize: 22,
+    fontSize: 30,
     marginLeft: 30,
-    marginTop: 30,
+    marginTop: 90,
     position: 'relative',
     zIndex: 1,
   },
@@ -21,6 +24,7 @@ export default StyleSheet.create({
     backgroundColor: 'transparent',
     color: '$colorWhite',
     marginLeft: 30,
+    paddingTop: 5,
     position: 'relative',
     zIndex: 1,
   },
@@ -41,6 +45,22 @@ export default StyleSheet.create({
     height: '$headerHeight',
     resizeMode: 'stretch',
     ...StyleSheet.absoluteFillObject,
-    top: -20,
+    top: -10,
+  },
+  withShadow: {
+    backgroundColor: 'white',
+    borderRadius: 3,
+    alignItems: 'stretch',
+  },
+  elevatedView: {
+    alignItems: 'stretch',
+    backgroundColor: 'white',
+    justifyContent: 'space-between',
+    margin: 20,
+    marginTop: 0,
+  },
+  alignCenter: {
+    alignItems: 'center'
   }
+
 });

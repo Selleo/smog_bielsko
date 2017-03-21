@@ -1,20 +1,48 @@
 import React, { Component, PropTypes } from 'react'
-import { View, StyleSheet, Text }      from 'react-native'
+import { View, StyleSheet, Text, Dimensions }      from 'react-native'
+import header from '../stylesheets/Header'
+import ElevatedView from 'react-native-elevated-view'
+const window = Dimensions.get('window');
 
 export default class AirQualityIndex extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      width: Dimensions.get('window').width,
+      height: Dimensions.get('window').height,
+    };
+
+    this.onLayout = this.onLayout.bind(this);
+  }
+
   render() {
     var index = this.getAirConditionIndex(this.props.index);
     return (
-      <View style={styles.container}>
-        <Text style={styles.text}>Jakość powietrza:</Text>
-        <View style={styles.titleContainer}>
-          <Text backgroundColor={colors[index]} style={styles.circle}></Text>
-          <Text style={styles.text}>{names[index]}</Text>
-          <Text backgroundColor={colors[index]} style={styles.circle}></Text>
-        </View>
+      <View style={[styles.container, header.withShadow]}>
+        <ElevatedView elevation={2} style={[header.elevatedView, header.alignCenter]}>
+          <Text style={styles.text}>Jakość powietrza:</Text>
+          <View style={styles.titleContainer}>
+            <View backgroundColor={colors[index]} style={styles.circleContainer}>
+              <View style={styles.circle}></View>
+            </View>
+            <Text style={styles.title}>{names[index]}</Text>
+            <View backgroundColor={colors[index]} style={styles.circleContainer}>
+              <View style={styles.circle}></View>
+            </View>
+          </View>
+        </ElevatedView>
       </View>
     )
   }
+
+  onLayout() {
+    this.setState({
+      width: Dimensions.get('window').width,
+      height: Dimensions.get('window').height,
+    });
+  }
+
 
   getAirConditionIndex(aqi) {
     if (aqi < 50) { return 0 }
@@ -50,9 +78,9 @@ const colors = [
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
-    marginVertical: 15,
     alignItems: 'center',
+    backgroundColor: 'white',
+    marginTop: 20
   },
   titleContainer: {
     flex: 1,
@@ -63,14 +91,26 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#111',
-    fontSize: 16,
+    fontSize: 14,
     paddingHorizontal: 10,
-    paddingVertical: 6,
+    paddingTop: 6,
+  },
+  title: {
+    color: '#111',
+    fontSize: 24,
+    paddingBottom: 6,
+    paddingHorizontal: 10,
+  },
+  circleContainer: {
+    alignItems: 'center',
+    borderRadius: 30,
+    height: 15,
+    justifyContent: 'center',
+    overflow: 'hidden',
+    width: 15,
   },
   circle: {
-    borderRadius: 30,
-    backgroundColor: 'red',
-    height: 10,
-    width: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 });
