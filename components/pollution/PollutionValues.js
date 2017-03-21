@@ -8,9 +8,9 @@ export default class PollutionValues extends Component {
     return (
       <View style={header.withShadow}>
         <ElevatedView elevation={2} style={header.elevatedView}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10 }}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10, alignItems: 'center' }}>
             <Text>{names[this.getDatasetKeys()[number]]}</Text>
-            <Text>{this.getDatasetItem(number).v} {suffices[this.getDatasetKeys()[number]] }</Text>
+            <Text style={{fontSize: 18}}>{this.getDatasetItem(number).v} {suffices[this.getDatasetKeys()[number]] }</Text>
           </View>
         </ElevatedView>
       </View>
