@@ -63,6 +63,7 @@ export default StyleSheet.create({
     backgroundColor: 'white',
     justifyContent: 'space-between',
     margin: 20,
+    marginBottom: 15,
     marginTop: 0,
   },
   alignCenter: {
@@ -79,6 +80,9 @@ export default StyleSheet.create({
   circle: {
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  spaceBetweenItems: {
+    paddingTop: 5
   }
 
 });

@@ -21,8 +21,8 @@ export default class PollutionValues extends Component {
 
   singleComponent(type) {
     return (
-      <View style={header.withShadow}>
-        <ElevatedView elevation={4} style={header.elevatedView}>
+      <View style={[header.withShadow, header.spaceBetweenItems]}>
+        <ElevatedView elevation={4} style={[header.elevatedView, styles.singleElevatedView]}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10, alignItems: 'center' }}>
               <Text>{names[type]}</Text>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
@@ -39,7 +39,7 @@ export default class PollutionValues extends Component {
 
   bigComponent(type) {
     return (
-      <View style={{ width: (this.state.width - 60)/ 2, marginHorizontal:5 }}>
+      <View style={{ width: (this.state.width - 60)/ 2, marginHorizontal:5, paddingTop: 5, marginBottom: 0 }}>
         <ElevatedView elevation={4} style={[header.elevatedView, styles.elevatedView]}>
           <View style={[styles.bigComponent]}>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'stretch'}}>
@@ -196,9 +196,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     justifyContent: 'space-between',
     margin: 0,
-    marginBottom: 20
   },
   singleCTitle: {
     marginLeft: 5
+  },
+  singleElevatedView: {
+    marginBottom: 15
   }
 });

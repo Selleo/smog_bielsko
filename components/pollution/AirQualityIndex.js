@@ -19,7 +19,7 @@ export default class AirQualityIndex extends Component {
   render() {
     var index = this.getAirConditionIndex(this.props.index);
     return (
-      <View style={[styles.container, header.withShadow]}>
+      <View style={[header.withShadow, header.spaceBetweenItems, styles.container]}>
         <ElevatedView elevation={4} style={[header.elevatedView, header.alignCenter, styles.elevatedView]}>
           <Text style={styles.text}>Jakość powietrza:</Text>
           <View style={styles.titleContainer}>
@@ -78,9 +78,8 @@ const colors = [
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
     backgroundColor: 'white',
-    marginTop: 20
+    marginTop: 15,
   },
   titleContainer: {
     flex: 1,
@@ -96,7 +95,7 @@ const styles = StyleSheet.create({
     color: '#111',
     fontSize: 14,
     paddingHorizontal: 10,
-    paddingTop: 0,
+    paddingTop: 3,
   },
   title: {
     color: '#111',
