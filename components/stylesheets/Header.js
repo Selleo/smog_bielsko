@@ -66,6 +66,18 @@ export default StyleSheet.create({
   },
   alignCenter: {
     alignItems: 'center'
+  },
+  circleContainer: {
+    alignItems: 'center',
+    borderRadius: 30,
+    height: 15,
+    justifyContent: 'center',
+    overflow: 'hidden',
+    width: 15,
+  },
+  circle: {
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 
 });

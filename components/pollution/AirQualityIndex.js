@@ -23,12 +23,12 @@ export default class AirQualityIndex extends Component {
         <ElevatedView elevation={4} style={[header.elevatedView, header.alignCenter, styles.elevatedView]}>
           <Text style={styles.text}>Jakość powietrza:</Text>
           <View style={styles.titleContainer}>
-            <View backgroundColor={colors[index]} style={styles.circleContainer}>
-              <View style={styles.circle}></View>
+            <View backgroundColor={colors[index]} style={header.circleContainer}>
+              <View style={header.circle}></View>
             </View>
             <Text style={styles.title}>{names[index]}</Text>
-            <View backgroundColor={colors[index]} style={styles.circleContainer}>
-              <View style={styles.circle}></View>
+            <View backgroundColor={colors[index]} style={header.circleContainer}>
+              <View style={header.circle}></View>
             </View>
           </View>
         </ElevatedView>
@@ -103,17 +103,5 @@ const styles = StyleSheet.create({
     fontSize: 24,
     paddingBottom: 3,
     paddingHorizontal: 10,
-  },
-  circleContainer: {
-    alignItems: 'center',
-    borderRadius: 30,
-    height: 15,
-    justifyContent: 'center',
-    overflow: 'hidden',
-    width: 15,
-  },
-  circle: {
-    alignItems: 'center',
-    justifyContent: 'center',
   }
 });

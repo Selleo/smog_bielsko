@@ -5,6 +5,7 @@ import ElevatedView from 'react-native-elevated-view'
 const window = Dimensions.get('window');
 
 import Icon from '../MyIcons';
+let color, itemValueVar;
 
 export default class PollutionValues extends Component {
   constructor(props) {
@@ -23,8 +24,13 @@ export default class PollutionValues extends Component {
       <View style={header.withShadow}>
         <ElevatedView elevation={4} style={header.elevatedView}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10, alignItems: 'center' }}>
-            <Text>{names[type]}</Text>
-            <Text style={{fontSize: 18}}>{this.getDatasetItem(type).v} {suffices[type]}</Text>
+              <Text>{names[type]}</Text>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <Text style={{fontSize: 18}}>{this.getDatasetItem(type).v} {suffices[type]}</Text>
+              <View backgroundColor={this.conditions(type)} style={[header.circleContainer, styles.singleCTitle]}>
+                <View style={header.circle}></View>
+              </View>
+            </View>
           </View>
         </ElevatedView>
       </View>
@@ -84,10 +90,69 @@ export default class PollutionValues extends Component {
     });
   }
 
+  conditions(value) {
+    if (value == 'pm10') {
+      return this.pm10Condition(value)
+    }
+    else if (value == 'no2'){
+      return this.no2Condition(value)
+    }
+    else if (value == 'so2'){
+      return this.so2Condition(value)
+    }
+  }
+  
+  itemValue(value) {
+    return this.getDatasetItem(value).v
+  }
+  
+  pm10Condition(value) {
+    itemValueVar = this.itemValue(value);
+    color = undefined;
+
+    if (itemValueVar < 50) { color = colors['1'] }
+    else if (itemValueVar < 100) { color = colors['2'] }
+    else if (itemValueVar < 150) { color = colors['3'] }
+    else if (itemValueVar < 200) { color = colors['4'] }
+    else if (itemValueVar < 300) { color = colors['5'] }
+    return color
+  }
+
+  so2Condition(value) {
+    itemValueVar = this.itemValue(value);
+    color = undefined;
+
+    if (itemValueVar < 50) { color = colors['1'] }
+    else if (itemValueVar < 125) { color = colors['2'] }
+    else if (itemValueVar < 250) { color = colors['3'] }
+    else if (itemValueVar < 380) { color = colors['4'] }
+    else if (itemValueVar >= 500) { color = colors['5'] }
+    return color
+  }
+
+  no2Condition(value) {
+    itemValueVar = this.itemValue(value);
+    color = undefined;
+
+    if (itemValueVar < 40) { color = colors['1'] }
+    else if (itemValueVar < 150) { color = colors['2'] }
+    else if (itemValueVar < 250) { color = colors['3'] }
+    else if (itemValueVar < 400) { color = colors['4'] }
+    else if (itemValueVar >= 400) { color = colors['5'] }
+    return color
+  }
+
   static propTypes = {
     dataset: PropTypes.object.isRequired
   };
 }
+const colors = {
+  1: '#57b108',
+  2: '#b0dd10',
+  3: '#ffd911',
+  4: '#e58100',
+  5: '#d82329'
+};
 
 const names = {
   'co': 'Tlenek Węgla',
@@ -95,7 +160,7 @@ const names = {
   'no2': 'Dwutlenek Azotu',
   'o3': 'Ozon',
   'p': 'Ciśnienie',
-  'pm10': 'Pył zawieszony',
+  'pm10': 'Pył zawieszony (PM10)',
   'so2': 'Dwutlenek Siarki',
   't': 'Temperatura',
   'w': 'Wiatr'
@@ -132,5 +197,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     margin: 0,
     marginBottom: 20
+  },
+  singleCTitle: {
+    marginLeft: 5
   }
 });
