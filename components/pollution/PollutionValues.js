@@ -1,34 +1,49 @@
 import React, { Component, PropTypes } from 'react';
-import { View, StyleSheet, Text }      from 'react-native';
+import { View, StyleSheet, Text, Dimensions }      from 'react-native';
 import header from '../stylesheets/Header'
 import ElevatedView from 'react-native-elevated-view'
+const window = Dimensions.get('window');
+
 
 export default class PollutionValues extends Component {
-  singleComponent(number) {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      width: Dimensions.get('window').width,
+      height: Dimensions.get('window').height,
+    };
+
+    this.onLayout = this.onLayout.bind(this);
+  }
+
+  singleComponent(type) {
     return (
       <View style={header.withShadow}>
         <ElevatedView elevation={4} style={header.elevatedView}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10, alignItems: 'center' }}>
-            <Text>{names[this.getDatasetKeys()[number]]}</Text>
-            <Text style={{fontSize: 18}}>{this.getDatasetItem(number).v} {suffices[this.getDatasetKeys()[number]] }</Text>
+            <Text>{names[type]}</Text>
+            <Text style={{fontSize: 18}}>{this.getDatasetItem(type).v} {suffices[type]}</Text>
           </View>
         </ElevatedView>
       </View>
     )
   }
 
-  bigComponent(number) {
+  bigComponent(type) {
     return (
-      <View style={[styles.bigComponent, header.withShadow]}>
-        <ElevatedView elevation={4} style={header.elevatedView}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10 }}>
-            <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
-              <Text>{names[this.getDatasetKeys()[number]]}</Text>
-              <Text>{this.getDatasetItem(number).v} {suffices[this.getDatasetKeys()[number]] }</Text>
-            </View>
-            <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-              <Text>Icon</Text>
-            </View>
+      <View style={{ width: (this.state.width - 60)/ 2, marginHorizontal:5 }}>
+        <ElevatedView elevation={4} style={[header.elevatedView, styles.elevatedView]}>
+          <View style={[styles.bigComponent]}>
+              <View style={{ flexDirection: 'row', justifyContent: 'space-between', flex: 1}}>
+                <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+                  <Text>{names[type]}</Text>
+                  <Text>{this.getDatasetItem(type).v} {suffices[type] }</Text>
+                </View>
+                <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                  <Text>Icon</Text>
+                </View>
+              </View>
           </View>
         </ElevatedView>
       </View>
@@ -37,27 +52,31 @@ export default class PollutionValues extends Component {
 
   render() {
     return (
-      <View>
-        { this.getDatasetKeys()[5] && this.singleComponent(5) }
-        { this.getDatasetKeys()[2] && this.singleComponent(2) }
-        { this.getDatasetKeys()[6] && this.singleComponent(6) }
+      <View style={{alignItems: 'stretch',}} onLayout={this.onLayout}>
+        { this.getDatasetItem('pm10') && this.singleComponent('pm10') }
+        { this.getDatasetItem('no2') && this.singleComponent('no2') }
+        { this.getDatasetItem('so2') && this.singleComponent('so2') }
 
-        <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center' }}>
-          { this.getDatasetKeys()[1] && this.bigComponent(1) }
-          { this.getDatasetKeys()[8] && this.bigComponent(8) }
-          { this.getDatasetKeys()[7] && this.bigComponent(7) }
-          { this.getDatasetKeys()[4] && this.bigComponent(4) }
+        <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-start', marginHorizontal: 15 }}>
+          { this.getDatasetItem('h') && this.bigComponent('h') }
+          { this.getDatasetItem('w') && this.bigComponent('w') }
+          { this.getDatasetItem('t') && this.bigComponent('t') }
+          { this.getDatasetItem('p') && this.bigComponent('p') }
         </View>
+
       </View>
     )
   }
 
-  getDatasetKeys() {
-    return Object.keys(this.props.dataset);
+  getDatasetItem(type) {
+    return this.props.dataset[type]
   }
 
-  getDatasetItem(index) {
-    return this.props.dataset[this.getDatasetKeys()[index]]
+  onLayout() {
+    this.setState({
+      width: Dimensions.get('window').width,
+      height: Dimensions.get('window').height,
+    });
   }
 
   static propTypes = {
@@ -85,14 +104,21 @@ const suffices = {
 };
 
 const styles = StyleSheet.create({
-  oneComponent: {
-    flex: 1,
-  },
-  twoComponents: {
-    flex: 0.5,
+  test: {
+    alignItems: 'flex-start',
   },
   bigComponent: {
+    alignItems: 'flex-start',
+    flex: 1,
+    flexWrap: 'wrap',
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+  },
+  elevatedView: {
+    alignItems: 'center',
     backgroundColor: 'white',
-    height: 50,
+    justifyContent: 'space-between',
+    margin: 0,
+    marginBottom: 20
   }
 });

@@ -13,7 +13,7 @@ export default class StationDataRenderer extends Component {
             <CityInfo city={this.props.dataStations.city} stationName={this.props.stationName} />
 
             <AirQualityIndex index={this.props.dataStations.aqi} style={styles.withShadow}/>
-            <PollutionValues dataset={this.props.dataStations.iaqi} style={{ marginHorizontal:30 }}/>
+            <PollutionValues dataset={this.props.dataStations.iaqi} style={{  }}/>
           </ScrollView>
         </View>
       );

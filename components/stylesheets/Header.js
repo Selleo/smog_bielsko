@@ -52,6 +52,11 @@ export default StyleSheet.create({
     borderRadius: 3,
     alignItems: 'stretch',
   },
+  withShadow2: {
+    backgroundColor: 'white',
+    borderRadius: 3,
+  },
+
   elevatedView: {
     alignItems: 'stretch',
     backgroundColor: 'white',
