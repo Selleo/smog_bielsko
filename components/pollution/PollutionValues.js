@@ -4,6 +4,7 @@ import header from '../stylesheets/Header'
 import ElevatedView from 'react-native-elevated-view'
 const window = Dimensions.get('window');
 
+import Icon from '../MyIcons';
 
 export default class PollutionValues extends Component {
   constructor(props) {
@@ -41,7 +42,7 @@ export default class PollutionValues extends Component {
                   <Text>{this.getDatasetItem(type).v} {suffices[type] }</Text>
                 </View>
                 <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                  <Text>Icon</Text>
+                  <Text><Icon name={icons[type]} size={25} color="#900" /></Text>
                 </View>
               </View>
           </View>
@@ -95,7 +96,13 @@ const names = {
   't': 'Temperatura',
   'w': 'Wiatr'
 };
+const icons = {
+  't': "thermometer",
+  'p': "pressure",
+  'h': "rain",
+  'w': "wind",
 
+};
 const suffices = {
   't': '°C',
   'p': 'hPa',
