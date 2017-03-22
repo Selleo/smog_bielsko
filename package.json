@@ -53,6 +53,7 @@
     "globals": {
       "__DEV__": true
     },
+    "testRegex": "/__tests__/.*\\.(spec.js)$",
     "collectCoverageFrom": [
       "components/**/*.{js,jsx}",
       "!**/node_modules/**",

@@ -9,45 +9,125 @@ ShallowWrapper {
   "node": <View
     style={
         Object {
+            "backgroundColor": "#fefefe",
             "flex": 1,
-            "flexDirection": "column",
-            "justifyContent": "space-around",
           }
     }>
-    <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-            Object {
-                "fontSize": 18,
-                "textAlign": "center",
-              }
-        }>
-        Loading
-    </Text>
+    <ScrollViewMock>
+        <CityInfo
+            city={
+                Object {
+                    "geo": Array [
+                      49.813464,
+                      19.027318,
+                    ],
+                    "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+                    "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
+                  }
+            }
+            stationName={undefined} />
+        <AirQualityIndex
+            index={24}
+            style={undefined} />
+        <PollutionValues
+            dataset={
+                Object {
+                    "co": Object {
+                      "v": 0.2,
+                    },
+                    "h": Object {
+                      "v": 9.2,
+                    },
+                    "no2": Object {
+                      "v": 7.2,
+                    },
+                    "o3": Object {
+                      "v": 4.2,
+                    },
+                    "p": Object {
+                      "v": 122.2,
+                    },
+                    "pm10": Object {
+                      "v": 5.2,
+                    },
+                    "so2": Object {
+                      "v": 2.2,
+                    },
+                    "t": Object {
+                      "v": 0.4,
+                    },
+                    "w": Object {
+                      "v": 12.2,
+                    },
+                    "wd": Object {
+                      "v": 20.2,
+                    },
+                  }
+            }
+            style={Object {}} />
+    </ScrollViewMock>
 </View>,
   "nodes": Array [
     <View
       style={
             Object {
+                  "backgroundColor": "#fefefe",
                   "flex": 1,
-                  "flexDirection": "column",
-                  "justifyContent": "space-around",
                 }
       }>
-      <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-                  Object {
-                        "fontSize": 18,
-                        "textAlign": "center",
-                      }
-            }>
-            Loading
-      </Text>
+      <ScrollViewMock>
+            <CityInfo
+                  city={
+                        Object {
+                              "geo": Array [
+                                49.813464,
+                                19.027318,
+                              ],
+                              "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+                              "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
+                            }
+                  }
+                  stationName={undefined} />
+            <AirQualityIndex
+                  index={24}
+                  style={undefined} />
+            <PollutionValues
+                  dataset={
+                        Object {
+                              "co": Object {
+                                "v": 0.2,
+                              },
+                              "h": Object {
+                                "v": 9.2,
+                              },
+                              "no2": Object {
+                                "v": 7.2,
+                              },
+                              "o3": Object {
+                                "v": 4.2,
+                              },
+                              "p": Object {
+                                "v": 122.2,
+                              },
+                              "pm10": Object {
+                                "v": 5.2,
+                              },
+                              "so2": Object {
+                                "v": 2.2,
+                              },
+                              "t": Object {
+                                "v": 0.4,
+                              },
+                              "w": Object {
+                                "v": 12.2,
+                              },
+                              "wd": Object {
+                                "v": 20.2,
+                              },
+                            }
+                  }
+                  style={Object {}} />
+      </ScrollViewMock>
 </View>,
   ],
   "options": Object {},
@@ -57,6 +137,64 @@ ShallowWrapper {
       "_compositeType": 0,
       "_context": Object {},
       "_currentElement": <StationDataRenderer
+        dataStations={
+                Object {
+                        "aqi": 24,
+                        "attributions": Array [
+                          Object {
+                            "name": "Świętokrzyski Monitoring network",
+                            "url": "http://powietrze.katowice.wios.gov.pl/",
+                          },
+                        ],
+                        "city": Object {
+                          "geo": Array [
+                            49.813464,
+                            19.027318,
+                          ],
+                          "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+                          "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
+                        },
+                        "dominentpol": "pm10",
+                        "iaqi": Object {
+                          "co": Object {
+                            "v": 0.2,
+                          },
+                          "h": Object {
+                            "v": 9.2,
+                          },
+                          "no2": Object {
+                            "v": 7.2,
+                          },
+                          "o3": Object {
+                            "v": 4.2,
+                          },
+                          "p": Object {
+                            "v": 122.2,
+                          },
+                          "pm10": Object {
+                            "v": 5.2,
+                          },
+                          "so2": Object {
+                            "v": 2.2,
+                          },
+                          "t": Object {
+                            "v": 0.4,
+                          },
+                          "w": Object {
+                            "v": 12.2,
+                          },
+                          "wd": Object {
+                            "v": 20.2,
+                          },
+                        },
+                        "idx": 6535,
+                        "time": Object {
+                          "s": "2017-03-22 10:00:00",
+                          "tz": "+01:00",
+                          "v": 1490176800,
+                        },
+                      }
+        }
         stationId={1} />,
       "_debugID": 1,
       "_hostContainerInfo": null,
@@ -65,13 +203,66 @@ ShallowWrapper {
         "_reactInternalInstance": [Circular],
         "context": Object {},
         "props": Object {
+          "dataStations": Object {
+            "aqi": 24,
+            "attributions": Array [
+              Object {
+                "name": "Świętokrzyski Monitoring network",
+                "url": "http://powietrze.katowice.wios.gov.pl/",
+              },
+            ],
+            "city": Object {
+              "geo": Array [
+                49.813464,
+                19.027318,
+              ],
+              "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+              "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
+            },
+            "dominentpol": "pm10",
+            "iaqi": Object {
+              "co": Object {
+                "v": 0.2,
+              },
+              "h": Object {
+                "v": 9.2,
+              },
+              "no2": Object {
+                "v": 7.2,
+              },
+              "o3": Object {
+                "v": 4.2,
+              },
+              "p": Object {
+                "v": 122.2,
+              },
+              "pm10": Object {
+                "v": 5.2,
+              },
+              "so2": Object {
+                "v": 2.2,
+              },
+              "t": Object {
+                "v": 0.4,
+              },
+              "w": Object {
+                "v": 12.2,
+              },
+              "wd": Object {
+                "v": 20.2,
+              },
+            },
+            "idx": 6535,
+            "time": Object {
+              "s": "2017-03-22 10:00:00",
+              "tz": "+01:00",
+              "v": 1490176800,
+            },
+          },
           "stationId": 1,
         },
         "refs": Object {},
-        "state": Object {
-          "data": undefined,
-          "pending": true,
-        },
+        "state": null,
         "updater": Object {
           "enqueueCallback": [Function],
           "enqueueCallbackInternal": [Function],
@@ -93,45 +284,125 @@ ShallowWrapper {
         "_currentElement": <View
           style={
                     Object {
+                              "backgroundColor": "#fefefe",
                               "flex": 1,
-                              "flexDirection": "column",
-                              "justifyContent": "space-around",
                             }
           }>
-          <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                              Object {
-                                        "fontSize": 18,
-                                        "textAlign": "center",
-                                      }
-                    }>
-                    Loading
-          </Text>
+          <ScrollViewMock>
+                    <CityInfo
+                              city={
+                                        Object {
+                                                  "geo": Array [
+                                                    49.813464,
+                                                    19.027318,
+                                                  ],
+                                                  "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+                                                  "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
+                                                }
+                              }
+                              stationName={undefined} />
+                    <AirQualityIndex
+                              index={24}
+                              style={undefined} />
+                    <PollutionValues
+                              dataset={
+                                        Object {
+                                                  "co": Object {
+                                                    "v": 0.2,
+                                                  },
+                                                  "h": Object {
+                                                    "v": 9.2,
+                                                  },
+                                                  "no2": Object {
+                                                    "v": 7.2,
+                                                  },
+                                                  "o3": Object {
+                                                    "v": 4.2,
+                                                  },
+                                                  "p": Object {
+                                                    "v": 122.2,
+                                                  },
+                                                  "pm10": Object {
+                                                    "v": 5.2,
+                                                  },
+                                                  "so2": Object {
+                                                    "v": 2.2,
+                                                  },
+                                                  "t": Object {
+                                                    "v": 0.4,
+                                                  },
+                                                  "w": Object {
+                                                    "v": 12.2,
+                                                  },
+                                                  "wd": Object {
+                                                    "v": 20.2,
+                                                  },
+                                                }
+                              }
+                              style={Object {}} />
+          </ScrollViewMock>
 </View>,
         "_debugID": 2,
         "_renderedOutput": <View
           style={
                     Object {
+                              "backgroundColor": "#fefefe",
                               "flex": 1,
-                              "flexDirection": "column",
-                              "justifyContent": "space-around",
                             }
           }>
-          <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                              Object {
-                                        "fontSize": 18,
-                                        "textAlign": "center",
-                                      }
-                    }>
-                    Loading
-          </Text>
+          <ScrollViewMock>
+                    <CityInfo
+                              city={
+                                        Object {
+                                                  "geo": Array [
+                                                    49.813464,
+                                                    19.027318,
+                                                  ],
+                                                  "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+                                                  "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
+                                                }
+                              }
+                              stationName={undefined} />
+                    <AirQualityIndex
+                              index={24}
+                              style={undefined} />
+                    <PollutionValues
+                              dataset={
+                                        Object {
+                                                  "co": Object {
+                                                    "v": 0.2,
+                                                  },
+                                                  "h": Object {
+                                                    "v": 9.2,
+                                                  },
+                                                  "no2": Object {
+                                                    "v": 7.2,
+                                                  },
+                                                  "o3": Object {
+                                                    "v": 4.2,
+                                                  },
+                                                  "p": Object {
+                                                    "v": 122.2,
+                                                  },
+                                                  "pm10": Object {
+                                                    "v": 5.2,
+                                                  },
+                                                  "so2": Object {
+                                                    "v": 2.2,
+                                                  },
+                                                  "t": Object {
+                                                    "v": 0.4,
+                                                  },
+                                                  "w": Object {
+                                                    "v": 12.2,
+                                                  },
+                                                  "wd": Object {
+                                                    "v": 20.2,
+                                                  },
+                                                }
+                              }
+                              style={Object {}} />
+          </ScrollViewMock>
 </View>,
       },
       "_renderedNodeType": 1,
@@ -145,6 +416,64 @@ ShallowWrapper {
   },
   "root": [Circular],
   "unrendered": <StationDataRenderer
+    dataStations={
+        Object {
+            "aqi": 24,
+            "attributions": Array [
+              Object {
+                "name": "Świętokrzyski Monitoring network",
+                "url": "http://powietrze.katowice.wios.gov.pl/",
+              },
+            ],
+            "city": Object {
+              "geo": Array [
+                49.813464,
+                19.027318,
+              ],
+              "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+              "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
+            },
+            "dominentpol": "pm10",
+            "iaqi": Object {
+              "co": Object {
+                "v": 0.2,
+              },
+              "h": Object {
+                "v": 9.2,
+              },
+              "no2": Object {
+                "v": 7.2,
+              },
+              "o3": Object {
+                "v": 4.2,
+              },
+              "p": Object {
+                "v": 122.2,
+              },
+              "pm10": Object {
+                "v": 5.2,
+              },
+              "so2": Object {
+                "v": 2.2,
+              },
+              "t": Object {
+                "v": 0.4,
+              },
+              "w": Object {
+                "v": 12.2,
+              },
+              "wd": Object {
+                "v": 20.2,
+              },
+            },
+            "idx": 6535,
+            "time": Object {
+              "s": "2017-03-22 10:00:00",
+              "tz": "+01:00",
+              "v": 1490176800,
+            },
+          }
+    }
     stationId={1} />,
 }
 `;

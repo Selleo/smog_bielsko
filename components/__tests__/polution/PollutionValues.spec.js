@@ -5,7 +5,8 @@ import { shallow }                    from 'enzyme';
 import chai, { expect }               from 'chai';
 import dirtyChai                      from 'dirty-chai';
 
-import PollutionValues                 from '../../pollution/PollutionValues';
+import PollutionValues                from '../../pollution/PollutionValues';
+import { data }                       from './../mock/data'
 
 const originalExpect = global.expect;
 
@@ -16,14 +17,7 @@ let wrapper, props;
 describe('PollutionValues', () => {
   beforeEach(() => {
     props = {
-      dataset: {
-        co: {
-          v: 0.1
-        },
-        h: {
-          v: 88.2461
-        }
-      }
+      dataset: data.iaqi
     };
 
     wrapper = shallow(<PollutionValues {...props}/>);
@@ -35,21 +29,9 @@ describe('PollutionValues', () => {
   });
 
 
-  it('render component with 3 children', () => {
-    expect(wrapper.children().first().children().nodes.join('')).to.equal('Tlenek Węgla: 0.1');
-    expect(wrapper.children().last().children().nodes.join('')).to.equal('Wilgotność: 88.2461%');
-    expect(wrapper.children().length).to.equal(2)
-  });
-
-  describe('#getDatasetKeys', () => {
-    it('return keys', () => {
-      expect(wrapper.instance().getDatasetKeys()).to.eql(['co', 'h'])
-    });
-  });
-
   describe('#getDatasetItem', () => {
     it('return object', () => {
-      expect(wrapper.instance().getDatasetItem(0)).to.eql({ v: 0.1 })
+      expect(wrapper.instance().getDatasetItem('co')).to.eql({ v: 0.2 })
     });
   });
 });

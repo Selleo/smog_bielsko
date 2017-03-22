@@ -26,9 +26,13 @@ describe('CityInfo', () => {
     props = { city: { name: 'Zywiec, ul. Rynek 2' } };
     wrapper = shallow(<CityInfo {...props}/>);
 
-    expect(wrapper.children().length).to.equal(2);
-    expect(wrapper.children().nodes[0].type.name).to.equal('CityName');
-    expect(wrapper.children().nodes[1].type.name).to.equal('CityDescription');
+    expect(wrapper.children().children().length).to.equal(2);
+    expect(wrapper.children().children().nodes[0].type.name).to.equal('AnimatedComponent');
+
+    expect(wrapper.children().children().nodes[1].props.children.length).to.equal(3);
+    expect(wrapper.children().children().nodes[1].props.children[0].type.name).to.equal('Component');
+    expect(wrapper.children().children().nodes[1].props.children[1].type.name).to.equal('CityName');
+    expect(wrapper.children().children().nodes[1].props.children[2].type.name).to.equal('CityDescription');
   });
 
 });

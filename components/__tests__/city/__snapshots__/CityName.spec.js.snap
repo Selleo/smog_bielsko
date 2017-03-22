@@ -13,8 +13,13 @@ ShallowWrapper {
         ellipsizeMode="tail"
         style={
             Object {
-                "color": "#363636",
+                "backgroundColor": "transparent",
+                "color": "white",
                 "fontSize": 30,
+                "marginLeft": 20,
+                "marginTop": 90,
+                "position": "relative",
+                "zIndex": 1,
               }
         }>
         Zywiec
@@ -28,8 +33,13 @@ ShallowWrapper {
             ellipsizeMode="tail"
             style={
                   Object {
-                        "color": "#363636",
+                        "backgroundColor": "transparent",
+                        "color": "white",
                         "fontSize": 30,
+                        "marginLeft": 20,
+                        "marginTop": 90,
+                        "position": "relative",
+                        "zIndex": 1,
                       }
             }>
             Zywiec
@@ -80,8 +90,13 @@ ShallowWrapper {
                     ellipsizeMode="tail"
                     style={
                               Object {
-                                        "color": "#363636",
+                                        "backgroundColor": "transparent",
+                                        "color": "white",
                                         "fontSize": 30,
+                                        "marginLeft": 20,
+                                        "marginTop": 90,
+                                        "position": "relative",
+                                        "zIndex": 1,
                                       }
                     }>
                     Zywiec
@@ -95,8 +110,13 @@ ShallowWrapper {
                     ellipsizeMode="tail"
                     style={
                               Object {
-                                        "color": "#363636",
+                                        "backgroundColor": "transparent",
+                                        "color": "white",
                                         "fontSize": 30,
+                                        "marginLeft": 20,
+                                        "marginTop": 90,
+                                        "position": "relative",
+                                        "zIndex": 1,
                                       }
                     }>
                     Zywiec

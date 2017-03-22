@@ -92,6 +92,7 @@ export default class smog_bielsko extends Component {
     this.stationName = route.stationName;
     switch (route.id) {
       case 'index':
+        console.log(route.stationId, this.state.dataStations, this.stationName);
         return (<Index nav={nav} stationId={route.stationId} dataStations={this.state.dataStations} stationName={this.stationName} />)
     }
   }

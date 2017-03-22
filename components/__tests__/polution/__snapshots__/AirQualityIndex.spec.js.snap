@@ -7,51 +7,241 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <View
-    backgroundColor="#2DB338"
     style={
-        Object {
-            "marginTop": 16,
-          }
+        Array [
+            Object {
+              "alignItems": "stretch",
+              "backgroundColor": "white",
+              "borderRadius": 3,
+            },
+            Object {
+              "paddingTop": 5,
+            },
+            Object {
+              "backgroundColor": "white",
+              "marginTop": 15,
+            },
+          ]
     }>
-    <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+    <ElevatedView
+        elevation={4}
         style={
-            Object {
-                "color": "#111",
-                "fontSize": 16,
-                "paddingHorizontal": 10,
-                "paddingVertical": 6,
-              }
+            Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "white",
+                  "justifyContent": "space-between",
+                  "margin": 20,
+                  "marginBottom": 15,
+                  "marginTop": 0,
+                },
+                Object {
+                  "alignItems": "center",
+                },
+                Object {
+                  "padding": 5,
+                },
+              ]
         }>
-        Jakość powietrza: 
-        Dobra
-    </Text>
-</View>,
-  "nodes": Array [
-    <View
-      backgroundColor="#2DB338"
-      style={
-            Object {
-                  "marginTop": 16,
-                }
-      }>
-      <Text
+        <Text
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
             style={
-                  Object {
-                        "color": "#111",
-                        "fontSize": 16,
-                        "paddingHorizontal": 10,
-                        "paddingVertical": 6,
-                      }
+                Object {
+                    "color": "#111",
+                    "fontSize": 14,
+                    "paddingHorizontal": 10,
+                    "paddingTop": 3,
+                  }
             }>
-            Jakość powietrza: 
-            Dobra
-      </Text>
+            Jakość powietrza:
+        </Text>
+        <View
+            style={
+                Object {
+                    "alignItems": "center",
+                    "flex": 1,
+                    "flexDirection": "row",
+                    "flexWrap": "nowrap",
+                    "justifyContent": "center",
+                  }
+            }>
+            <View
+                backgroundColor="#2DB338"
+                style={
+                    Object {
+                        "alignItems": "center",
+                        "borderRadius": 30,
+                        "height": 15,
+                        "justifyContent": "center",
+                        "overflow": "hidden",
+                        "width": 15,
+                      }
+                }>
+                <View
+                    style={
+                        Object {
+                            "alignItems": "center",
+                            "justifyContent": "center",
+                          }
+                    } />
+            </View>
+            <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                    Object {
+                        "color": "#111",
+                        "fontSize": 24,
+                        "paddingBottom": 3,
+                        "paddingHorizontal": 10,
+                      }
+                }>
+                Dobra
+            </Text>
+            <View
+                backgroundColor="#2DB338"
+                style={
+                    Object {
+                        "alignItems": "center",
+                        "borderRadius": 30,
+                        "height": 15,
+                        "justifyContent": "center",
+                        "overflow": "hidden",
+                        "width": 15,
+                      }
+                }>
+                <View
+                    style={
+                        Object {
+                            "alignItems": "center",
+                            "justifyContent": "center",
+                          }
+                    } />
+            </View>
+        </View>
+    </ElevatedView>
+</View>,
+  "nodes": Array [
+    <View
+      style={
+            Array [
+                  Object {
+                    "alignItems": "stretch",
+                    "backgroundColor": "white",
+                    "borderRadius": 3,
+                  },
+                  Object {
+                    "paddingTop": 5,
+                  },
+                  Object {
+                    "backgroundColor": "white",
+                    "marginTop": 15,
+                  },
+                ]
+      }>
+      <ElevatedView
+            elevation={4}
+            style={
+                  Array [
+                        Object {
+                          "alignItems": "stretch",
+                          "backgroundColor": "white",
+                          "justifyContent": "space-between",
+                          "margin": 20,
+                          "marginBottom": 15,
+                          "marginTop": 0,
+                        },
+                        Object {
+                          "alignItems": "center",
+                        },
+                        Object {
+                          "padding": 5,
+                        },
+                      ]
+            }>
+            <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                        Object {
+                              "color": "#111",
+                              "fontSize": 14,
+                              "paddingHorizontal": 10,
+                              "paddingTop": 3,
+                            }
+                  }>
+                  Jakość powietrza:
+            </Text>
+            <View
+                  style={
+                        Object {
+                              "alignItems": "center",
+                              "flex": 1,
+                              "flexDirection": "row",
+                              "flexWrap": "nowrap",
+                              "justifyContent": "center",
+                            }
+                  }>
+                  <View
+                        backgroundColor="#2DB338"
+                        style={
+                              Object {
+                                    "alignItems": "center",
+                                    "borderRadius": 30,
+                                    "height": 15,
+                                    "justifyContent": "center",
+                                    "overflow": "hidden",
+                                    "width": 15,
+                                  }
+                        }>
+                        <View
+                              style={
+                                    Object {
+                                          "alignItems": "center",
+                                          "justifyContent": "center",
+                                        }
+                              } />
+                  </View>
+                  <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                              Object {
+                                    "color": "#111",
+                                    "fontSize": 24,
+                                    "paddingBottom": 3,
+                                    "paddingHorizontal": 10,
+                                  }
+                        }>
+                        Dobra
+                  </Text>
+                  <View
+                        backgroundColor="#2DB338"
+                        style={
+                              Object {
+                                    "alignItems": "center",
+                                    "borderRadius": 30,
+                                    "height": 15,
+                                    "justifyContent": "center",
+                                    "overflow": "hidden",
+                                    "width": 15,
+                                  }
+                        }>
+                        <View
+                              style={
+                                    Object {
+                                          "alignItems": "center",
+                                          "justifyContent": "center",
+                                        }
+                              } />
+                  </View>
+            </View>
+      </ElevatedView>
 </View>,
   ],
   "options": Object {},
@@ -68,11 +258,15 @@ ShallowWrapper {
       "_instance": AirQualityIndex {
         "_reactInternalInstance": [Circular],
         "context": Object {},
+        "onLayout": [Function],
         "props": Object {
           "index": 1,
         },
         "refs": Object {},
-        "state": null,
+        "state": Object {
+          "height": 1334,
+          "width": 750,
+        },
         "updater": Object {
           "enqueueCallback": [Function],
           "enqueueCallbackInternal": [Function],
@@ -92,51 +286,241 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <View
-          backgroundColor="#2DB338"
           style={
-                    Object {
-                              "marginTop": 16,
-                            }
-          }>
-          <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
+                    Array [
                               Object {
-                                        "color": "#111",
-                                        "fontSize": 16,
-                                        "paddingHorizontal": 10,
-                                        "paddingVertical": 6,
-                                      }
+                                "alignItems": "stretch",
+                                "backgroundColor": "white",
+                                "borderRadius": 3,
+                              },
+                              Object {
+                                "paddingTop": 5,
+                              },
+                              Object {
+                                "backgroundColor": "white",
+                                "marginTop": 15,
+                              },
+                            ]
+          }>
+          <ElevatedView
+                    elevation={4}
+                    style={
+                              Array [
+                                        Object {
+                                          "alignItems": "stretch",
+                                          "backgroundColor": "white",
+                                          "justifyContent": "space-between",
+                                          "margin": 20,
+                                          "marginBottom": 15,
+                                          "marginTop": 0,
+                                        },
+                                        Object {
+                                          "alignItems": "center",
+                                        },
+                                        Object {
+                                          "padding": 5,
+                                        },
+                                      ]
                     }>
-                    Jakość powietrza: 
-                    Dobra
-          </Text>
+                    <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                        Object {
+                                                  "color": "#111",
+                                                  "fontSize": 14,
+                                                  "paddingHorizontal": 10,
+                                                  "paddingTop": 3,
+                                                }
+                              }>
+                              Jakość powietrza:
+                    </Text>
+                    <View
+                              style={
+                                        Object {
+                                                  "alignItems": "center",
+                                                  "flex": 1,
+                                                  "flexDirection": "row",
+                                                  "flexWrap": "nowrap",
+                                                  "justifyContent": "center",
+                                                }
+                              }>
+                              <View
+                                        backgroundColor="#2DB338"
+                                        style={
+                                                  Object {
+                                                            "alignItems": "center",
+                                                            "borderRadius": 30,
+                                                            "height": 15,
+                                                            "justifyContent": "center",
+                                                            "overflow": "hidden",
+                                                            "width": 15,
+                                                          }
+                                        }>
+                                        <View
+                                                  style={
+                                                            Object {
+                                                                      "alignItems": "center",
+                                                                      "justifyContent": "center",
+                                                                    }
+                                                  } />
+                              </View>
+                              <Text
+                                        accessible={true}
+                                        allowFontScaling={true}
+                                        ellipsizeMode="tail"
+                                        style={
+                                                  Object {
+                                                            "color": "#111",
+                                                            "fontSize": 24,
+                                                            "paddingBottom": 3,
+                                                            "paddingHorizontal": 10,
+                                                          }
+                                        }>
+                                        Dobra
+                              </Text>
+                              <View
+                                        backgroundColor="#2DB338"
+                                        style={
+                                                  Object {
+                                                            "alignItems": "center",
+                                                            "borderRadius": 30,
+                                                            "height": 15,
+                                                            "justifyContent": "center",
+                                                            "overflow": "hidden",
+                                                            "width": 15,
+                                                          }
+                                        }>
+                                        <View
+                                                  style={
+                                                            Object {
+                                                                      "alignItems": "center",
+                                                                      "justifyContent": "center",
+                                                                    }
+                                                  } />
+                              </View>
+                    </View>
+          </ElevatedView>
 </View>,
         "_debugID": 2,
         "_renderedOutput": <View
-          backgroundColor="#2DB338"
           style={
-                    Object {
-                              "marginTop": 16,
-                            }
-          }>
-          <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
+                    Array [
                               Object {
-                                        "color": "#111",
-                                        "fontSize": 16,
-                                        "paddingHorizontal": 10,
-                                        "paddingVertical": 6,
-                                      }
+                                "alignItems": "stretch",
+                                "backgroundColor": "white",
+                                "borderRadius": 3,
+                              },
+                              Object {
+                                "paddingTop": 5,
+                              },
+                              Object {
+                                "backgroundColor": "white",
+                                "marginTop": 15,
+                              },
+                            ]
+          }>
+          <ElevatedView
+                    elevation={4}
+                    style={
+                              Array [
+                                        Object {
+                                          "alignItems": "stretch",
+                                          "backgroundColor": "white",
+                                          "justifyContent": "space-between",
+                                          "margin": 20,
+                                          "marginBottom": 15,
+                                          "marginTop": 0,
+                                        },
+                                        Object {
+                                          "alignItems": "center",
+                                        },
+                                        Object {
+                                          "padding": 5,
+                                        },
+                                      ]
                     }>
-                    Jakość powietrza: 
-                    Dobra
-          </Text>
+                    <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                        Object {
+                                                  "color": "#111",
+                                                  "fontSize": 14,
+                                                  "paddingHorizontal": 10,
+                                                  "paddingTop": 3,
+                                                }
+                              }>
+                              Jakość powietrza:
+                    </Text>
+                    <View
+                              style={
+                                        Object {
+                                                  "alignItems": "center",
+                                                  "flex": 1,
+                                                  "flexDirection": "row",
+                                                  "flexWrap": "nowrap",
+                                                  "justifyContent": "center",
+                                                }
+                              }>
+                              <View
+                                        backgroundColor="#2DB338"
+                                        style={
+                                                  Object {
+                                                            "alignItems": "center",
+                                                            "borderRadius": 30,
+                                                            "height": 15,
+                                                            "justifyContent": "center",
+                                                            "overflow": "hidden",
+                                                            "width": 15,
+                                                          }
+                                        }>
+                                        <View
+                                                  style={
+                                                            Object {
+                                                                      "alignItems": "center",
+                                                                      "justifyContent": "center",
+                                                                    }
+                                                  } />
+                              </View>
+                              <Text
+                                        accessible={true}
+                                        allowFontScaling={true}
+                                        ellipsizeMode="tail"
+                                        style={
+                                                  Object {
+                                                            "color": "#111",
+                                                            "fontSize": 24,
+                                                            "paddingBottom": 3,
+                                                            "paddingHorizontal": 10,
+                                                          }
+                                        }>
+                                        Dobra
+                              </Text>
+                              <View
+                                        backgroundColor="#2DB338"
+                                        style={
+                                                  Object {
+                                                            "alignItems": "center",
+                                                            "borderRadius": 30,
+                                                            "height": 15,
+                                                            "justifyContent": "center",
+                                                            "overflow": "hidden",
+                                                            "width": 15,
+                                                          }
+                                        }>
+                                        <View
+                                                  style={
+                                                            Object {
+                                                                      "alignItems": "center",
+                                                                      "justifyContent": "center",
+                                                                    }
+                                                  } />
+                              </View>
+                    </View>
+          </ElevatedView>
 </View>,
       },
       "_renderedNodeType": 1,

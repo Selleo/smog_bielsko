@@ -28,7 +28,8 @@ describe('AirQualityIndex', () => {
   });
 
   it('render staton name on html', () => {
-    expect(wrapper.children().children().nodes.join('')).to.equal('Jakość powietrza: Dobra')
+    console.log(wrapper.children().children().nodes[0].props.children);
+    expect(wrapper.children().children().nodes[0].props.children).to.equal('Jakość powietrza:')
   });
 
   describe('#getAirConditionIndex', () => {
