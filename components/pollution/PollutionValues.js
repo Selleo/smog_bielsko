@@ -36,19 +36,23 @@ export default class PollutionValues extends Component {
       <View style={{ width: (this.state.width - 60)/ 2, marginHorizontal:5 }}>
         <ElevatedView elevation={4} style={[header.elevatedView, styles.elevatedView]}>
           <View style={[styles.bigComponent]}>
-              <View style={{ flexDirection: 'row', justifyContent: 'space-between', flex: 1}}>
+              <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'stretch'}}>
                 <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
                   <Text>{names[type]}</Text>
-                  <Text>{this.getDatasetItem(type).v} {suffices[type] }</Text>
+                  <Text style={{fontSize: 18, marginTop: 1}}>{this.formatValue(type)} {suffices[type] }</Text>
                 </View>
                 <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                  <Text><Icon name={icons[type]} size={25} color="#900" /></Text>
+                  <Text><Icon name={icons[type]} size={28} color="#95cfda" /></Text>
                 </View>
               </View>
           </View>
         </ElevatedView>
       </View>
     )
+  }
+
+  formatValue(value){
+    return Math.round(this.getDatasetItem(value).v * 100) / 100
   }
 
   render() {
@@ -115,11 +119,12 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   bigComponent: {
-    alignItems: 'flex-start',
-    flex: 1,
+    alignItems: 'stretch',
+    justifyContent: 'space-between',
     flexWrap: 'wrap',
+    alignSelf: 'stretch',
     paddingHorizontal: 10,
-    paddingVertical: 5,
+    paddingVertical: 15,
   },
   elevatedView: {
     alignItems: 'center',
