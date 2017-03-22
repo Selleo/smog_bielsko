@@ -5,6 +5,7 @@ export default StyleSheet.create({
     position: 'absolute',
     top: 20,
     padding: 10,
+    height: 32
   },
   caption: {
     fontSize: 20,

@@ -79,7 +79,7 @@ export default class smog_bielsko extends Component {
           />
           <Button style={menu.button} onPress={() => this.toggle()} title={'test'}>
             <Image
-              source={require('./components/images/menu.png')} style={{ width: 32, height: 32 }}/>
+              source={require('./components/images/menu.png')} style={{ maxWidth: 26, maxHeight: 26 }}/>
           </Button>
         </SideMenu>
       )
