@@ -59,7 +59,7 @@ export default class CityInfo extends Component {
       <View style={header.container}>
         <Image source={require('./../images/header.jpg')} style={header.bgr}>
           <Animated.Image source={{ uri: bgr }} style={this.secondUmageStyles()}/>
-          <View>
+          <View style={{ alignItems: 'flex-start'}}>
             <Image source={require('./../images/header_overlay.png')} style={[header.bgr, header.bgr2]}/>
             <CityName text={this.getCityInfo(0)}/>
             <CityDescription text={this.getCityInfo(1)}/>
