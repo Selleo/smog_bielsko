@@ -10,8 +10,9 @@ const originalExpect = global.expect;
 
 chai.use(dirtyChai);
 
-describe.only('StationDataRenderer', () => {
+describe('StationDataRenderer', () => {
   it('renders correctly', () => {
     originalExpect(glyphMap).toMatchSnapshot();
+    expect(glyphMap).to.exist();
   });
 });

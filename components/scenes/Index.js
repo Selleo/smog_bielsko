@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 import StationDataRenderer  from './../StationDataRenderer'
 
 export default class Index extends Component {
   render() {
     return (
-      <StationDataRenderer stationId={this.props.stationId} dataStations={this.props.dataStations}
-                           pendingView={this.props.pendingView} stationName={this.props.stationName} />
+      <StationDataRenderer dataStations={this.props.dataStations} stationName={this.props.stationName}/>
     )
   }
+
+  static propTypes = {
+    dataStations: PropTypes.object.isRequired,
+    stationName: PropTypes.string
+  };
 }

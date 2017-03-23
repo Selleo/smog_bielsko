@@ -26,7 +26,7 @@ export default class smog_bielsko extends Component {
   fetchData(stationId) {
     getData(stationId).then((responseJson) => {
       this.hideMenu();
-      return this.setState({ dataStations: responseJson.data, pendingApp: false, pendingView: false })
+      return this.setState({ dataStations: responseJson.data, pendingApp: false })
     });
   }
 
@@ -92,7 +92,7 @@ export default class smog_bielsko extends Component {
     this.stationName = route.stationName;
     switch (route.id) {
       case 'index':
-        return (<Index nav={nav} stationId={route.stationId} dataStations={this.state.dataStations} stationName={this.stationName} />)
+        return (<Index nav={nav} dataStations={this.state.dataStations} stationName={this.stationName} />)
     }
   }
 }

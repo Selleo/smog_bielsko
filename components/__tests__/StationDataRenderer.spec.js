@@ -15,7 +15,7 @@ chai.use(dirtyChai);
 let wrapper, props;
 props = { stationId: 1, dataStations: data };
 
-describe.only('StationDataRenderer', () => {
+describe('StationDataRenderer', () => {
   it('renders correctly', () => {
     wrapper = shallow(<StationDataRenderer {...props}/>);
 

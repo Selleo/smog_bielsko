@@ -20,8 +20,7 @@ export default class StationDataRenderer extends Component {
   }
 
   static propTypes = {
-    dataStations: PropTypes.object.isRequired,
-    pendingView: PropTypes.bool
+    dataStations: PropTypes.object.isRequired
   };
 }
 

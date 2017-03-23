@@ -26,7 +26,7 @@ export default class smog_bielsko extends Component {
   fetchData(stationId) {
     getData(stationId).then((responseJson) => {
       this.hideMenu();
-      return this.setState({ dataStations: responseJson.data, pendingApp: false, pendingView: false })
+      return this.setState({ dataStations: responseJson.data, pendingApp: false })
     });
   }
 
