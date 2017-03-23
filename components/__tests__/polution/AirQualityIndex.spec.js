@@ -28,7 +28,9 @@ describe('AirQualityIndex', () => {
   });
 
   it('render staton name on html', () => {
-    expect(wrapper.children().children().nodes[0].props.children).to.equal('Jakość powietrza:')
+    expect(wrapper.children().children().nodes[0].props.children).to.equal('Jakość powietrza:');
+    expect(wrapper.children().children().nodes[1].props.children.length).to.equal(3);
+    expect(wrapper.children().children().nodes[1].props.children[1].props.children).to.equal('Dobra')
   });
 
   describe('#getAirConditionIndex', () => {
@@ -56,4 +58,26 @@ describe('AirQualityIndex', () => {
       expect(wrapper.instance().getAirConditionIndex(350)).to.equal(5)
     });
   });
+
+  describe('#onLayout', () => {
+    it('state has width and height', () => {
+      expect(Object.keys(wrapper.state()).length).to.equal(2);
+      expect(Object.keys(wrapper.state())[0]).to.equal('height');
+      expect(Object.keys(wrapper.state())[1]).to.equal('width');
+    });
+
+    it('set new width and height', () => {
+      let customWidth = 1;
+      let customHeight = 2;
+
+      wrapper.setState({'height': customHeight});
+      wrapper.setState({'width': customWidth});
+
+      let oldState = wrapper.state();
+      wrapper.instance().onLayout();
+
+      expect(wrapper.state().height).to.not.equal(oldState.height);
+      expect(wrapper.state().width).to.not.equal(oldState.width);
+    })
+  })
 });

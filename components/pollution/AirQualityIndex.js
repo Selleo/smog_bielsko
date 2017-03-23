@@ -4,13 +4,15 @@ import header from '../stylesheets/Header'
 import ElevatedView from 'react-native-elevated-view'
 const window = Dimensions.get('window');
 
+let airCondition;
+
 export default class AirQualityIndex extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      width: Dimensions.get('window').width,
       height: Dimensions.get('window').height,
+      width: Dimensions.get('window').width
     };
 
     this.onLayout = this.onLayout.bind(this);
@@ -38,19 +40,23 @@ export default class AirQualityIndex extends Component {
 
   onLayout() {
     this.setState({
-      width: Dimensions.get('window').width,
       height: Dimensions.get('window').height,
+      width: Dimensions.get('window').width
     });
   }
 
 
   getAirConditionIndex(aqi) {
-    if (aqi < 50) { return 0 }
-    if (aqi < 100) { return 1 }
-    if (aqi < 150) { return 2 }
-    if (aqi < 200) { return 3 }
-    if (aqi < 300) { return 4 }
-    return 5
+    airCondition = undefined;
+
+    if (aqi < 50) { airCondition = 0 }
+    else if (aqi < 100) { airCondition = 1 }
+    else if (aqi < 150) { airCondition = 2 }
+    else if (aqi < 200) { airCondition = 3 }
+    else if (aqi < 300) { airCondition = 4 }
+    else airCondition = 5;
+
+    return airCondition
   }
 
   static propTypes = {
