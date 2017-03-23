@@ -28,7 +28,6 @@ describe('PollutionValues', () => {
     expect(wrapper).to.exist();
   });
 
-
   describe('#getDatasetItem', () => {
     it('return object', () => {
       expect(wrapper.instance().getDatasetItem('co')).to.eql({ v: 0.2 })

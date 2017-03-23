@@ -1,10 +1,13 @@
-import React, { Component, PropTypes } from 'react';
-import { View, StyleSheet, Text, Dimensions }      from 'react-native';
-import header from '../stylesheets/Header'
-import ElevatedView from 'react-native-elevated-view'
-const window = Dimensions.get('window');
+import React, { Component, PropTypes }    from 'react';
+import { View, Text, Dimensions }         from 'react-native';
+import ElevatedView                       from 'react-native-elevated-view'
 
-import Icon from '../MyIcons';
+import header                             from './../stylesheets/Header'
+import pollution                          from './../stylesheets/Pollution'
+import Icon                               from './../MyIcons';
+import { colors, names, icons, suffices } from './../sharing/PollutionTypes'
+
+const window = Dimensions.get('window');
 let color, itemValueVar;
 
 export default class PollutionValues extends Component {
@@ -12,8 +15,8 @@ export default class PollutionValues extends Component {
     super(props);
 
     this.state = {
-      width: Dimensions.get('window').width,
       height: Dimensions.get('window').height,
+      width: Dimensions.get('window').width,
     };
 
     this.onLayout = this.onLayout.bind(this);
@@ -22,12 +25,12 @@ export default class PollutionValues extends Component {
   singleComponent(type) {
     return (
       <View style={[header.withShadow, header.spaceBetweenItems]}>
-        <ElevatedView elevation={4} style={[header.elevatedView, styles.singleElevatedView]}>
+        <ElevatedView elevation={4} style={[header.elevatedView, pollution.singleElevatedView]}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10, alignItems: 'center' }}>
               <Text>{names[type]}</Text>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <Text style={{fontSize: 18}}>{this.getDatasetItem(type).v} {suffices[type]}</Text>
-              <View backgroundColor={this.conditions(type)} style={[header.circleContainer, styles.singleCTitle]}>
+              <View backgroundColor={this.conditions(type)} style={[header.circleContainer, pollution.singleCTitle]}>
                 <View style={header.circle}></View>
               </View>
             </View>
@@ -40,8 +43,8 @@ export default class PollutionValues extends Component {
   bigComponent(type) {
     return (
       <View style={{ width: (this.state.width - 60)/ 2, marginHorizontal:5, paddingTop: 5, marginBottom: 0 }}>
-        <ElevatedView elevation={4} style={[header.elevatedView, styles.elevatedView]}>
-          <View style={[styles.bigComponent]}>
+        <ElevatedView elevation={4} style={[header.elevatedView, pollution.elevatedView]}>
+          <View style={[pollution.bigComponent]}>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'stretch'}}>
                 <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
                   <Text>{names[type]}</Text>
@@ -85,27 +88,21 @@ export default class PollutionValues extends Component {
 
   onLayout() {
     this.setState({
-      width: Dimensions.get('window').width,
       height: Dimensions.get('window').height,
+      width: Dimensions.get('window').width,
     });
   }
 
   conditions(value) {
-    if (value == 'pm10') {
-      return this.pm10Condition(value)
-    }
-    else if (value == 'no2'){
-      return this.no2Condition(value)
-    }
-    else if (value == 'so2'){
-      return this.so2Condition(value)
-    }
+    if (value == 'pm10') { return this.pm10Condition(value) }
+    else if (value == 'no2'){ return this.no2Condition(value) }
+    else if (value == 'so2'){ return this.so2Condition(value) }
   }
-  
+
   itemValue(value) {
     return this.getDatasetItem(value).v
   }
-  
+
   pm10Condition(value) {
     itemValueVar = this.itemValue(value);
     color = undefined;
@@ -146,61 +143,3 @@ export default class PollutionValues extends Component {
     dataset: PropTypes.object.isRequired
   };
 }
-const colors = {
-  1: '#57b108',
-  2: '#b0dd10',
-  3: '#ffd911',
-  4: '#e58100',
-  5: '#d82329'
-};
-
-const names = {
-  'co': 'Tlenek Węgla',
-  'h': 'Wilgotność',
-  'no2': 'Dwutlenek Azotu',
-  'o3': 'Ozon',
-  'p': 'Ciśnienie',
-  'pm10': 'Pył zawieszony (PM10)',
-  'so2': 'Dwutlenek Siarki',
-  't': 'Temperatura',
-  'w': 'Wiatr'
-};
-const icons = {
-  't': "thermometer",
-  'p': "pressure",
-  'h': "rain",
-  'w': "wind",
-
-};
-const suffices = {
-  't': '°C',
-  'p': 'hPa',
-  'h': '%',
-  'w': ' m/s'
-};
-
-const styles = StyleSheet.create({
-  test: {
-    alignItems: 'flex-start',
-  },
-  bigComponent: {
-    alignItems: 'stretch',
-    justifyContent: 'space-between',
-    flexWrap: 'wrap',
-    alignSelf: 'stretch',
-    paddingHorizontal: 10,
-    paddingVertical: 15,
-  },
-  elevatedView: {
-    alignItems: 'center',
-    backgroundColor: 'white',
-    justifyContent: 'space-between',
-    margin: 0,
-  },
-  singleCTitle: {
-    marginLeft: 5
-  },
-  singleElevatedView: {
-    marginBottom: 15
-  }
-});
