@@ -2,52 +2,52 @@ import StyleSheet from 'react-native-extensible-stylesheet'
 
 export default StyleSheet.create({
   button: {
+    height: 32,
+    padding: 10,
     position: 'absolute',
     top: 20,
-    padding: 10,
-    height: 32
   },
   caption: {
+    alignItems: 'center',
     fontSize: 20,
     fontWeight: 'bold',
-    alignItems: 'center',
   },
   container: {
-    flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+    flex: 1,
+    justifyContent: 'center',
   },
   welcome: {
     fontSize: 20,
-    textAlign: 'center',
     margin: 10,
+    textAlign: 'center',
   },
   instructions: {
-    textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+    textAlign: 'center',
   },
   menu: {
-    flex: 1,
-    width: window.width,
-    height: window.height,
     backgroundColor: 'gray',
+    flex: 1,
+    height: window.height,
     padding: 20,
+    width: window.width,
   },
   avatarContainer: {
     marginBottom: 20,
     marginTop: 20,
   },
   avatar: {
-    width: 48,
-    height: 48,
     borderRadius: 24,
     flex: 1,
+    height: 48,
+    width: 48,
   },
   name: {
-    position: 'absolute',
     left: 70,
+    position: 'absolute',
     top: 20,
   },
   item: {

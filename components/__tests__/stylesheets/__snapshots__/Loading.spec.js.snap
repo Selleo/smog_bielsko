@@ -1,0 +1,39 @@
+exports[`Loading renders correctly 1`] = `
+ExtensibleStyleSheet {
+  "_options": Object {
+    "loadingContainer": Object {
+      "backgroundColor": "white",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "space-around",
+    },
+    "loadingText": Object {
+      "fontSize": 18,
+      "textAlign": "center",
+    },
+  },
+  "_styles": Object {
+    "loadingContainer": Object {
+      "backgroundColor": "white",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "space-around",
+    },
+    "loadingText": Object {
+      "fontSize": 18,
+      "textAlign": "center",
+    },
+  },
+  "_variables": Object {},
+  "loadingContainer": Object {
+    "backgroundColor": "white",
+    "flex": 1,
+    "flexDirection": "column",
+    "justifyContent": "space-around",
+  },
+  "loadingText": Object {
+    "fontSize": 18,
+    "textAlign": "center",
+  },
+}
+`;
