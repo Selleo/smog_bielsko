@@ -75,5 +75,6 @@ export default class CityInfo extends Component {
 
   static propTypes = {
     city: PropTypes.object.isRequired,
+    stationName: PropTypes.string,
   };
 }

@@ -93,9 +93,9 @@ ShallowWrapper {
                       ]
                 } />
             <CityName
-                text="Zywiec" />
+                text="Bielsko-Biała" />
             <CityDescription
-                text="ul. Rynek 2" />
+                text="ul. Kossak-Szczuckiej 19" />
         </View>
     </Image>
 </View>,
@@ -187,9 +187,9 @@ ShallowWrapper {
                                   ]
                         } />
                   <CityName
-                        text="Zywiec" />
+                        text="Bielsko-Biała" />
                   <CityDescription
-                        text="ul. Rynek 2" />
+                        text="ul. Kossak-Szczuckiej 19" />
             </View>
       </Image>
 </View>,
@@ -203,7 +203,12 @@ ShallowWrapper {
       "_currentElement": <CityInfo
         city={
                 Object {
-                        "name": "Zywiec, ul. Rynek 2",
+                        "geo": Array [
+                          49.813464,
+                          19.027318,
+                        ],
+                        "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+                        "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
                       }
         } />,
       "_debugID": 1,
@@ -214,7 +219,12 @@ ShallowWrapper {
         "context": Object {},
         "props": Object {
           "city": Object {
-            "name": "Zywiec, ul. Rynek 2",
+            "geo": Array [
+              49.813464,
+              19.027318,
+            ],
+            "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+            "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
           },
         },
         "refs": Object {},
@@ -327,9 +337,9 @@ ShallowWrapper {
                                                           ]
                                         } />
                               <CityName
-                                        text="Zywiec" />
+                                        text="Bielsko-Biała" />
                               <CityDescription
-                                        text="ul. Rynek 2" />
+                                        text="ul. Kossak-Szczuckiej 19" />
                     </View>
           </Image>
 </View>,
@@ -421,9 +431,9 @@ ShallowWrapper {
                                                           ]
                                         } />
                               <CityName
-                                        text="Zywiec" />
+                                        text="Bielsko-Biała" />
                               <CityDescription
-                                        text="ul. Rynek 2" />
+                                        text="ul. Kossak-Szczuckiej 19" />
                     </View>
           </Image>
 </View>,
@@ -441,7 +451,12 @@ ShallowWrapper {
   "unrendered": <CityInfo
     city={
         Object {
-            "name": "Zywiec, ul. Rynek 2",
+            "geo": Array [
+              49.813464,
+              19.027318,
+            ],
+            "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+            "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
           }
     } />,
 }
