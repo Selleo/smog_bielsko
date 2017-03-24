@@ -19,7 +19,8 @@ export default class Button extends Component {
   }
 
   static propTypes = {
-    onPress: PropTypes.func.isRequired,
+    children: PropTypes.object.isRequired,
+    onPress: PropTypes.func,
     style: PropTypes.number.isRequired,
   };
 }

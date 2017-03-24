@@ -14,7 +14,9 @@ ShallowWrapper {
     <Text
         accessible={true}
         allowFontScaling={true}
-        ellipsizeMode="tail" />
+        ellipsizeMode="tail">
+        <image />
+    </Text>
 </TouchableOpacity>,
   "nodes": Array [
     <TouchableOpacity
@@ -25,7 +27,9 @@ ShallowWrapper {
       <Text
             accessible={true}
             allowFontScaling={true}
-            ellipsizeMode="tail" />
+            ellipsizeMode="tail">
+            <image />
+      </Text>
 </TouchableOpacity>,
   ],
   "options": Object {},
@@ -36,7 +40,9 @@ ShallowWrapper {
       "_context": Object {},
       "_currentElement": <Button
         onPress={[Function]}
-        style={45} />,
+        style={45}>
+        <image />
+</Button>,
       "_debugID": 1,
       "_hostContainerInfo": null,
       "_hostParent": null,
@@ -44,6 +50,7 @@ ShallowWrapper {
         "_reactInternalInstance": [Circular],
         "context": Object {},
         "props": Object {
+          "children": <image />,
           "onPress": [Function],
           "style": 45,
         },
@@ -75,7 +82,9 @@ ShallowWrapper {
           <Text
                     accessible={true}
                     allowFontScaling={true}
-                    ellipsizeMode="tail" />
+                    ellipsizeMode="tail">
+                    <image />
+          </Text>
 </TouchableOpacity>,
         "_debugID": 2,
         "_renderedOutput": <TouchableOpacity
@@ -86,7 +95,9 @@ ShallowWrapper {
           <Text
                     accessible={true}
                     allowFontScaling={true}
-                    ellipsizeMode="tail" />
+                    ellipsizeMode="tail">
+                    <image />
+          </Text>
 </TouchableOpacity>,
       },
       "_renderedNodeType": 1,
@@ -101,6 +112,8 @@ ShallowWrapper {
   "root": [Circular],
   "unrendered": <Button
     onPress={[Function]}
-    style={45} />,
+    style={45}>
+    <image />
+</Button>,
 }
 `;
