@@ -74,7 +74,7 @@ ShallowWrapper {
                                 "fontSize": 18,
                               }
                         }>
-                        5.2
+                        5.2788
                          
                     </Text>
                     <View
@@ -167,7 +167,7 @@ ShallowWrapper {
                                 "fontSize": 18,
                               }
                         }>
-                        7.2
+                        7.2131
                          
                     </Text>
                     <View
@@ -260,7 +260,7 @@ ShallowWrapper {
                                 "fontSize": 18,
                               }
                         }>
-                        2.2
+                        2.299
                          
                     </Text>
                     <View
@@ -375,7 +375,7 @@ ShallowWrapper {
                                         "marginTop": 1,
                                       }
                                 }>
-                                9.2
+                                9.24
                                  
                                 %
                             </Text>
@@ -475,7 +475,7 @@ ShallowWrapper {
                                         "marginTop": 1,
                                       }
                                 }>
-                                12.2
+                                12.22
                                  
                                  m/s
                             </Text>
@@ -575,7 +575,7 @@ ShallowWrapper {
                                         "marginTop": 1,
                                       }
                                 }>
-                                0.4
+                                0.43
                                  
                                 °C
                             </Text>
@@ -675,7 +675,7 @@ ShallowWrapper {
                                         "marginTop": 1,
                                       }
                                 }>
-                                122.2
+                                122.26
                                  
                                 hPa
                             </Text>
@@ -773,7 +773,7 @@ ShallowWrapper {
                                                 "fontSize": 18,
                                               }
                                     }>
-                                    5.2
+                                    5.2788
                                      
                               </Text>
                               <View
@@ -866,7 +866,7 @@ ShallowWrapper {
                                                 "fontSize": 18,
                                               }
                                     }>
-                                    7.2
+                                    7.2131
                                      
                               </Text>
                               <View
@@ -959,7 +959,7 @@ ShallowWrapper {
                                                 "fontSize": 18,
                                               }
                                     }>
-                                    2.2
+                                    2.299
                                      
                               </Text>
                               <View
@@ -1074,7 +1074,7 @@ ShallowWrapper {
                                                             "marginTop": 1,
                                                           }
                                                 }>
-                                                9.2
+                                                9.24
                                                  
                                                 %
                                           </Text>
@@ -1174,7 +1174,7 @@ ShallowWrapper {
                                                             "marginTop": 1,
                                                           }
                                                 }>
-                                                12.2
+                                                12.22
                                                  
                                                  m/s
                                           </Text>
@@ -1274,7 +1274,7 @@ ShallowWrapper {
                                                             "marginTop": 1,
                                                           }
                                                 }>
-                                                0.4
+                                                0.43
                                                  
                                                 °C
                                           </Text>
@@ -1374,7 +1374,7 @@ ShallowWrapper {
                                                             "marginTop": 1,
                                                           }
                                                 }>
-                                                122.2
+                                                122.26
                                                  
                                                 hPa
                                           </Text>
@@ -1414,34 +1414,34 @@ ShallowWrapper {
         dataset={
                 Object {
                         "co": Object {
-                          "v": 0.2,
+                          "v": 0.223,
                         },
                         "h": Object {
-                          "v": 9.2,
+                          "v": 9.2444,
                         },
                         "no2": Object {
-                          "v": 7.2,
+                          "v": 7.2131,
                         },
                         "o3": Object {
-                          "v": 4.2,
+                          "v": 4.2242,
                         },
                         "p": Object {
-                          "v": 122.2,
+                          "v": 122.2567,
                         },
                         "pm10": Object {
-                          "v": 5.2,
+                          "v": 5.2788,
                         },
                         "so2": Object {
-                          "v": 2.2,
+                          "v": 2.299,
                         },
                         "t": Object {
-                          "v": 0.4,
+                          "v": 0.434,
                         },
                         "w": Object {
-                          "v": 12.2,
+                          "v": 12.2234,
                         },
                         "wd": Object {
-                          "v": 20.2,
+                          "v": 20.201,
                         },
                       }
         } />,
@@ -1455,34 +1455,34 @@ ShallowWrapper {
         "props": Object {
           "dataset": Object {
             "co": Object {
-              "v": 0.2,
+              "v": 0.223,
             },
             "h": Object {
-              "v": 9.2,
+              "v": 9.2444,
             },
             "no2": Object {
-              "v": 7.2,
+              "v": 7.2131,
             },
             "o3": Object {
-              "v": 4.2,
+              "v": 4.2242,
             },
             "p": Object {
-              "v": 122.2,
+              "v": 122.2567,
             },
             "pm10": Object {
-              "v": 5.2,
+              "v": 5.2788,
             },
             "so2": Object {
-              "v": 2.2,
+              "v": 2.299,
             },
             "t": Object {
-              "v": 0.4,
+              "v": 0.434,
             },
             "w": Object {
-              "v": 12.2,
+              "v": 12.2234,
             },
             "wd": Object {
-              "v": 20.2,
+              "v": 20.201,
             },
           },
         },
@@ -1577,7 +1577,7 @@ ShallowWrapper {
                                                                                 "fontSize": 18,
                                                                               }
                                                             }>
-                                                            5.2
+                                                            5.2788
                                                              
                                                   </Text>
                                                   <View
@@ -1670,7 +1670,7 @@ ShallowWrapper {
                                                                                 "fontSize": 18,
                                                                               }
                                                             }>
-                                                            7.2
+                                                            7.2131
                                                              
                                                   </Text>
                                                   <View
@@ -1763,7 +1763,7 @@ ShallowWrapper {
                                                                                 "fontSize": 18,
                                                                               }
                                                             }>
-                                                            2.2
+                                                            2.299
                                                              
                                                   </Text>
                                                   <View
@@ -1878,7 +1878,7 @@ ShallowWrapper {
                                                                                                     "marginTop": 1,
                                                                                                   }
                                                                                 }>
-                                                                                9.2
+                                                                                9.24
                                                                                  
                                                                                 %
                                                                       </Text>
@@ -1978,7 +1978,7 @@ ShallowWrapper {
                                                                                                     "marginTop": 1,
                                                                                                   }
                                                                                 }>
-                                                                                12.2
+                                                                                12.22
                                                                                  
                                                                                  m/s
                                                                       </Text>
@@ -2078,7 +2078,7 @@ ShallowWrapper {
                                                                                                     "marginTop": 1,
                                                                                                   }
                                                                                 }>
-                                                                                0.4
+                                                                                0.43
                                                                                  
                                                                                 °C
                                                                       </Text>
@@ -2178,7 +2178,7 @@ ShallowWrapper {
                                                                                                     "marginTop": 1,
                                                                                                   }
                                                                                 }>
-                                                                                122.2
+                                                                                122.26
                                                                                  
                                                                                 hPa
                                                                       </Text>
@@ -2276,7 +2276,7 @@ ShallowWrapper {
                                                                                 "fontSize": 18,
                                                                               }
                                                             }>
-                                                            5.2
+                                                            5.2788
                                                              
                                                   </Text>
                                                   <View
@@ -2369,7 +2369,7 @@ ShallowWrapper {
                                                                                 "fontSize": 18,
                                                                               }
                                                             }>
-                                                            7.2
+                                                            7.2131
                                                              
                                                   </Text>
                                                   <View
@@ -2462,7 +2462,7 @@ ShallowWrapper {
                                                                                 "fontSize": 18,
                                                                               }
                                                             }>
-                                                            2.2
+                                                            2.299
                                                              
                                                   </Text>
                                                   <View
@@ -2577,7 +2577,7 @@ ShallowWrapper {
                                                                                                     "marginTop": 1,
                                                                                                   }
                                                                                 }>
-                                                                                9.2
+                                                                                9.24
                                                                                  
                                                                                 %
                                                                       </Text>
@@ -2677,7 +2677,7 @@ ShallowWrapper {
                                                                                                     "marginTop": 1,
                                                                                                   }
                                                                                 }>
-                                                                                12.2
+                                                                                12.22
                                                                                  
                                                                                  m/s
                                                                       </Text>
@@ -2777,7 +2777,7 @@ ShallowWrapper {
                                                                                                     "marginTop": 1,
                                                                                                   }
                                                                                 }>
-                                                                                0.4
+                                                                                0.43
                                                                                  
                                                                                 °C
                                                                       </Text>
@@ -2877,7 +2877,7 @@ ShallowWrapper {
                                                                                                     "marginTop": 1,
                                                                                                   }
                                                                                 }>
-                                                                                122.2
+                                                                                122.26
                                                                                  
                                                                                 hPa
                                                                       </Text>
@@ -2921,34 +2921,34 @@ ShallowWrapper {
     dataset={
         Object {
             "co": Object {
-              "v": 0.2,
+              "v": 0.223,
             },
             "h": Object {
-              "v": 9.2,
+              "v": 9.2444,
             },
             "no2": Object {
-              "v": 7.2,
+              "v": 7.2131,
             },
             "o3": Object {
-              "v": 4.2,
+              "v": 4.2242,
             },
             "p": Object {
-              "v": 122.2,
+              "v": 122.2567,
             },
             "pm10": Object {
-              "v": 5.2,
+              "v": 5.2788,
             },
             "so2": Object {
-              "v": 2.2,
+              "v": 2.299,
             },
             "t": Object {
-              "v": 0.4,
+              "v": 0.434,
             },
             "w": Object {
-              "v": 12.2,
+              "v": 12.2234,
             },
             "wd": Object {
-              "v": 20.2,
+              "v": 20.201,
             },
           }
     } />,

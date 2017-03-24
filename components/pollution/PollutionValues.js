@@ -94,9 +94,10 @@ export default class PollutionValues extends Component {
   }
 
   conditions(value) {
-    if (value == 'pm10') { return this.pm10Condition(value) }
-    else if (value == 'no2'){ return this.no2Condition(value) }
-    else if (value == 'so2'){ return this.so2Condition(value) }
+    itemValueVar = this.itemValue(value);
+    if (value == 'pm10') { return this.pm10Condition(itemValueVar) }
+    else if (value == 'no2'){ return this.no2Condition(itemValueVar) }
+    else if (value == 'so2'){ return this.so2Condition(itemValueVar) }
   }
 
   itemValue(value) {
@@ -104,38 +105,35 @@ export default class PollutionValues extends Component {
   }
 
   pm10Condition(value) {
-    itemValueVar = this.itemValue(value);
     color = undefined;
 
-    if (itemValueVar < 50) { color = colors['1'] }
-    else if (itemValueVar < 100) { color = colors['2'] }
-    else if (itemValueVar < 150) { color = colors['3'] }
-    else if (itemValueVar < 200) { color = colors['4'] }
-    else if (itemValueVar < 300) { color = colors['5'] }
+    if (value < 50) { color = colors['1'] }
+    else if (value < 100) { color = colors['2'] }
+    else if (value < 150) { color = colors['3'] }
+    else if (value < 200) { color = colors['4'] }
+    else if (value >= 200) { color = colors['5'] }
     return color
   }
 
   so2Condition(value) {
-    itemValueVar = this.itemValue(value);
     color = undefined;
 
-    if (itemValueVar < 50) { color = colors['1'] }
-    else if (itemValueVar < 125) { color = colors['2'] }
-    else if (itemValueVar < 250) { color = colors['3'] }
-    else if (itemValueVar < 380) { color = colors['4'] }
-    else if (itemValueVar >= 500) { color = colors['5'] }
+    if (value < 50) { color = colors['1'] }
+    else if (value < 200) { color = colors['2'] }
+    else if (value < 350) { color = colors['3'] }
+    else if (value < 500) { color = colors['4'] }
+    else if (value >= 500) { color = colors['5'] }
     return color
   }
 
   no2Condition(value) {
-    itemValueVar = this.itemValue(value);
     color = undefined;
 
-    if (itemValueVar < 40) { color = colors['1'] }
-    else if (itemValueVar < 150) { color = colors['2'] }
-    else if (itemValueVar < 250) { color = colors['3'] }
-    else if (itemValueVar < 400) { color = colors['4'] }
-    else if (itemValueVar >= 400) { color = colors['5'] }
+    if (value < 40) { color = colors['1'] }
+    else if (value < 150) { color = colors['2'] }
+    else if (value < 250) { color = colors['3'] }
+    else if (value < 400) { color = colors['4'] }
+    else if (value >= 400) { color = colors['5'] }
     return color
   }
 
