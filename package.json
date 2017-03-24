@@ -23,7 +23,9 @@
     "react-native-shadow": "^1.1.1",
     "react-native-side-menu": "^0.20.1",
     "react-native-svg": "^5.1.5",
-    "react-native-vector-icons": "^4.0.0"
+    "react-native-vector-icons": "^4.0.0",
+    "sinon": "^2.1.0",
+    "sinon-chai": "^2.9.0"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",

@@ -32,9 +32,6 @@ export default class CityInfo extends Component {
           }
         ).start();
       })
-      .catch((response) => {
-        console.log(response);
-      })
   }
 
   secondUmageStyles() {
