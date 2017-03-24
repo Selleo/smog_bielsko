@@ -55,6 +55,17 @@ describe('Index', () => {
 
       fetchMock.restore();
     });
+
+    it('return error', () => {
+      let url = 'https://www.googleapis.com/customsearch/v1?key=' + Env.GOOGLE_KEY + '&cx=' + Env.GOOGLE_CX + '&q=Zywiec%20city&imgType=photo&searchType=image&fileType=jpg&imgSize=large&num=1&alt=json';
+      let response = fetchMock.get(url, 500).routes[0];
+
+      fetchBgr('Zywiec city');
+
+      expect(response.name).to.equal('https://www.googleapis.com/customsearch/v1?key=AIzaSyC87rWFIceblB8SiPYRIVjTVDa4Ykg2B5k&cx=011489618918057685518:znkt_vgea0o&q=Zywiec%20city&imgType=photo&searchType=image&fileType=jpg&imgSize=large&num=1&alt=json');
+      expect(response.response).to.equal(500);
+      fetchMock.restore();
+    });
   });
 
   describe('#getData', () => {
@@ -81,6 +92,17 @@ describe('Index', () => {
         done();
       }, 2);
 
+      fetchMock.restore();
+    });
+
+    it('return error', () => {
+      let url = 'http://api.waqi.info/feed/@6535/?token=' + Env.API_KEY;
+      let response = fetchMock.get(url, 500).routes[0];
+
+      getData(6535);
+
+      expect(response.name).to.equal('http://api.waqi.info/feed/@6535/?token=a15ef567a5c1e6342c20de7ac3d473361dfbcb54');
+      expect(response.response).to.equal(500);
       fetchMock.restore();
     });
   });
