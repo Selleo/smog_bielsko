@@ -9,7 +9,7 @@ import loading                                       from './stylesheets/Loading
 import menu                                          from './stylesheets/Menu'
 import { getData, stationId }                        from './sharing/Extends'
 
-export default class smog_bielsko extends Component {
+export default class SmogBielsko extends Component {
   constructor() {
     super();
     this.routes = [{ id: 'index' }];
@@ -46,21 +46,25 @@ export default class smog_bielsko extends Component {
     });
   }
 
-  render() {
-    const menuNav = <DrawerMenu
-      closeDrawer={(stationId, stationName) => {
-        this.nav.replace({
-          id: 'index',
-          stationId: stationId,
-          stationName: stationName
-        });
-        this.fetchData(stationId);
-      }}
-      getCurrentStationId={() => {
-        return this.currentStationId
-      }}
-    />;
+  menuNav() {
+    return (
+      <DrawerMenu
+        closeDrawer={(stationId, stationName) => {
+          this.nav.replace({
+            id: 'index',
+            stationId: stationId,
+            stationName: stationName
+          });
+          this.fetchData(stationId);
+        }}
+        getCurrentStationId={() => {
+          return this.currentStationId
+        }}
+      />
+    )
+  }
 
+  render() {
     if (this.state.pendingApp) {
       return (
         <View style={loading.loadingContainer}>
@@ -70,7 +74,7 @@ export default class smog_bielsko extends Component {
     } else {
       return (
         <SideMenu
-          menu={menuNav}
+          menu={this.menuNav()}
           isOpen={this.state.isOpen}
           onChange={(isOpen) => this.updateMenuState(isOpen)}>
           <Navigator

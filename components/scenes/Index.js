@@ -11,6 +11,7 @@ export default class Index extends Component {
 
   static propTypes = {
     dataStations: PropTypes.object.isRequired,
+    nav: PropTypes.object,
     stationName: PropTypes.string
   };
 }

@@ -5,7 +5,7 @@ import { shallow }                    from 'enzyme';
 import chai, { expect }               from 'chai';
 import dirtyChai                      from 'dirty-chai';
 
-import DrawerMenu                 from '../../nav/DrawerMenu';
+import DrawerMenu                     from '../../nav/DrawerMenu';
 
 const originalExpect = global.expect;
 
