@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
-import { Text, View } from 'react-native'
+import { Text, View }                  from 'react-native'
 
-import header from '../stylesheets/Header'
+import header                          from '../stylesheets/Header'
 
 export default class CityDescription extends Component {
   render() {

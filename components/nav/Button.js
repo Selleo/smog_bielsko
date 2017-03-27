@@ -1,5 +1,5 @@
 import React, { Component, PropTypes }       from 'react';
-import { Text, TouchableOpacity } from 'react-native';
+import { Text, TouchableOpacity }            from 'react-native';
 
 export default class Button extends Component {
   handlePress(e) {

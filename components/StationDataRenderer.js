@@ -1,9 +1,9 @@
-import React, { Component, PropTypes } from 'react'
-import { View, ScrollView, StyleSheet }                        from 'react-native'
+import React, { Component, PropTypes }  from 'react'
+import { View, ScrollView, StyleSheet } from 'react-native'
 
-import AirQualityIndex                 from './pollution/AirQualityIndex'
-import CityInfo                        from './city/CityInfo'
-import PollutionValues                 from './pollution/PollutionValues'
+import AirQualityIndex                  from './pollution/AirQualityIndex'
+import CityInfo                         from './city/CityInfo'
+import PollutionValues                  from './pollution/PollutionValues'
 
 export default class StationDataRenderer extends Component {
   render() {

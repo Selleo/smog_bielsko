@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import StationDataRenderer  from './../StationDataRenderer'
+import StationDataRenderer             from './../StationDataRenderer'
 
 export default class Index extends Component {
   render() {
