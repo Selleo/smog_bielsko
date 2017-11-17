@@ -1,61 +1,143 @@
-import React, { Component, PropTypes } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import React, { Component, PropTypes }    from 'react';
+import { View, Text, Dimensions }         from 'react-native';
+import ElevatedView                       from 'react-native-elevated-view'
+
+import header                             from './../stylesheets/Header'
+import pollution                          from './../stylesheets/Pollution'
+import Icon                               from './../MyIcons';
+import { colors, names, icons, suffices } from './../sharing/PollutionTypes'
+
+const window = Dimensions.get('window');
+let color, itemValueVar;
 
 export default class PollutionValues extends Component {
-  render() {
-    let rows = [];
-    for (var i = 0; i < this.getDatasetKeys().length; i++) {
-      let key = this.getDatasetKeys()[i];
-      let item = this.getDatasetItem(i);
-      rows.push(<Text style={styles.dataRow} key={i}>{names[key]}: {item.v}{suffices[key]}</Text>)
-    }
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      height: Dimensions.get('window').height,
+      width: Dimensions.get('window').width,
+    };
+
+    this.onLayout = this.onLayout.bind(this);
+  }
+
+  singleComponent(type) {
     return (
-      <View style={styles.container}>
-        {rows}
+      <View style={[header.withShadow, header.spaceBetweenItems]}>
+        <ElevatedView elevation={4} style={[header.elevatedView, pollution.singleElevatedView]}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between', padding: 10, alignItems: 'center' }}>
+              <Text>{names[type]}</Text>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+              <Text style={{fontSize: 18}}>{this.getDatasetItem(type).v} {suffices[type]}</Text>
+              <View backgroundColor={this.conditions(type)} style={[header.circleContainer, pollution.singleCTitle]}>
+                <View style={header.circle}></View>
+              </View>
+            </View>
+          </View>
+        </ElevatedView>
       </View>
     )
   }
 
-  getDatasetKeys() {
-    return Object.keys(this.props.dataset);
+  bigComponent(type) {
+    return (
+      <View style={{ width: (this.state.width - 60)/ 2, marginHorizontal:5, paddingTop: 5, marginBottom: 0 }}>
+        <ElevatedView elevation={4} style={[header.elevatedView, pollution.elevatedView]}>
+          <View style={[pollution.bigComponent]}>
+              <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'stretch'}}>
+                <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+                  <Text>{names[type]}</Text>
+                  <Text style={{fontSize: 18, marginTop: 1}}>{this.formatValue(type)} {suffices[type] }</Text>
+                </View>
+                <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                  <Text><Icon name={icons[type]} size={28} color="#95cfda" /></Text>
+                </View>
+              </View>
+          </View>
+        </ElevatedView>
+      </View>
+    )
   }
 
-  getDatasetItem(index) {
-    return this.props.dataset[this.getDatasetKeys()[index]]
+  formatValue(value){
+    return Math.round(this.getDatasetItem(value).v * 100) / 100
+  }
+
+  render() {
+    return (
+      <View style={{alignItems: 'stretch',}} onLayout={this.onLayout}>
+        { this.getDatasetItem('pm10') && this.singleComponent('pm10') }
+        { this.getDatasetItem('no2') && this.singleComponent('no2') }
+        { this.getDatasetItem('so2') && this.singleComponent('so2') }
+
+        <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-start', marginHorizontal: 15 }}>
+          { this.getDatasetItem('h') && this.bigComponent('h') }
+          { this.getDatasetItem('w') && this.bigComponent('w') }
+          { this.getDatasetItem('t') && this.bigComponent('t') }
+          { this.getDatasetItem('p') && this.bigComponent('p') }
+        </View>
+
+      </View>
+    )
+  }
+
+  getDatasetItem(type) {
+    return this.props.dataset[type]
+  }
+
+  onLayout() {
+    this.setState({
+      height: Dimensions.get('window').height,
+      width: Dimensions.get('window').width,
+    });
+  }
+
+  conditions(value) {
+    itemValueVar = this.itemValue(value);
+    if (value == 'pm10') { return this.pm10Condition(itemValueVar) }
+    else if (value == 'no2'){ return this.no2Condition(itemValueVar) }
+    else if (value == 'so2'){ return this.so2Condition(itemValueVar) }
+  }
+
+  itemValue(value) {
+    return this.getDatasetItem(value).v
+  }
+
+  pm10Condition(value) {
+    color = undefined;
+
+    if (value < 50) { color = colors['1'] }
+    else if (value < 100) { color = colors['2'] }
+    else if (value < 150) { color = colors['3'] }
+    else if (value < 200) { color = colors['4'] }
+    else if (value >= 200) { color = colors['5'] }
+    return color
+  }
+
+  so2Condition(value) {
+    color = undefined;
+
+    if (value < 50) { color = colors['1'] }
+    else if (value < 200) { color = colors['2'] }
+    else if (value < 350) { color = colors['3'] }
+    else if (value < 500) { color = colors['4'] }
+    else if (value >= 500) { color = colors['5'] }
+    return color
+  }
+
+  no2Condition(value) {
+    color = undefined;
+
+    if (value < 40) { color = colors['1'] }
+    else if (value < 150) { color = colors['2'] }
+    else if (value < 250) { color = colors['3'] }
+    else if (value < 400) { color = colors['4'] }
+    else if (value >= 400) { color = colors['5'] }
+    return color
   }
 
   static propTypes = {
     dataset: PropTypes.object.isRequired
   };
 }
-
-const names = {
-  'pm10': 'Pył zawieszony',
-  'o3': 'Ozon',
-  'no2': 'Dwutlenek Azotu',
-  'so2': 'Dwutlenek Siarki',
-  'co': 'Tlenek Węgla',
-  't': 'Temperatura',
-  'p': 'Ciśnienie',
-  'h': 'Wilgotność',
-  'w': 'Wiatr'
-};
-
-const suffices = {
-  't': '°C',
-  'p': 'hPa',
-  'h': '%',
-  'w': ' m/s'
-};
-
-const styles = StyleSheet.create({
-  container: {},
-  dataRow: {
-    fontSize: 16,
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-    backgroundColor: '#ccc',
-    color: '#363636'
-  }
-});

@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { StyleSheet, Text } from 'react-native';
+import { StyleSheet, Text }            from 'react-native';
 
 export default class DrawerHeader extends Component {
   render() {

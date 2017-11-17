@@ -9,27 +9,189 @@ ShallowWrapper {
   "node": <View
     style={
         Object {
-            "paddingLeft": 10,
-            "paddingTop": 15,
+            "height": 180,
+            "position": "relative",
+            "width": undefined,
           }
     }>
-    <CityName
-        text="Zywiec" />
-    <CityDescription
-        text="ul. Rynek 2" />
+    <Image
+        source={1}
+        style={
+            Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+                "flex": 1,
+                "flexDirection": "column",
+                "height": 180,
+                "justifyContent": "flex-end",
+                "margin": 0,
+                "padding": 0,
+                "paddingBottom": 10,
+                "top": 0,
+                "width": undefined,
+              }
+        }>
+        <AnimatedComponent
+            source={
+                Object {
+                    "uri": undefined,
+                  }
+            }
+            style={
+                Object {
+                    "alignSelf": "center",
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                    "bottom": 0,
+                    "flex": 1,
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "left": 0,
+                    "margin": 0,
+                    "opacity": 0,
+                    "padding": 0,
+                    "position": "absolute",
+                    "resizeMode": "cover",
+                    "right": 0,
+                    "top": 0,
+                  }
+            } />
+        <View
+            style={
+                Object {
+                    "alignItems": "flex-start",
+                  }
+            }>
+            <Image
+                source={1}
+                style={
+                    Array [
+                        Object {
+                          "alignSelf": "stretch",
+                          "backgroundColor": "transparent",
+                          "borderWidth": 0,
+                          "flex": 1,
+                          "flexDirection": "column",
+                          "height": 180,
+                          "justifyContent": "flex-end",
+                          "margin": 0,
+                          "padding": 0,
+                          "paddingBottom": 10,
+                          "top": 0,
+                          "width": undefined,
+                        },
+                        Object {
+                          "bottom": 0,
+                          "height": 180,
+                          "left": 0,
+                          "position": "absolute",
+                          "resizeMode": "stretch",
+                          "right": 0,
+                          "top": -16,
+                        },
+                      ]
+                } />
+            <CityName
+                text="Bielsko-Biała" />
+            <CityDescription
+                text="ul. Kossak-Szczuckiej 19" />
+        </View>
+    </Image>
 </View>,
   "nodes": Array [
     <View
       style={
             Object {
-                  "paddingLeft": 10,
-                  "paddingTop": 15,
+                  "height": 180,
+                  "position": "relative",
+                  "width": undefined,
                 }
       }>
-      <CityName
-            text="Zywiec" />
-      <CityDescription
-            text="ul. Rynek 2" />
+      <Image
+            source={1}
+            style={
+                  Object {
+                        "alignSelf": "stretch",
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                        "flex": 1,
+                        "flexDirection": "column",
+                        "height": 180,
+                        "justifyContent": "flex-end",
+                        "margin": 0,
+                        "padding": 0,
+                        "paddingBottom": 10,
+                        "top": 0,
+                        "width": undefined,
+                      }
+            }>
+            <AnimatedComponent
+                  source={
+                        Object {
+                              "uri": undefined,
+                            }
+                  }
+                  style={
+                        Object {
+                              "alignSelf": "center",
+                              "backgroundColor": "transparent",
+                              "borderWidth": 0,
+                              "bottom": 0,
+                              "flex": 1,
+                              "flexDirection": "column",
+                              "justifyContent": "center",
+                              "left": 0,
+                              "margin": 0,
+                              "opacity": 0,
+                              "padding": 0,
+                              "position": "absolute",
+                              "resizeMode": "cover",
+                              "right": 0,
+                              "top": 0,
+                            }
+                  } />
+            <View
+                  style={
+                        Object {
+                              "alignItems": "flex-start",
+                            }
+                  }>
+                  <Image
+                        source={1}
+                        style={
+                              Array [
+                                    Object {
+                                      "alignSelf": "stretch",
+                                      "backgroundColor": "transparent",
+                                      "borderWidth": 0,
+                                      "flex": 1,
+                                      "flexDirection": "column",
+                                      "height": 180,
+                                      "justifyContent": "flex-end",
+                                      "margin": 0,
+                                      "padding": 0,
+                                      "paddingBottom": 10,
+                                      "top": 0,
+                                      "width": undefined,
+                                    },
+                                    Object {
+                                      "bottom": 0,
+                                      "height": 180,
+                                      "left": 0,
+                                      "position": "absolute",
+                                      "resizeMode": "stretch",
+                                      "right": 0,
+                                      "top": -16,
+                                    },
+                                  ]
+                        } />
+                  <CityName
+                        text="Bielsko-Biała" />
+                  <CityDescription
+                        text="ul. Kossak-Szczuckiej 19" />
+            </View>
+      </Image>
 </View>,
   ],
   "options": Object {},
@@ -41,7 +203,12 @@ ShallowWrapper {
       "_currentElement": <CityInfo
         city={
                 Object {
-                        "name": "Zywiec, ul. Rynek 2",
+                        "geo": Array [
+                          49.813464,
+                          19.027318,
+                        ],
+                        "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+                        "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
                       }
         } />,
       "_debugID": 1,
@@ -52,11 +219,19 @@ ShallowWrapper {
         "context": Object {},
         "props": Object {
           "city": Object {
-            "name": "Zywiec, ul. Rynek 2",
+            "geo": Array [
+              49.813464,
+              19.027318,
+            ],
+            "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+            "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
           },
         },
         "refs": Object {},
-        "state": Object {},
+        "state": Object {
+          "fadeAnim": 0,
+          "fetched": false,
+        },
         "updater": Object {
           "enqueueCallback": [Function],
           "enqueueCallbackInternal": [Function],
@@ -78,27 +253,189 @@ ShallowWrapper {
         "_currentElement": <View
           style={
                     Object {
-                              "paddingLeft": 10,
-                              "paddingTop": 15,
+                              "height": 180,
+                              "position": "relative",
+                              "width": undefined,
                             }
           }>
-          <CityName
-                    text="Zywiec" />
-          <CityDescription
-                    text="ul. Rynek 2" />
+          <Image
+                    source={1}
+                    style={
+                              Object {
+                                        "alignSelf": "stretch",
+                                        "backgroundColor": "transparent",
+                                        "borderWidth": 0,
+                                        "flex": 1,
+                                        "flexDirection": "column",
+                                        "height": 180,
+                                        "justifyContent": "flex-end",
+                                        "margin": 0,
+                                        "padding": 0,
+                                        "paddingBottom": 10,
+                                        "top": 0,
+                                        "width": undefined,
+                                      }
+                    }>
+                    <AnimatedComponent
+                              source={
+                                        Object {
+                                                  "uri": undefined,
+                                                }
+                              }
+                              style={
+                                        Object {
+                                                  "alignSelf": "center",
+                                                  "backgroundColor": "transparent",
+                                                  "borderWidth": 0,
+                                                  "bottom": 0,
+                                                  "flex": 1,
+                                                  "flexDirection": "column",
+                                                  "justifyContent": "center",
+                                                  "left": 0,
+                                                  "margin": 0,
+                                                  "opacity": 0,
+                                                  "padding": 0,
+                                                  "position": "absolute",
+                                                  "resizeMode": "cover",
+                                                  "right": 0,
+                                                  "top": 0,
+                                                }
+                              } />
+                    <View
+                              style={
+                                        Object {
+                                                  "alignItems": "flex-start",
+                                                }
+                              }>
+                              <Image
+                                        source={1}
+                                        style={
+                                                  Array [
+                                                            Object {
+                                                              "alignSelf": "stretch",
+                                                              "backgroundColor": "transparent",
+                                                              "borderWidth": 0,
+                                                              "flex": 1,
+                                                              "flexDirection": "column",
+                                                              "height": 180,
+                                                              "justifyContent": "flex-end",
+                                                              "margin": 0,
+                                                              "padding": 0,
+                                                              "paddingBottom": 10,
+                                                              "top": 0,
+                                                              "width": undefined,
+                                                            },
+                                                            Object {
+                                                              "bottom": 0,
+                                                              "height": 180,
+                                                              "left": 0,
+                                                              "position": "absolute",
+                                                              "resizeMode": "stretch",
+                                                              "right": 0,
+                                                              "top": -16,
+                                                            },
+                                                          ]
+                                        } />
+                              <CityName
+                                        text="Bielsko-Biała" />
+                              <CityDescription
+                                        text="ul. Kossak-Szczuckiej 19" />
+                    </View>
+          </Image>
 </View>,
         "_debugID": 2,
         "_renderedOutput": <View
           style={
                     Object {
-                              "paddingLeft": 10,
-                              "paddingTop": 15,
+                              "height": 180,
+                              "position": "relative",
+                              "width": undefined,
                             }
           }>
-          <CityName
-                    text="Zywiec" />
-          <CityDescription
-                    text="ul. Rynek 2" />
+          <Image
+                    source={1}
+                    style={
+                              Object {
+                                        "alignSelf": "stretch",
+                                        "backgroundColor": "transparent",
+                                        "borderWidth": 0,
+                                        "flex": 1,
+                                        "flexDirection": "column",
+                                        "height": 180,
+                                        "justifyContent": "flex-end",
+                                        "margin": 0,
+                                        "padding": 0,
+                                        "paddingBottom": 10,
+                                        "top": 0,
+                                        "width": undefined,
+                                      }
+                    }>
+                    <AnimatedComponent
+                              source={
+                                        Object {
+                                                  "uri": undefined,
+                                                }
+                              }
+                              style={
+                                        Object {
+                                                  "alignSelf": "center",
+                                                  "backgroundColor": "transparent",
+                                                  "borderWidth": 0,
+                                                  "bottom": 0,
+                                                  "flex": 1,
+                                                  "flexDirection": "column",
+                                                  "justifyContent": "center",
+                                                  "left": 0,
+                                                  "margin": 0,
+                                                  "opacity": 0,
+                                                  "padding": 0,
+                                                  "position": "absolute",
+                                                  "resizeMode": "cover",
+                                                  "right": 0,
+                                                  "top": 0,
+                                                }
+                              } />
+                    <View
+                              style={
+                                        Object {
+                                                  "alignItems": "flex-start",
+                                                }
+                              }>
+                              <Image
+                                        source={1}
+                                        style={
+                                                  Array [
+                                                            Object {
+                                                              "alignSelf": "stretch",
+                                                              "backgroundColor": "transparent",
+                                                              "borderWidth": 0,
+                                                              "flex": 1,
+                                                              "flexDirection": "column",
+                                                              "height": 180,
+                                                              "justifyContent": "flex-end",
+                                                              "margin": 0,
+                                                              "padding": 0,
+                                                              "paddingBottom": 10,
+                                                              "top": 0,
+                                                              "width": undefined,
+                                                            },
+                                                            Object {
+                                                              "bottom": 0,
+                                                              "height": 180,
+                                                              "left": 0,
+                                                              "position": "absolute",
+                                                              "resizeMode": "stretch",
+                                                              "right": 0,
+                                                              "top": -16,
+                                                            },
+                                                          ]
+                                        } />
+                              <CityName
+                                        text="Bielsko-Biała" />
+                              <CityDescription
+                                        text="ul. Kossak-Szczuckiej 19" />
+                    </View>
+          </Image>
 </View>,
       },
       "_renderedNodeType": 1,
@@ -114,7 +451,12 @@ ShallowWrapper {
   "unrendered": <CityInfo
     city={
         Object {
-            "name": "Zywiec, ul. Rynek 2",
+            "geo": Array [
+              49.813464,
+              19.027318,
+            ],
+            "name": "Bielsko-Biała, ul. Kossak-Szczuckiej 19",
+            "url": "http://aqicn.org/city/poland/slaski/bielsko-biala--ul.-kossak-szczuckiej-19/",
           }
     } />,
 }

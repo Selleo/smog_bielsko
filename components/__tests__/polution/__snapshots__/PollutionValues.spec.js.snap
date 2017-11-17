@@ -7,81 +7,1401 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <View
-    style={Object {}}>
-    <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
+    onLayout={[Function]}
+    style={
+        Object {
+            "alignItems": "stretch",
+          }
+    }>
+    <View
+        style={
+            Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "white",
+                  "borderRadius": 3,
+                },
+                Object {
+                  "paddingTop": 5,
+                },
+              ]
+        }>
+        <ElevatedView
+            elevation={4}
+            style={
+                Array [
+                    Object {
+                      "alignItems": "stretch",
+                      "backgroundColor": "white",
+                      "justifyContent": "space-between",
+                      "margin": 20,
+                      "marginBottom": 15,
+                      "marginTop": 0,
+                    },
+                    Object {
+                      "marginBottom": 15,
+                    },
+                  ]
+            }>
+            <View
+                style={
+                    Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "padding": 10,
+                      }
+                }>
+                <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                    Pył zawieszony (PM10)
+                </Text>
+                <View
+                    style={
+                        Object {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                          }
+                    }>
+                    <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                            Object {
+                                "fontSize": 18,
+                              }
+                        }>
+                        5.2788
+                         
+                    </Text>
+                    <View
+                        backgroundColor="#57b108"
+                        style={
+                            Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "borderRadius": 30,
+                                  "height": 15,
+                                  "justifyContent": "center",
+                                  "overflow": "hidden",
+                                  "width": 15,
+                                },
+                                Object {
+                                  "marginLeft": 5,
+                                },
+                              ]
+                        }>
+                        <View
+                            style={
+                                Object {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                            } />
+                    </View>
+                </View>
+            </View>
+        </ElevatedView>
+    </View>
+    <View
+        style={
+            Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "white",
+                  "borderRadius": 3,
+                },
+                Object {
+                  "paddingTop": 5,
+                },
+              ]
+        }>
+        <ElevatedView
+            elevation={4}
+            style={
+                Array [
+                    Object {
+                      "alignItems": "stretch",
+                      "backgroundColor": "white",
+                      "justifyContent": "space-between",
+                      "margin": 20,
+                      "marginBottom": 15,
+                      "marginTop": 0,
+                    },
+                    Object {
+                      "marginBottom": 15,
+                    },
+                  ]
+            }>
+            <View
+                style={
+                    Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "padding": 10,
+                      }
+                }>
+                <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                    Dwutlenek Azotu
+                </Text>
+                <View
+                    style={
+                        Object {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                          }
+                    }>
+                    <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                            Object {
+                                "fontSize": 18,
+                              }
+                        }>
+                        7.2131
+                         
+                    </Text>
+                    <View
+                        backgroundColor="#57b108"
+                        style={
+                            Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "borderRadius": 30,
+                                  "height": 15,
+                                  "justifyContent": "center",
+                                  "overflow": "hidden",
+                                  "width": 15,
+                                },
+                                Object {
+                                  "marginLeft": 5,
+                                },
+                              ]
+                        }>
+                        <View
+                            style={
+                                Object {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                            } />
+                    </View>
+                </View>
+            </View>
+        </ElevatedView>
+    </View>
+    <View
+        style={
+            Array [
+                Object {
+                  "alignItems": "stretch",
+                  "backgroundColor": "white",
+                  "borderRadius": 3,
+                },
+                Object {
+                  "paddingTop": 5,
+                },
+              ]
+        }>
+        <ElevatedView
+            elevation={4}
+            style={
+                Array [
+                    Object {
+                      "alignItems": "stretch",
+                      "backgroundColor": "white",
+                      "justifyContent": "space-between",
+                      "margin": 20,
+                      "marginBottom": 15,
+                      "marginTop": 0,
+                    },
+                    Object {
+                      "marginBottom": 15,
+                    },
+                  ]
+            }>
+            <View
+                style={
+                    Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "space-between",
+                        "padding": 10,
+                      }
+                }>
+                <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail">
+                    Dwutlenek Siarki
+                </Text>
+                <View
+                    style={
+                        Object {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                          }
+                    }>
+                    <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                            Object {
+                                "fontSize": 18,
+                              }
+                        }>
+                        2.299
+                         
+                    </Text>
+                    <View
+                        backgroundColor="#57b108"
+                        style={
+                            Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "borderRadius": 30,
+                                  "height": 15,
+                                  "justifyContent": "center",
+                                  "overflow": "hidden",
+                                  "width": 15,
+                                },
+                                Object {
+                                  "marginLeft": 5,
+                                },
+                              ]
+                        }>
+                        <View
+                            style={
+                                Object {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                            } />
+                    </View>
+                </View>
+            </View>
+        </ElevatedView>
+    </View>
+    <View
         style={
             Object {
-                "backgroundColor": "#ccc",
-                "color": "#363636",
-                "fontSize": 16,
-                "paddingHorizontal": 10,
-                "paddingVertical": 6,
+                "alignItems": "flex-start",
+                "flexDirection": "row",
+                "flexWrap": "wrap",
+                "justifyContent": "space-between",
+                "marginHorizontal": 15,
               }
         }>
-        Tlenek Węgla
-        : 
-        0.1
-    </Text>
-    <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-            Object {
-                "backgroundColor": "#ccc",
-                "color": "#363636",
-                "fontSize": 16,
-                "paddingHorizontal": 10,
-                "paddingVertical": 6,
-              }
-        }>
-        Wilgotność
-        : 
-        88.2461
-        %
-    </Text>
+        <View
+            style={
+                Object {
+                    "marginBottom": 0,
+                    "marginHorizontal": 5,
+                    "paddingTop": 5,
+                    "width": 345,
+                  }
+            }>
+            <ElevatedView
+                elevation={4}
+                style={
+                    Array [
+                        Object {
+                          "alignItems": "stretch",
+                          "backgroundColor": "white",
+                          "justifyContent": "space-between",
+                          "margin": 20,
+                          "marginBottom": 15,
+                          "marginTop": 0,
+                        },
+                        Object {
+                          "alignItems": "center",
+                          "backgroundColor": "white",
+                          "justifyContent": "space-between",
+                          "margin": 0,
+                        },
+                      ]
+                }>
+                <View
+                    style={
+                        Array [
+                            Object {
+                              "alignItems": "stretch",
+                              "alignSelf": "stretch",
+                              "flexWrap": "wrap",
+                              "justifyContent": "space-between",
+                              "paddingHorizontal": 10,
+                              "paddingVertical": 15,
+                            },
+                          ]
+                    }>
+                    <View
+                        style={
+                            Object {
+                                "alignItems": "stretch",
+                                "flexDirection": "row",
+                                "justifyContent": "space-between",
+                              }
+                        }>
+                        <View
+                            style={
+                                Object {
+                                    "flexDirection": "column",
+                                    "justifyContent": "space-between",
+                                  }
+                            }>
+                            <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail">
+                                Wilgotność
+                            </Text>
+                            <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail"
+                                style={
+                                    Object {
+                                        "fontSize": 18,
+                                        "marginTop": 1,
+                                      }
+                                }>
+                                9.24
+                                 
+                                %
+                            </Text>
+                        </View>
+                        <View
+                            style={
+                                Object {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                            }>
+                            <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail">
+                                <Icon
+                                    allowFontScaling={false}
+                                    color="#95cfda"
+                                    name="rain"
+                                    size={28} />
+                            </Text>
+                        </View>
+                    </View>
+                </View>
+            </ElevatedView>
+        </View>
+        <View
+            style={
+                Object {
+                    "marginBottom": 0,
+                    "marginHorizontal": 5,
+                    "paddingTop": 5,
+                    "width": 345,
+                  }
+            }>
+            <ElevatedView
+                elevation={4}
+                style={
+                    Array [
+                        Object {
+                          "alignItems": "stretch",
+                          "backgroundColor": "white",
+                          "justifyContent": "space-between",
+                          "margin": 20,
+                          "marginBottom": 15,
+                          "marginTop": 0,
+                        },
+                        Object {
+                          "alignItems": "center",
+                          "backgroundColor": "white",
+                          "justifyContent": "space-between",
+                          "margin": 0,
+                        },
+                      ]
+                }>
+                <View
+                    style={
+                        Array [
+                            Object {
+                              "alignItems": "stretch",
+                              "alignSelf": "stretch",
+                              "flexWrap": "wrap",
+                              "justifyContent": "space-between",
+                              "paddingHorizontal": 10,
+                              "paddingVertical": 15,
+                            },
+                          ]
+                    }>
+                    <View
+                        style={
+                            Object {
+                                "alignItems": "stretch",
+                                "flexDirection": "row",
+                                "justifyContent": "space-between",
+                              }
+                        }>
+                        <View
+                            style={
+                                Object {
+                                    "flexDirection": "column",
+                                    "justifyContent": "space-between",
+                                  }
+                            }>
+                            <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail">
+                                Wiatr
+                            </Text>
+                            <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail"
+                                style={
+                                    Object {
+                                        "fontSize": 18,
+                                        "marginTop": 1,
+                                      }
+                                }>
+                                12.22
+                                 
+                                 m/s
+                            </Text>
+                        </View>
+                        <View
+                            style={
+                                Object {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                            }>
+                            <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail">
+                                <Icon
+                                    allowFontScaling={false}
+                                    color="#95cfda"
+                                    name="wind"
+                                    size={28} />
+                            </Text>
+                        </View>
+                    </View>
+                </View>
+            </ElevatedView>
+        </View>
+        <View
+            style={
+                Object {
+                    "marginBottom": 0,
+                    "marginHorizontal": 5,
+                    "paddingTop": 5,
+                    "width": 345,
+                  }
+            }>
+            <ElevatedView
+                elevation={4}
+                style={
+                    Array [
+                        Object {
+                          "alignItems": "stretch",
+                          "backgroundColor": "white",
+                          "justifyContent": "space-between",
+                          "margin": 20,
+                          "marginBottom": 15,
+                          "marginTop": 0,
+                        },
+                        Object {
+                          "alignItems": "center",
+                          "backgroundColor": "white",
+                          "justifyContent": "space-between",
+                          "margin": 0,
+                        },
+                      ]
+                }>
+                <View
+                    style={
+                        Array [
+                            Object {
+                              "alignItems": "stretch",
+                              "alignSelf": "stretch",
+                              "flexWrap": "wrap",
+                              "justifyContent": "space-between",
+                              "paddingHorizontal": 10,
+                              "paddingVertical": 15,
+                            },
+                          ]
+                    }>
+                    <View
+                        style={
+                            Object {
+                                "alignItems": "stretch",
+                                "flexDirection": "row",
+                                "justifyContent": "space-between",
+                              }
+                        }>
+                        <View
+                            style={
+                                Object {
+                                    "flexDirection": "column",
+                                    "justifyContent": "space-between",
+                                  }
+                            }>
+                            <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail">
+                                Temperatura
+                            </Text>
+                            <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail"
+                                style={
+                                    Object {
+                                        "fontSize": 18,
+                                        "marginTop": 1,
+                                      }
+                                }>
+                                0.43
+                                 
+                                °C
+                            </Text>
+                        </View>
+                        <View
+                            style={
+                                Object {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                            }>
+                            <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail">
+                                <Icon
+                                    allowFontScaling={false}
+                                    color="#95cfda"
+                                    name="thermometer"
+                                    size={28} />
+                            </Text>
+                        </View>
+                    </View>
+                </View>
+            </ElevatedView>
+        </View>
+        <View
+            style={
+                Object {
+                    "marginBottom": 0,
+                    "marginHorizontal": 5,
+                    "paddingTop": 5,
+                    "width": 345,
+                  }
+            }>
+            <ElevatedView
+                elevation={4}
+                style={
+                    Array [
+                        Object {
+                          "alignItems": "stretch",
+                          "backgroundColor": "white",
+                          "justifyContent": "space-between",
+                          "margin": 20,
+                          "marginBottom": 15,
+                          "marginTop": 0,
+                        },
+                        Object {
+                          "alignItems": "center",
+                          "backgroundColor": "white",
+                          "justifyContent": "space-between",
+                          "margin": 0,
+                        },
+                      ]
+                }>
+                <View
+                    style={
+                        Array [
+                            Object {
+                              "alignItems": "stretch",
+                              "alignSelf": "stretch",
+                              "flexWrap": "wrap",
+                              "justifyContent": "space-between",
+                              "paddingHorizontal": 10,
+                              "paddingVertical": 15,
+                            },
+                          ]
+                    }>
+                    <View
+                        style={
+                            Object {
+                                "alignItems": "stretch",
+                                "flexDirection": "row",
+                                "justifyContent": "space-between",
+                              }
+                        }>
+                        <View
+                            style={
+                                Object {
+                                    "flexDirection": "column",
+                                    "justifyContent": "space-between",
+                                  }
+                            }>
+                            <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail">
+                                Ciśnienie
+                            </Text>
+                            <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail"
+                                style={
+                                    Object {
+                                        "fontSize": 18,
+                                        "marginTop": 1,
+                                      }
+                                }>
+                                122.26
+                                 
+                                hPa
+                            </Text>
+                        </View>
+                        <View
+                            style={
+                                Object {
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                  }
+                            }>
+                            <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail">
+                                <Icon
+                                    allowFontScaling={false}
+                                    color="#95cfda"
+                                    name="pressure"
+                                    size={28} />
+                            </Text>
+                        </View>
+                    </View>
+                </View>
+            </ElevatedView>
+        </View>
+    </View>
 </View>,
   "nodes": Array [
     <View
-      style={Object {}}>
-      <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+      onLayout={[Function]}
+      style={
+            Object {
+                  "alignItems": "stretch",
+                }
+      }>
+      <View
+            style={
+                  Array [
+                        Object {
+                          "alignItems": "stretch",
+                          "backgroundColor": "white",
+                          "borderRadius": 3,
+                        },
+                        Object {
+                          "paddingTop": 5,
+                        },
+                      ]
+            }>
+            <ElevatedView
+                  elevation={4}
+                  style={
+                        Array [
+                              Object {
+                                "alignItems": "stretch",
+                                "backgroundColor": "white",
+                                "justifyContent": "space-between",
+                                "margin": 20,
+                                "marginBottom": 15,
+                                "marginTop": 0,
+                              },
+                              Object {
+                                "marginBottom": 15,
+                              },
+                            ]
+                  }>
+                  <View
+                        style={
+                              Object {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                    "justifyContent": "space-between",
+                                    "padding": 10,
+                                  }
+                        }>
+                        <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail">
+                              Pył zawieszony (PM10)
+                        </Text>
+                        <View
+                              style={
+                                    Object {
+                                          "alignItems": "center",
+                                          "flexDirection": "row",
+                                        }
+                              }>
+                              <Text
+                                    accessible={true}
+                                    allowFontScaling={true}
+                                    ellipsizeMode="tail"
+                                    style={
+                                          Object {
+                                                "fontSize": 18,
+                                              }
+                                    }>
+                                    5.2788
+                                     
+                              </Text>
+                              <View
+                                    backgroundColor="#57b108"
+                                    style={
+                                          Array [
+                                                Object {
+                                                  "alignItems": "center",
+                                                  "borderRadius": 30,
+                                                  "height": 15,
+                                                  "justifyContent": "center",
+                                                  "overflow": "hidden",
+                                                  "width": 15,
+                                                },
+                                                Object {
+                                                  "marginLeft": 5,
+                                                },
+                                              ]
+                                    }>
+                                    <View
+                                          style={
+                                                Object {
+                                                      "alignItems": "center",
+                                                      "justifyContent": "center",
+                                                    }
+                                          } />
+                              </View>
+                        </View>
+                  </View>
+            </ElevatedView>
+      </View>
+      <View
+            style={
+                  Array [
+                        Object {
+                          "alignItems": "stretch",
+                          "backgroundColor": "white",
+                          "borderRadius": 3,
+                        },
+                        Object {
+                          "paddingTop": 5,
+                        },
+                      ]
+            }>
+            <ElevatedView
+                  elevation={4}
+                  style={
+                        Array [
+                              Object {
+                                "alignItems": "stretch",
+                                "backgroundColor": "white",
+                                "justifyContent": "space-between",
+                                "margin": 20,
+                                "marginBottom": 15,
+                                "marginTop": 0,
+                              },
+                              Object {
+                                "marginBottom": 15,
+                              },
+                            ]
+                  }>
+                  <View
+                        style={
+                              Object {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                    "justifyContent": "space-between",
+                                    "padding": 10,
+                                  }
+                        }>
+                        <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail">
+                              Dwutlenek Azotu
+                        </Text>
+                        <View
+                              style={
+                                    Object {
+                                          "alignItems": "center",
+                                          "flexDirection": "row",
+                                        }
+                              }>
+                              <Text
+                                    accessible={true}
+                                    allowFontScaling={true}
+                                    ellipsizeMode="tail"
+                                    style={
+                                          Object {
+                                                "fontSize": 18,
+                                              }
+                                    }>
+                                    7.2131
+                                     
+                              </Text>
+                              <View
+                                    backgroundColor="#57b108"
+                                    style={
+                                          Array [
+                                                Object {
+                                                  "alignItems": "center",
+                                                  "borderRadius": 30,
+                                                  "height": 15,
+                                                  "justifyContent": "center",
+                                                  "overflow": "hidden",
+                                                  "width": 15,
+                                                },
+                                                Object {
+                                                  "marginLeft": 5,
+                                                },
+                                              ]
+                                    }>
+                                    <View
+                                          style={
+                                                Object {
+                                                      "alignItems": "center",
+                                                      "justifyContent": "center",
+                                                    }
+                                          } />
+                              </View>
+                        </View>
+                  </View>
+            </ElevatedView>
+      </View>
+      <View
+            style={
+                  Array [
+                        Object {
+                          "alignItems": "stretch",
+                          "backgroundColor": "white",
+                          "borderRadius": 3,
+                        },
+                        Object {
+                          "paddingTop": 5,
+                        },
+                      ]
+            }>
+            <ElevatedView
+                  elevation={4}
+                  style={
+                        Array [
+                              Object {
+                                "alignItems": "stretch",
+                                "backgroundColor": "white",
+                                "justifyContent": "space-between",
+                                "margin": 20,
+                                "marginBottom": 15,
+                                "marginTop": 0,
+                              },
+                              Object {
+                                "marginBottom": 15,
+                              },
+                            ]
+                  }>
+                  <View
+                        style={
+                              Object {
+                                    "alignItems": "center",
+                                    "flexDirection": "row",
+                                    "justifyContent": "space-between",
+                                    "padding": 10,
+                                  }
+                        }>
+                        <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail">
+                              Dwutlenek Siarki
+                        </Text>
+                        <View
+                              style={
+                                    Object {
+                                          "alignItems": "center",
+                                          "flexDirection": "row",
+                                        }
+                              }>
+                              <Text
+                                    accessible={true}
+                                    allowFontScaling={true}
+                                    ellipsizeMode="tail"
+                                    style={
+                                          Object {
+                                                "fontSize": 18,
+                                              }
+                                    }>
+                                    2.299
+                                     
+                              </Text>
+                              <View
+                                    backgroundColor="#57b108"
+                                    style={
+                                          Array [
+                                                Object {
+                                                  "alignItems": "center",
+                                                  "borderRadius": 30,
+                                                  "height": 15,
+                                                  "justifyContent": "center",
+                                                  "overflow": "hidden",
+                                                  "width": 15,
+                                                },
+                                                Object {
+                                                  "marginLeft": 5,
+                                                },
+                                              ]
+                                    }>
+                                    <View
+                                          style={
+                                                Object {
+                                                      "alignItems": "center",
+                                                      "justifyContent": "center",
+                                                    }
+                                          } />
+                              </View>
+                        </View>
+                  </View>
+            </ElevatedView>
+      </View>
+      <View
             style={
                   Object {
-                        "backgroundColor": "#ccc",
-                        "color": "#363636",
-                        "fontSize": 16,
-                        "paddingHorizontal": 10,
-                        "paddingVertical": 6,
+                        "alignItems": "flex-start",
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "justifyContent": "space-between",
+                        "marginHorizontal": 15,
                       }
             }>
-            Tlenek Węgla
-            : 
-            0.1
-      </Text>
-      <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-                  Object {
-                        "backgroundColor": "#ccc",
-                        "color": "#363636",
-                        "fontSize": 16,
-                        "paddingHorizontal": 10,
-                        "paddingVertical": 6,
-                      }
-            }>
-            Wilgotność
-            : 
-            88.2461
-            %
-      </Text>
+            <View
+                  style={
+                        Object {
+                              "marginBottom": 0,
+                              "marginHorizontal": 5,
+                              "paddingTop": 5,
+                              "width": 345,
+                            }
+                  }>
+                  <ElevatedView
+                        elevation={4}
+                        style={
+                              Array [
+                                    Object {
+                                      "alignItems": "stretch",
+                                      "backgroundColor": "white",
+                                      "justifyContent": "space-between",
+                                      "margin": 20,
+                                      "marginBottom": 15,
+                                      "marginTop": 0,
+                                    },
+                                    Object {
+                                      "alignItems": "center",
+                                      "backgroundColor": "white",
+                                      "justifyContent": "space-between",
+                                      "margin": 0,
+                                    },
+                                  ]
+                        }>
+                        <View
+                              style={
+                                    Array [
+                                          Object {
+                                            "alignItems": "stretch",
+                                            "alignSelf": "stretch",
+                                            "flexWrap": "wrap",
+                                            "justifyContent": "space-between",
+                                            "paddingHorizontal": 10,
+                                            "paddingVertical": 15,
+                                          },
+                                        ]
+                              }>
+                              <View
+                                    style={
+                                          Object {
+                                                "alignItems": "stretch",
+                                                "flexDirection": "row",
+                                                "justifyContent": "space-between",
+                                              }
+                                    }>
+                                    <View
+                                          style={
+                                                Object {
+                                                      "flexDirection": "column",
+                                                      "justifyContent": "space-between",
+                                                    }
+                                          }>
+                                          <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail">
+                                                Wilgotność
+                                          </Text>
+                                          <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail"
+                                                style={
+                                                      Object {
+                                                            "fontSize": 18,
+                                                            "marginTop": 1,
+                                                          }
+                                                }>
+                                                9.24
+                                                 
+                                                %
+                                          </Text>
+                                    </View>
+                                    <View
+                                          style={
+                                                Object {
+                                                      "alignItems": "center",
+                                                      "justifyContent": "center",
+                                                    }
+                                          }>
+                                          <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail">
+                                                <Icon
+                                                      allowFontScaling={false}
+                                                      color="#95cfda"
+                                                      name="rain"
+                                                      size={28} />
+                                          </Text>
+                                    </View>
+                              </View>
+                        </View>
+                  </ElevatedView>
+            </View>
+            <View
+                  style={
+                        Object {
+                              "marginBottom": 0,
+                              "marginHorizontal": 5,
+                              "paddingTop": 5,
+                              "width": 345,
+                            }
+                  }>
+                  <ElevatedView
+                        elevation={4}
+                        style={
+                              Array [
+                                    Object {
+                                      "alignItems": "stretch",
+                                      "backgroundColor": "white",
+                                      "justifyContent": "space-between",
+                                      "margin": 20,
+                                      "marginBottom": 15,
+                                      "marginTop": 0,
+                                    },
+                                    Object {
+                                      "alignItems": "center",
+                                      "backgroundColor": "white",
+                                      "justifyContent": "space-between",
+                                      "margin": 0,
+                                    },
+                                  ]
+                        }>
+                        <View
+                              style={
+                                    Array [
+                                          Object {
+                                            "alignItems": "stretch",
+                                            "alignSelf": "stretch",
+                                            "flexWrap": "wrap",
+                                            "justifyContent": "space-between",
+                                            "paddingHorizontal": 10,
+                                            "paddingVertical": 15,
+                                          },
+                                        ]
+                              }>
+                              <View
+                                    style={
+                                          Object {
+                                                "alignItems": "stretch",
+                                                "flexDirection": "row",
+                                                "justifyContent": "space-between",
+                                              }
+                                    }>
+                                    <View
+                                          style={
+                                                Object {
+                                                      "flexDirection": "column",
+                                                      "justifyContent": "space-between",
+                                                    }
+                                          }>
+                                          <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail">
+                                                Wiatr
+                                          </Text>
+                                          <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail"
+                                                style={
+                                                      Object {
+                                                            "fontSize": 18,
+                                                            "marginTop": 1,
+                                                          }
+                                                }>
+                                                12.22
+                                                 
+                                                 m/s
+                                          </Text>
+                                    </View>
+                                    <View
+                                          style={
+                                                Object {
+                                                      "alignItems": "center",
+                                                      "justifyContent": "center",
+                                                    }
+                                          }>
+                                          <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail">
+                                                <Icon
+                                                      allowFontScaling={false}
+                                                      color="#95cfda"
+                                                      name="wind"
+                                                      size={28} />
+                                          </Text>
+                                    </View>
+                              </View>
+                        </View>
+                  </ElevatedView>
+            </View>
+            <View
+                  style={
+                        Object {
+                              "marginBottom": 0,
+                              "marginHorizontal": 5,
+                              "paddingTop": 5,
+                              "width": 345,
+                            }
+                  }>
+                  <ElevatedView
+                        elevation={4}
+                        style={
+                              Array [
+                                    Object {
+                                      "alignItems": "stretch",
+                                      "backgroundColor": "white",
+                                      "justifyContent": "space-between",
+                                      "margin": 20,
+                                      "marginBottom": 15,
+                                      "marginTop": 0,
+                                    },
+                                    Object {
+                                      "alignItems": "center",
+                                      "backgroundColor": "white",
+                                      "justifyContent": "space-between",
+                                      "margin": 0,
+                                    },
+                                  ]
+                        }>
+                        <View
+                              style={
+                                    Array [
+                                          Object {
+                                            "alignItems": "stretch",
+                                            "alignSelf": "stretch",
+                                            "flexWrap": "wrap",
+                                            "justifyContent": "space-between",
+                                            "paddingHorizontal": 10,
+                                            "paddingVertical": 15,
+                                          },
+                                        ]
+                              }>
+                              <View
+                                    style={
+                                          Object {
+                                                "alignItems": "stretch",
+                                                "flexDirection": "row",
+                                                "justifyContent": "space-between",
+                                              }
+                                    }>
+                                    <View
+                                          style={
+                                                Object {
+                                                      "flexDirection": "column",
+                                                      "justifyContent": "space-between",
+                                                    }
+                                          }>
+                                          <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail">
+                                                Temperatura
+                                          </Text>
+                                          <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail"
+                                                style={
+                                                      Object {
+                                                            "fontSize": 18,
+                                                            "marginTop": 1,
+                                                          }
+                                                }>
+                                                0.43
+                                                 
+                                                °C
+                                          </Text>
+                                    </View>
+                                    <View
+                                          style={
+                                                Object {
+                                                      "alignItems": "center",
+                                                      "justifyContent": "center",
+                                                    }
+                                          }>
+                                          <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail">
+                                                <Icon
+                                                      allowFontScaling={false}
+                                                      color="#95cfda"
+                                                      name="thermometer"
+                                                      size={28} />
+                                          </Text>
+                                    </View>
+                              </View>
+                        </View>
+                  </ElevatedView>
+            </View>
+            <View
+                  style={
+                        Object {
+                              "marginBottom": 0,
+                              "marginHorizontal": 5,
+                              "paddingTop": 5,
+                              "width": 345,
+                            }
+                  }>
+                  <ElevatedView
+                        elevation={4}
+                        style={
+                              Array [
+                                    Object {
+                                      "alignItems": "stretch",
+                                      "backgroundColor": "white",
+                                      "justifyContent": "space-between",
+                                      "margin": 20,
+                                      "marginBottom": 15,
+                                      "marginTop": 0,
+                                    },
+                                    Object {
+                                      "alignItems": "center",
+                                      "backgroundColor": "white",
+                                      "justifyContent": "space-between",
+                                      "margin": 0,
+                                    },
+                                  ]
+                        }>
+                        <View
+                              style={
+                                    Array [
+                                          Object {
+                                            "alignItems": "stretch",
+                                            "alignSelf": "stretch",
+                                            "flexWrap": "wrap",
+                                            "justifyContent": "space-between",
+                                            "paddingHorizontal": 10,
+                                            "paddingVertical": 15,
+                                          },
+                                        ]
+                              }>
+                              <View
+                                    style={
+                                          Object {
+                                                "alignItems": "stretch",
+                                                "flexDirection": "row",
+                                                "justifyContent": "space-between",
+                                              }
+                                    }>
+                                    <View
+                                          style={
+                                                Object {
+                                                      "flexDirection": "column",
+                                                      "justifyContent": "space-between",
+                                                    }
+                                          }>
+                                          <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail">
+                                                Ciśnienie
+                                          </Text>
+                                          <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail"
+                                                style={
+                                                      Object {
+                                                            "fontSize": 18,
+                                                            "marginTop": 1,
+                                                          }
+                                                }>
+                                                122.26
+                                                 
+                                                hPa
+                                          </Text>
+                                    </View>
+                                    <View
+                                          style={
+                                                Object {
+                                                      "alignItems": "center",
+                                                      "justifyContent": "center",
+                                                    }
+                                          }>
+                                          <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail">
+                                                <Icon
+                                                      allowFontScaling={false}
+                                                      color="#95cfda"
+                                                      name="pressure"
+                                                      size={28} />
+                                          </Text>
+                                    </View>
+                              </View>
+                        </View>
+                  </ElevatedView>
+            </View>
+      </View>
 </View>,
   ],
   "options": Object {},
@@ -94,10 +1414,34 @@ ShallowWrapper {
         dataset={
                 Object {
                         "co": Object {
-                          "v": 0.1,
+                          "v": 0.223,
                         },
                         "h": Object {
-                          "v": 88.2461,
+                          "v": 9.2444,
+                        },
+                        "no2": Object {
+                          "v": 7.2131,
+                        },
+                        "o3": Object {
+                          "v": 4.2242,
+                        },
+                        "p": Object {
+                          "v": 122.2567,
+                        },
+                        "pm10": Object {
+                          "v": 5.2788,
+                        },
+                        "so2": Object {
+                          "v": 2.299,
+                        },
+                        "t": Object {
+                          "v": 0.434,
+                        },
+                        "w": Object {
+                          "v": 12.2234,
+                        },
+                        "wd": Object {
+                          "v": 20.201,
                         },
                       }
         } />,
@@ -107,18 +1451,46 @@ ShallowWrapper {
       "_instance": PollutionValues {
         "_reactInternalInstance": [Circular],
         "context": Object {},
+        "onLayout": [Function],
         "props": Object {
           "dataset": Object {
             "co": Object {
-              "v": 0.1,
+              "v": 0.223,
             },
             "h": Object {
-              "v": 88.2461,
+              "v": 9.2444,
+            },
+            "no2": Object {
+              "v": 7.2131,
+            },
+            "o3": Object {
+              "v": 4.2242,
+            },
+            "p": Object {
+              "v": 122.2567,
+            },
+            "pm10": Object {
+              "v": 5.2788,
+            },
+            "so2": Object {
+              "v": 2.299,
+            },
+            "t": Object {
+              "v": 0.434,
+            },
+            "w": Object {
+              "v": 12.2234,
+            },
+            "wd": Object {
+              "v": 20.201,
             },
           },
         },
         "refs": Object {},
-        "state": null,
+        "state": Object {
+          "height": 1334,
+          "width": 750,
+        },
         "updater": Object {
           "enqueueCallback": [Function],
           "enqueueCallbackInternal": [Function],
@@ -138,81 +1510,1401 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <View
-          style={Object {}}>
-          <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
+          onLayout={[Function]}
+          style={
+                    Object {
+                              "alignItems": "stretch",
+                            }
+          }>
+          <View
+                    style={
+                              Array [
+                                        Object {
+                                          "alignItems": "stretch",
+                                          "backgroundColor": "white",
+                                          "borderRadius": 3,
+                                        },
+                                        Object {
+                                          "paddingTop": 5,
+                                        },
+                                      ]
+                    }>
+                    <ElevatedView
+                              elevation={4}
+                              style={
+                                        Array [
+                                                  Object {
+                                                    "alignItems": "stretch",
+                                                    "backgroundColor": "white",
+                                                    "justifyContent": "space-between",
+                                                    "margin": 20,
+                                                    "marginBottom": 15,
+                                                    "marginTop": 0,
+                                                  },
+                                                  Object {
+                                                    "marginBottom": 15,
+                                                  },
+                                                ]
+                              }>
+                              <View
+                                        style={
+                                                  Object {
+                                                            "alignItems": "center",
+                                                            "flexDirection": "row",
+                                                            "justifyContent": "space-between",
+                                                            "padding": 10,
+                                                          }
+                                        }>
+                                        <Text
+                                                  accessible={true}
+                                                  allowFontScaling={true}
+                                                  ellipsizeMode="tail">
+                                                  Pył zawieszony (PM10)
+                                        </Text>
+                                        <View
+                                                  style={
+                                                            Object {
+                                                                      "alignItems": "center",
+                                                                      "flexDirection": "row",
+                                                                    }
+                                                  }>
+                                                  <Text
+                                                            accessible={true}
+                                                            allowFontScaling={true}
+                                                            ellipsizeMode="tail"
+                                                            style={
+                                                                      Object {
+                                                                                "fontSize": 18,
+                                                                              }
+                                                            }>
+                                                            5.2788
+                                                             
+                                                  </Text>
+                                                  <View
+                                                            backgroundColor="#57b108"
+                                                            style={
+                                                                      Array [
+                                                                                Object {
+                                                                                  "alignItems": "center",
+                                                                                  "borderRadius": 30,
+                                                                                  "height": 15,
+                                                                                  "justifyContent": "center",
+                                                                                  "overflow": "hidden",
+                                                                                  "width": 15,
+                                                                                },
+                                                                                Object {
+                                                                                  "marginLeft": 5,
+                                                                                },
+                                                                              ]
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      } />
+                                                  </View>
+                                        </View>
+                              </View>
+                    </ElevatedView>
+          </View>
+          <View
+                    style={
+                              Array [
+                                        Object {
+                                          "alignItems": "stretch",
+                                          "backgroundColor": "white",
+                                          "borderRadius": 3,
+                                        },
+                                        Object {
+                                          "paddingTop": 5,
+                                        },
+                                      ]
+                    }>
+                    <ElevatedView
+                              elevation={4}
+                              style={
+                                        Array [
+                                                  Object {
+                                                    "alignItems": "stretch",
+                                                    "backgroundColor": "white",
+                                                    "justifyContent": "space-between",
+                                                    "margin": 20,
+                                                    "marginBottom": 15,
+                                                    "marginTop": 0,
+                                                  },
+                                                  Object {
+                                                    "marginBottom": 15,
+                                                  },
+                                                ]
+                              }>
+                              <View
+                                        style={
+                                                  Object {
+                                                            "alignItems": "center",
+                                                            "flexDirection": "row",
+                                                            "justifyContent": "space-between",
+                                                            "padding": 10,
+                                                          }
+                                        }>
+                                        <Text
+                                                  accessible={true}
+                                                  allowFontScaling={true}
+                                                  ellipsizeMode="tail">
+                                                  Dwutlenek Azotu
+                                        </Text>
+                                        <View
+                                                  style={
+                                                            Object {
+                                                                      "alignItems": "center",
+                                                                      "flexDirection": "row",
+                                                                    }
+                                                  }>
+                                                  <Text
+                                                            accessible={true}
+                                                            allowFontScaling={true}
+                                                            ellipsizeMode="tail"
+                                                            style={
+                                                                      Object {
+                                                                                "fontSize": 18,
+                                                                              }
+                                                            }>
+                                                            7.2131
+                                                             
+                                                  </Text>
+                                                  <View
+                                                            backgroundColor="#57b108"
+                                                            style={
+                                                                      Array [
+                                                                                Object {
+                                                                                  "alignItems": "center",
+                                                                                  "borderRadius": 30,
+                                                                                  "height": 15,
+                                                                                  "justifyContent": "center",
+                                                                                  "overflow": "hidden",
+                                                                                  "width": 15,
+                                                                                },
+                                                                                Object {
+                                                                                  "marginLeft": 5,
+                                                                                },
+                                                                              ]
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      } />
+                                                  </View>
+                                        </View>
+                              </View>
+                    </ElevatedView>
+          </View>
+          <View
+                    style={
+                              Array [
+                                        Object {
+                                          "alignItems": "stretch",
+                                          "backgroundColor": "white",
+                                          "borderRadius": 3,
+                                        },
+                                        Object {
+                                          "paddingTop": 5,
+                                        },
+                                      ]
+                    }>
+                    <ElevatedView
+                              elevation={4}
+                              style={
+                                        Array [
+                                                  Object {
+                                                    "alignItems": "stretch",
+                                                    "backgroundColor": "white",
+                                                    "justifyContent": "space-between",
+                                                    "margin": 20,
+                                                    "marginBottom": 15,
+                                                    "marginTop": 0,
+                                                  },
+                                                  Object {
+                                                    "marginBottom": 15,
+                                                  },
+                                                ]
+                              }>
+                              <View
+                                        style={
+                                                  Object {
+                                                            "alignItems": "center",
+                                                            "flexDirection": "row",
+                                                            "justifyContent": "space-between",
+                                                            "padding": 10,
+                                                          }
+                                        }>
+                                        <Text
+                                                  accessible={true}
+                                                  allowFontScaling={true}
+                                                  ellipsizeMode="tail">
+                                                  Dwutlenek Siarki
+                                        </Text>
+                                        <View
+                                                  style={
+                                                            Object {
+                                                                      "alignItems": "center",
+                                                                      "flexDirection": "row",
+                                                                    }
+                                                  }>
+                                                  <Text
+                                                            accessible={true}
+                                                            allowFontScaling={true}
+                                                            ellipsizeMode="tail"
+                                                            style={
+                                                                      Object {
+                                                                                "fontSize": 18,
+                                                                              }
+                                                            }>
+                                                            2.299
+                                                             
+                                                  </Text>
+                                                  <View
+                                                            backgroundColor="#57b108"
+                                                            style={
+                                                                      Array [
+                                                                                Object {
+                                                                                  "alignItems": "center",
+                                                                                  "borderRadius": 30,
+                                                                                  "height": 15,
+                                                                                  "justifyContent": "center",
+                                                                                  "overflow": "hidden",
+                                                                                  "width": 15,
+                                                                                },
+                                                                                Object {
+                                                                                  "marginLeft": 5,
+                                                                                },
+                                                                              ]
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      } />
+                                                  </View>
+                                        </View>
+                              </View>
+                    </ElevatedView>
+          </View>
+          <View
                     style={
                               Object {
-                                        "backgroundColor": "#ccc",
-                                        "color": "#363636",
-                                        "fontSize": 16,
-                                        "paddingHorizontal": 10,
-                                        "paddingVertical": 6,
+                                        "alignItems": "flex-start",
+                                        "flexDirection": "row",
+                                        "flexWrap": "wrap",
+                                        "justifyContent": "space-between",
+                                        "marginHorizontal": 15,
                                       }
                     }>
-                    Tlenek Węgla
-                    : 
-                    0.1
-          </Text>
-          <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                              Object {
-                                        "backgroundColor": "#ccc",
-                                        "color": "#363636",
-                                        "fontSize": 16,
-                                        "paddingHorizontal": 10,
-                                        "paddingVertical": 6,
-                                      }
-                    }>
-                    Wilgotność
-                    : 
-                    88.2461
-                    %
-          </Text>
+                    <View
+                              style={
+                                        Object {
+                                                  "marginBottom": 0,
+                                                  "marginHorizontal": 5,
+                                                  "paddingTop": 5,
+                                                  "width": 345,
+                                                }
+                              }>
+                              <ElevatedView
+                                        elevation={4}
+                                        style={
+                                                  Array [
+                                                            Object {
+                                                              "alignItems": "stretch",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 20,
+                                                              "marginBottom": 15,
+                                                              "marginTop": 0,
+                                                            },
+                                                            Object {
+                                                              "alignItems": "center",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 0,
+                                                            },
+                                                          ]
+                                        }>
+                                        <View
+                                                  style={
+                                                            Array [
+                                                                      Object {
+                                                                        "alignItems": "stretch",
+                                                                        "alignSelf": "stretch",
+                                                                        "flexWrap": "wrap",
+                                                                        "justifyContent": "space-between",
+                                                                        "paddingHorizontal": 10,
+                                                                        "paddingVertical": 15,
+                                                                      },
+                                                                    ]
+                                                  }>
+                                                  <View
+                                                            style={
+                                                                      Object {
+                                                                                "alignItems": "stretch",
+                                                                                "flexDirection": "row",
+                                                                                "justifyContent": "space-between",
+                                                                              }
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "flexDirection": "column",
+                                                                                          "justifyContent": "space-between",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                Wilgotność
+                                                                      </Text>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail"
+                                                                                style={
+                                                                                          Object {
+                                                                                                    "fontSize": 18,
+                                                                                                    "marginTop": 1,
+                                                                                                  }
+                                                                                }>
+                                                                                9.24
+                                                                                 
+                                                                                %
+                                                                      </Text>
+                                                            </View>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                <Icon
+                                                                                          allowFontScaling={false}
+                                                                                          color="#95cfda"
+                                                                                          name="rain"
+                                                                                          size={28} />
+                                                                      </Text>
+                                                            </View>
+                                                  </View>
+                                        </View>
+                              </ElevatedView>
+                    </View>
+                    <View
+                              style={
+                                        Object {
+                                                  "marginBottom": 0,
+                                                  "marginHorizontal": 5,
+                                                  "paddingTop": 5,
+                                                  "width": 345,
+                                                }
+                              }>
+                              <ElevatedView
+                                        elevation={4}
+                                        style={
+                                                  Array [
+                                                            Object {
+                                                              "alignItems": "stretch",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 20,
+                                                              "marginBottom": 15,
+                                                              "marginTop": 0,
+                                                            },
+                                                            Object {
+                                                              "alignItems": "center",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 0,
+                                                            },
+                                                          ]
+                                        }>
+                                        <View
+                                                  style={
+                                                            Array [
+                                                                      Object {
+                                                                        "alignItems": "stretch",
+                                                                        "alignSelf": "stretch",
+                                                                        "flexWrap": "wrap",
+                                                                        "justifyContent": "space-between",
+                                                                        "paddingHorizontal": 10,
+                                                                        "paddingVertical": 15,
+                                                                      },
+                                                                    ]
+                                                  }>
+                                                  <View
+                                                            style={
+                                                                      Object {
+                                                                                "alignItems": "stretch",
+                                                                                "flexDirection": "row",
+                                                                                "justifyContent": "space-between",
+                                                                              }
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "flexDirection": "column",
+                                                                                          "justifyContent": "space-between",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                Wiatr
+                                                                      </Text>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail"
+                                                                                style={
+                                                                                          Object {
+                                                                                                    "fontSize": 18,
+                                                                                                    "marginTop": 1,
+                                                                                                  }
+                                                                                }>
+                                                                                12.22
+                                                                                 
+                                                                                 m/s
+                                                                      </Text>
+                                                            </View>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                <Icon
+                                                                                          allowFontScaling={false}
+                                                                                          color="#95cfda"
+                                                                                          name="wind"
+                                                                                          size={28} />
+                                                                      </Text>
+                                                            </View>
+                                                  </View>
+                                        </View>
+                              </ElevatedView>
+                    </View>
+                    <View
+                              style={
+                                        Object {
+                                                  "marginBottom": 0,
+                                                  "marginHorizontal": 5,
+                                                  "paddingTop": 5,
+                                                  "width": 345,
+                                                }
+                              }>
+                              <ElevatedView
+                                        elevation={4}
+                                        style={
+                                                  Array [
+                                                            Object {
+                                                              "alignItems": "stretch",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 20,
+                                                              "marginBottom": 15,
+                                                              "marginTop": 0,
+                                                            },
+                                                            Object {
+                                                              "alignItems": "center",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 0,
+                                                            },
+                                                          ]
+                                        }>
+                                        <View
+                                                  style={
+                                                            Array [
+                                                                      Object {
+                                                                        "alignItems": "stretch",
+                                                                        "alignSelf": "stretch",
+                                                                        "flexWrap": "wrap",
+                                                                        "justifyContent": "space-between",
+                                                                        "paddingHorizontal": 10,
+                                                                        "paddingVertical": 15,
+                                                                      },
+                                                                    ]
+                                                  }>
+                                                  <View
+                                                            style={
+                                                                      Object {
+                                                                                "alignItems": "stretch",
+                                                                                "flexDirection": "row",
+                                                                                "justifyContent": "space-between",
+                                                                              }
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "flexDirection": "column",
+                                                                                          "justifyContent": "space-between",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                Temperatura
+                                                                      </Text>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail"
+                                                                                style={
+                                                                                          Object {
+                                                                                                    "fontSize": 18,
+                                                                                                    "marginTop": 1,
+                                                                                                  }
+                                                                                }>
+                                                                                0.43
+                                                                                 
+                                                                                °C
+                                                                      </Text>
+                                                            </View>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                <Icon
+                                                                                          allowFontScaling={false}
+                                                                                          color="#95cfda"
+                                                                                          name="thermometer"
+                                                                                          size={28} />
+                                                                      </Text>
+                                                            </View>
+                                                  </View>
+                                        </View>
+                              </ElevatedView>
+                    </View>
+                    <View
+                              style={
+                                        Object {
+                                                  "marginBottom": 0,
+                                                  "marginHorizontal": 5,
+                                                  "paddingTop": 5,
+                                                  "width": 345,
+                                                }
+                              }>
+                              <ElevatedView
+                                        elevation={4}
+                                        style={
+                                                  Array [
+                                                            Object {
+                                                              "alignItems": "stretch",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 20,
+                                                              "marginBottom": 15,
+                                                              "marginTop": 0,
+                                                            },
+                                                            Object {
+                                                              "alignItems": "center",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 0,
+                                                            },
+                                                          ]
+                                        }>
+                                        <View
+                                                  style={
+                                                            Array [
+                                                                      Object {
+                                                                        "alignItems": "stretch",
+                                                                        "alignSelf": "stretch",
+                                                                        "flexWrap": "wrap",
+                                                                        "justifyContent": "space-between",
+                                                                        "paddingHorizontal": 10,
+                                                                        "paddingVertical": 15,
+                                                                      },
+                                                                    ]
+                                                  }>
+                                                  <View
+                                                            style={
+                                                                      Object {
+                                                                                "alignItems": "stretch",
+                                                                                "flexDirection": "row",
+                                                                                "justifyContent": "space-between",
+                                                                              }
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "flexDirection": "column",
+                                                                                          "justifyContent": "space-between",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                Ciśnienie
+                                                                      </Text>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail"
+                                                                                style={
+                                                                                          Object {
+                                                                                                    "fontSize": 18,
+                                                                                                    "marginTop": 1,
+                                                                                                  }
+                                                                                }>
+                                                                                122.26
+                                                                                 
+                                                                                hPa
+                                                                      </Text>
+                                                            </View>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                <Icon
+                                                                                          allowFontScaling={false}
+                                                                                          color="#95cfda"
+                                                                                          name="pressure"
+                                                                                          size={28} />
+                                                                      </Text>
+                                                            </View>
+                                                  </View>
+                                        </View>
+                              </ElevatedView>
+                    </View>
+          </View>
 </View>,
         "_debugID": 2,
         "_renderedOutput": <View
-          style={Object {}}>
-          <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
+          onLayout={[Function]}
+          style={
+                    Object {
+                              "alignItems": "stretch",
+                            }
+          }>
+          <View
+                    style={
+                              Array [
+                                        Object {
+                                          "alignItems": "stretch",
+                                          "backgroundColor": "white",
+                                          "borderRadius": 3,
+                                        },
+                                        Object {
+                                          "paddingTop": 5,
+                                        },
+                                      ]
+                    }>
+                    <ElevatedView
+                              elevation={4}
+                              style={
+                                        Array [
+                                                  Object {
+                                                    "alignItems": "stretch",
+                                                    "backgroundColor": "white",
+                                                    "justifyContent": "space-between",
+                                                    "margin": 20,
+                                                    "marginBottom": 15,
+                                                    "marginTop": 0,
+                                                  },
+                                                  Object {
+                                                    "marginBottom": 15,
+                                                  },
+                                                ]
+                              }>
+                              <View
+                                        style={
+                                                  Object {
+                                                            "alignItems": "center",
+                                                            "flexDirection": "row",
+                                                            "justifyContent": "space-between",
+                                                            "padding": 10,
+                                                          }
+                                        }>
+                                        <Text
+                                                  accessible={true}
+                                                  allowFontScaling={true}
+                                                  ellipsizeMode="tail">
+                                                  Pył zawieszony (PM10)
+                                        </Text>
+                                        <View
+                                                  style={
+                                                            Object {
+                                                                      "alignItems": "center",
+                                                                      "flexDirection": "row",
+                                                                    }
+                                                  }>
+                                                  <Text
+                                                            accessible={true}
+                                                            allowFontScaling={true}
+                                                            ellipsizeMode="tail"
+                                                            style={
+                                                                      Object {
+                                                                                "fontSize": 18,
+                                                                              }
+                                                            }>
+                                                            5.2788
+                                                             
+                                                  </Text>
+                                                  <View
+                                                            backgroundColor="#57b108"
+                                                            style={
+                                                                      Array [
+                                                                                Object {
+                                                                                  "alignItems": "center",
+                                                                                  "borderRadius": 30,
+                                                                                  "height": 15,
+                                                                                  "justifyContent": "center",
+                                                                                  "overflow": "hidden",
+                                                                                  "width": 15,
+                                                                                },
+                                                                                Object {
+                                                                                  "marginLeft": 5,
+                                                                                },
+                                                                              ]
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      } />
+                                                  </View>
+                                        </View>
+                              </View>
+                    </ElevatedView>
+          </View>
+          <View
+                    style={
+                              Array [
+                                        Object {
+                                          "alignItems": "stretch",
+                                          "backgroundColor": "white",
+                                          "borderRadius": 3,
+                                        },
+                                        Object {
+                                          "paddingTop": 5,
+                                        },
+                                      ]
+                    }>
+                    <ElevatedView
+                              elevation={4}
+                              style={
+                                        Array [
+                                                  Object {
+                                                    "alignItems": "stretch",
+                                                    "backgroundColor": "white",
+                                                    "justifyContent": "space-between",
+                                                    "margin": 20,
+                                                    "marginBottom": 15,
+                                                    "marginTop": 0,
+                                                  },
+                                                  Object {
+                                                    "marginBottom": 15,
+                                                  },
+                                                ]
+                              }>
+                              <View
+                                        style={
+                                                  Object {
+                                                            "alignItems": "center",
+                                                            "flexDirection": "row",
+                                                            "justifyContent": "space-between",
+                                                            "padding": 10,
+                                                          }
+                                        }>
+                                        <Text
+                                                  accessible={true}
+                                                  allowFontScaling={true}
+                                                  ellipsizeMode="tail">
+                                                  Dwutlenek Azotu
+                                        </Text>
+                                        <View
+                                                  style={
+                                                            Object {
+                                                                      "alignItems": "center",
+                                                                      "flexDirection": "row",
+                                                                    }
+                                                  }>
+                                                  <Text
+                                                            accessible={true}
+                                                            allowFontScaling={true}
+                                                            ellipsizeMode="tail"
+                                                            style={
+                                                                      Object {
+                                                                                "fontSize": 18,
+                                                                              }
+                                                            }>
+                                                            7.2131
+                                                             
+                                                  </Text>
+                                                  <View
+                                                            backgroundColor="#57b108"
+                                                            style={
+                                                                      Array [
+                                                                                Object {
+                                                                                  "alignItems": "center",
+                                                                                  "borderRadius": 30,
+                                                                                  "height": 15,
+                                                                                  "justifyContent": "center",
+                                                                                  "overflow": "hidden",
+                                                                                  "width": 15,
+                                                                                },
+                                                                                Object {
+                                                                                  "marginLeft": 5,
+                                                                                },
+                                                                              ]
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      } />
+                                                  </View>
+                                        </View>
+                              </View>
+                    </ElevatedView>
+          </View>
+          <View
+                    style={
+                              Array [
+                                        Object {
+                                          "alignItems": "stretch",
+                                          "backgroundColor": "white",
+                                          "borderRadius": 3,
+                                        },
+                                        Object {
+                                          "paddingTop": 5,
+                                        },
+                                      ]
+                    }>
+                    <ElevatedView
+                              elevation={4}
+                              style={
+                                        Array [
+                                                  Object {
+                                                    "alignItems": "stretch",
+                                                    "backgroundColor": "white",
+                                                    "justifyContent": "space-between",
+                                                    "margin": 20,
+                                                    "marginBottom": 15,
+                                                    "marginTop": 0,
+                                                  },
+                                                  Object {
+                                                    "marginBottom": 15,
+                                                  },
+                                                ]
+                              }>
+                              <View
+                                        style={
+                                                  Object {
+                                                            "alignItems": "center",
+                                                            "flexDirection": "row",
+                                                            "justifyContent": "space-between",
+                                                            "padding": 10,
+                                                          }
+                                        }>
+                                        <Text
+                                                  accessible={true}
+                                                  allowFontScaling={true}
+                                                  ellipsizeMode="tail">
+                                                  Dwutlenek Siarki
+                                        </Text>
+                                        <View
+                                                  style={
+                                                            Object {
+                                                                      "alignItems": "center",
+                                                                      "flexDirection": "row",
+                                                                    }
+                                                  }>
+                                                  <Text
+                                                            accessible={true}
+                                                            allowFontScaling={true}
+                                                            ellipsizeMode="tail"
+                                                            style={
+                                                                      Object {
+                                                                                "fontSize": 18,
+                                                                              }
+                                                            }>
+                                                            2.299
+                                                             
+                                                  </Text>
+                                                  <View
+                                                            backgroundColor="#57b108"
+                                                            style={
+                                                                      Array [
+                                                                                Object {
+                                                                                  "alignItems": "center",
+                                                                                  "borderRadius": 30,
+                                                                                  "height": 15,
+                                                                                  "justifyContent": "center",
+                                                                                  "overflow": "hidden",
+                                                                                  "width": 15,
+                                                                                },
+                                                                                Object {
+                                                                                  "marginLeft": 5,
+                                                                                },
+                                                                              ]
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      } />
+                                                  </View>
+                                        </View>
+                              </View>
+                    </ElevatedView>
+          </View>
+          <View
                     style={
                               Object {
-                                        "backgroundColor": "#ccc",
-                                        "color": "#363636",
-                                        "fontSize": 16,
-                                        "paddingHorizontal": 10,
-                                        "paddingVertical": 6,
+                                        "alignItems": "flex-start",
+                                        "flexDirection": "row",
+                                        "flexWrap": "wrap",
+                                        "justifyContent": "space-between",
+                                        "marginHorizontal": 15,
                                       }
                     }>
-                    Tlenek Węgla
-                    : 
-                    0.1
-          </Text>
-          <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                              Object {
-                                        "backgroundColor": "#ccc",
-                                        "color": "#363636",
-                                        "fontSize": 16,
-                                        "paddingHorizontal": 10,
-                                        "paddingVertical": 6,
-                                      }
-                    }>
-                    Wilgotność
-                    : 
-                    88.2461
-                    %
-          </Text>
+                    <View
+                              style={
+                                        Object {
+                                                  "marginBottom": 0,
+                                                  "marginHorizontal": 5,
+                                                  "paddingTop": 5,
+                                                  "width": 345,
+                                                }
+                              }>
+                              <ElevatedView
+                                        elevation={4}
+                                        style={
+                                                  Array [
+                                                            Object {
+                                                              "alignItems": "stretch",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 20,
+                                                              "marginBottom": 15,
+                                                              "marginTop": 0,
+                                                            },
+                                                            Object {
+                                                              "alignItems": "center",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 0,
+                                                            },
+                                                          ]
+                                        }>
+                                        <View
+                                                  style={
+                                                            Array [
+                                                                      Object {
+                                                                        "alignItems": "stretch",
+                                                                        "alignSelf": "stretch",
+                                                                        "flexWrap": "wrap",
+                                                                        "justifyContent": "space-between",
+                                                                        "paddingHorizontal": 10,
+                                                                        "paddingVertical": 15,
+                                                                      },
+                                                                    ]
+                                                  }>
+                                                  <View
+                                                            style={
+                                                                      Object {
+                                                                                "alignItems": "stretch",
+                                                                                "flexDirection": "row",
+                                                                                "justifyContent": "space-between",
+                                                                              }
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "flexDirection": "column",
+                                                                                          "justifyContent": "space-between",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                Wilgotność
+                                                                      </Text>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail"
+                                                                                style={
+                                                                                          Object {
+                                                                                                    "fontSize": 18,
+                                                                                                    "marginTop": 1,
+                                                                                                  }
+                                                                                }>
+                                                                                9.24
+                                                                                 
+                                                                                %
+                                                                      </Text>
+                                                            </View>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                <Icon
+                                                                                          allowFontScaling={false}
+                                                                                          color="#95cfda"
+                                                                                          name="rain"
+                                                                                          size={28} />
+                                                                      </Text>
+                                                            </View>
+                                                  </View>
+                                        </View>
+                              </ElevatedView>
+                    </View>
+                    <View
+                              style={
+                                        Object {
+                                                  "marginBottom": 0,
+                                                  "marginHorizontal": 5,
+                                                  "paddingTop": 5,
+                                                  "width": 345,
+                                                }
+                              }>
+                              <ElevatedView
+                                        elevation={4}
+                                        style={
+                                                  Array [
+                                                            Object {
+                                                              "alignItems": "stretch",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 20,
+                                                              "marginBottom": 15,
+                                                              "marginTop": 0,
+                                                            },
+                                                            Object {
+                                                              "alignItems": "center",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 0,
+                                                            },
+                                                          ]
+                                        }>
+                                        <View
+                                                  style={
+                                                            Array [
+                                                                      Object {
+                                                                        "alignItems": "stretch",
+                                                                        "alignSelf": "stretch",
+                                                                        "flexWrap": "wrap",
+                                                                        "justifyContent": "space-between",
+                                                                        "paddingHorizontal": 10,
+                                                                        "paddingVertical": 15,
+                                                                      },
+                                                                    ]
+                                                  }>
+                                                  <View
+                                                            style={
+                                                                      Object {
+                                                                                "alignItems": "stretch",
+                                                                                "flexDirection": "row",
+                                                                                "justifyContent": "space-between",
+                                                                              }
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "flexDirection": "column",
+                                                                                          "justifyContent": "space-between",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                Wiatr
+                                                                      </Text>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail"
+                                                                                style={
+                                                                                          Object {
+                                                                                                    "fontSize": 18,
+                                                                                                    "marginTop": 1,
+                                                                                                  }
+                                                                                }>
+                                                                                12.22
+                                                                                 
+                                                                                 m/s
+                                                                      </Text>
+                                                            </View>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                <Icon
+                                                                                          allowFontScaling={false}
+                                                                                          color="#95cfda"
+                                                                                          name="wind"
+                                                                                          size={28} />
+                                                                      </Text>
+                                                            </View>
+                                                  </View>
+                                        </View>
+                              </ElevatedView>
+                    </View>
+                    <View
+                              style={
+                                        Object {
+                                                  "marginBottom": 0,
+                                                  "marginHorizontal": 5,
+                                                  "paddingTop": 5,
+                                                  "width": 345,
+                                                }
+                              }>
+                              <ElevatedView
+                                        elevation={4}
+                                        style={
+                                                  Array [
+                                                            Object {
+                                                              "alignItems": "stretch",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 20,
+                                                              "marginBottom": 15,
+                                                              "marginTop": 0,
+                                                            },
+                                                            Object {
+                                                              "alignItems": "center",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 0,
+                                                            },
+                                                          ]
+                                        }>
+                                        <View
+                                                  style={
+                                                            Array [
+                                                                      Object {
+                                                                        "alignItems": "stretch",
+                                                                        "alignSelf": "stretch",
+                                                                        "flexWrap": "wrap",
+                                                                        "justifyContent": "space-between",
+                                                                        "paddingHorizontal": 10,
+                                                                        "paddingVertical": 15,
+                                                                      },
+                                                                    ]
+                                                  }>
+                                                  <View
+                                                            style={
+                                                                      Object {
+                                                                                "alignItems": "stretch",
+                                                                                "flexDirection": "row",
+                                                                                "justifyContent": "space-between",
+                                                                              }
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "flexDirection": "column",
+                                                                                          "justifyContent": "space-between",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                Temperatura
+                                                                      </Text>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail"
+                                                                                style={
+                                                                                          Object {
+                                                                                                    "fontSize": 18,
+                                                                                                    "marginTop": 1,
+                                                                                                  }
+                                                                                }>
+                                                                                0.43
+                                                                                 
+                                                                                °C
+                                                                      </Text>
+                                                            </View>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                <Icon
+                                                                                          allowFontScaling={false}
+                                                                                          color="#95cfda"
+                                                                                          name="thermometer"
+                                                                                          size={28} />
+                                                                      </Text>
+                                                            </View>
+                                                  </View>
+                                        </View>
+                              </ElevatedView>
+                    </View>
+                    <View
+                              style={
+                                        Object {
+                                                  "marginBottom": 0,
+                                                  "marginHorizontal": 5,
+                                                  "paddingTop": 5,
+                                                  "width": 345,
+                                                }
+                              }>
+                              <ElevatedView
+                                        elevation={4}
+                                        style={
+                                                  Array [
+                                                            Object {
+                                                              "alignItems": "stretch",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 20,
+                                                              "marginBottom": 15,
+                                                              "marginTop": 0,
+                                                            },
+                                                            Object {
+                                                              "alignItems": "center",
+                                                              "backgroundColor": "white",
+                                                              "justifyContent": "space-between",
+                                                              "margin": 0,
+                                                            },
+                                                          ]
+                                        }>
+                                        <View
+                                                  style={
+                                                            Array [
+                                                                      Object {
+                                                                        "alignItems": "stretch",
+                                                                        "alignSelf": "stretch",
+                                                                        "flexWrap": "wrap",
+                                                                        "justifyContent": "space-between",
+                                                                        "paddingHorizontal": 10,
+                                                                        "paddingVertical": 15,
+                                                                      },
+                                                                    ]
+                                                  }>
+                                                  <View
+                                                            style={
+                                                                      Object {
+                                                                                "alignItems": "stretch",
+                                                                                "flexDirection": "row",
+                                                                                "justifyContent": "space-between",
+                                                                              }
+                                                            }>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "flexDirection": "column",
+                                                                                          "justifyContent": "space-between",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                Ciśnienie
+                                                                      </Text>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail"
+                                                                                style={
+                                                                                          Object {
+                                                                                                    "fontSize": 18,
+                                                                                                    "marginTop": 1,
+                                                                                                  }
+                                                                                }>
+                                                                                122.26
+                                                                                 
+                                                                                hPa
+                                                                      </Text>
+                                                            </View>
+                                                            <View
+                                                                      style={
+                                                                                Object {
+                                                                                          "alignItems": "center",
+                                                                                          "justifyContent": "center",
+                                                                                        }
+                                                                      }>
+                                                                      <Text
+                                                                                accessible={true}
+                                                                                allowFontScaling={true}
+                                                                                ellipsizeMode="tail">
+                                                                                <Icon
+                                                                                          allowFontScaling={false}
+                                                                                          color="#95cfda"
+                                                                                          name="pressure"
+                                                                                          size={28} />
+                                                                      </Text>
+                                                            </View>
+                                                  </View>
+                                        </View>
+                              </ElevatedView>
+                    </View>
+          </View>
 </View>,
       },
       "_renderedNodeType": 1,
@@ -229,10 +2921,34 @@ ShallowWrapper {
     dataset={
         Object {
             "co": Object {
-              "v": 0.1,
+              "v": 0.223,
             },
             "h": Object {
-              "v": 88.2461,
+              "v": 9.2444,
+            },
+            "no2": Object {
+              "v": 7.2131,
+            },
+            "o3": Object {
+              "v": 4.2242,
+            },
+            "p": Object {
+              "v": 122.2567,
+            },
+            "pm10": Object {
+              "v": 5.2788,
+            },
+            "so2": Object {
+              "v": 2.299,
+            },
+            "t": Object {
+              "v": 0.434,
+            },
+            "w": Object {
+              "v": 12.2234,
+            },
+            "wd": Object {
+              "v": 20.201,
             },
           }
     } />,

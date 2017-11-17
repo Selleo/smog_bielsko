@@ -1,0 +1,171 @@
+exports[`Menu renders correctly 1`] = `
+ExtensibleStyleSheet {
+  "_options": Object {
+    "avatar": Object {
+      "borderRadius": 24,
+      "flex": 1,
+      "height": 48,
+      "width": 48,
+    },
+    "avatarContainer": Object {
+      "marginBottom": 20,
+      "marginTop": 20,
+    },
+    "button": Object {
+      "height": 32,
+      "padding": 10,
+      "position": "absolute",
+      "top": 20,
+    },
+    "caption": Object {
+      "alignItems": "center",
+      "fontSize": 20,
+      "fontWeight": "bold",
+    },
+    "container": Object {
+      "alignItems": "center",
+      "backgroundColor": "#F5FCFF",
+      "flex": 1,
+      "justifyContent": "center",
+    },
+    "instructions": Object {
+      "color": "#333333",
+      "marginBottom": 5,
+      "textAlign": "center",
+    },
+    "item": Object {
+      "fontSize": 14,
+      "fontWeight": "300",
+      "paddingTop": 5,
+    },
+    "menu": Object {
+      "backgroundColor": "gray",
+      "flex": 1,
+      "height": undefined,
+      "padding": 20,
+      "width": undefined,
+    },
+    "name": Object {
+      "left": 70,
+      "position": "absolute",
+      "top": 20,
+    },
+    "welcome": Object {
+      "fontSize": 20,
+      "margin": 10,
+      "textAlign": "center",
+    },
+  },
+  "_styles": Object {
+    "avatar": Object {
+      "borderRadius": 24,
+      "flex": 1,
+      "height": 48,
+      "width": 48,
+    },
+    "avatarContainer": Object {
+      "marginBottom": 20,
+      "marginTop": 20,
+    },
+    "button": Object {
+      "height": 32,
+      "padding": 10,
+      "position": "absolute",
+      "top": 20,
+    },
+    "caption": Object {
+      "alignItems": "center",
+      "fontSize": 20,
+      "fontWeight": "bold",
+    },
+    "container": Object {
+      "alignItems": "center",
+      "backgroundColor": "#F5FCFF",
+      "flex": 1,
+      "justifyContent": "center",
+    },
+    "instructions": Object {
+      "color": "#333333",
+      "marginBottom": 5,
+      "textAlign": "center",
+    },
+    "item": Object {
+      "fontSize": 14,
+      "fontWeight": "300",
+      "paddingTop": 5,
+    },
+    "menu": Object {
+      "backgroundColor": "gray",
+      "flex": 1,
+      "height": undefined,
+      "padding": 20,
+      "width": undefined,
+    },
+    "name": Object {
+      "left": 70,
+      "position": "absolute",
+      "top": 20,
+    },
+    "welcome": Object {
+      "fontSize": 20,
+      "margin": 10,
+      "textAlign": "center",
+    },
+  },
+  "_variables": Object {},
+  "avatar": Object {
+    "borderRadius": 24,
+    "flex": 1,
+    "height": 48,
+    "width": 48,
+  },
+  "avatarContainer": Object {
+    "marginBottom": 20,
+    "marginTop": 20,
+  },
+  "button": Object {
+    "height": 32,
+    "padding": 10,
+    "position": "absolute",
+    "top": 20,
+  },
+  "caption": Object {
+    "alignItems": "center",
+    "fontSize": 20,
+    "fontWeight": "bold",
+  },
+  "container": Object {
+    "alignItems": "center",
+    "backgroundColor": "#F5FCFF",
+    "flex": 1,
+    "justifyContent": "center",
+  },
+  "instructions": Object {
+    "color": "#333333",
+    "marginBottom": 5,
+    "textAlign": "center",
+  },
+  "item": Object {
+    "fontSize": 14,
+    "fontWeight": "300",
+    "paddingTop": 5,
+  },
+  "menu": Object {
+    "backgroundColor": "gray",
+    "flex": 1,
+    "height": undefined,
+    "padding": 20,
+    "width": undefined,
+  },
+  "name": Object {
+    "left": 70,
+    "position": "absolute",
+    "top": 20,
+  },
+  "welcome": Object {
+    "fontSize": 20,
+    "margin": 10,
+    "textAlign": "center",
+  },
+}
+`;

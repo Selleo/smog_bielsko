@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View }            from 'react-native';
 
-import DrawerCityLink from './DrawerCityLink'
-import DrawerHeader from './DrawerHeader'
+import DrawerCityLink                  from './DrawerCityLink'
+import DrawerHeader                    from './DrawerHeader'
 
 export default class DrawerMenu extends Component {
   render() {

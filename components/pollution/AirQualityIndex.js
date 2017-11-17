@@ -1,23 +1,62 @@
-import React, { Component, PropTypes } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import React, { Component, PropTypes } from 'react'
+import { View, StyleSheet, Text, Dimensions }      from 'react-native'
+import header from '../stylesheets/Header'
+import ElevatedView from 'react-native-elevated-view'
+const window = Dimensions.get('window');
+
+let airCondition;
 
 export default class AirQualityIndex extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      height: Dimensions.get('window').height,
+      width: Dimensions.get('window').width
+    };
+
+    this.onLayout = this.onLayout.bind(this);
+  }
+
   render() {
     var index = this.getAirConditionIndex(this.props.index);
     return (
-      <View style={styles.container} backgroundColor={colors[index]}>
-        <Text style={styles.text}>Jakość powietrza: {names[index]}</Text>
+      <View style={[header.withShadow, header.spaceBetweenItems, styles.container]}>
+        <ElevatedView elevation={4} style={[header.elevatedView, header.alignCenter, styles.elevatedView]}>
+          <Text style={styles.text}>Jakość powietrza:</Text>
+          <View style={styles.titleContainer}>
+            <View backgroundColor={colors[index]} style={header.circleContainer}>
+              <View style={header.circle}></View>
+            </View>
+            <Text style={styles.title}>{names[index]}</Text>
+            <View backgroundColor={colors[index]} style={header.circleContainer}>
+              <View style={header.circle}></View>
+            </View>
+          </View>
+        </ElevatedView>
       </View>
     )
   }
 
+  onLayout() {
+    this.setState({
+      height: Dimensions.get('window').height,
+      width: Dimensions.get('window').width
+    });
+  }
+
+
   getAirConditionIndex(aqi) {
-    if (aqi < 50) { return 0 }
-    if (aqi < 100) { return 1 }
-    if (aqi < 150) { return 2 }
-    if (aqi < 200) { return 3 }
-    if (aqi < 300) { return 4 }
-    return 5
+    airCondition = undefined;
+
+    if (aqi < 50) { airCondition = 0 }
+    else if (aqi < 100) { airCondition = 1 }
+    else if (aqi < 150) { airCondition = 2 }
+    else if (aqi < 200) { airCondition = 3 }
+    else if (aqi < 300) { airCondition = 4 }
+    else airCondition = 5;
+
+    return airCondition
   }
 
   static propTypes = {
@@ -45,12 +84,29 @@ const colors = [
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 16
+    backgroundColor: 'white',
+    marginTop: 15,
+  },
+  titleContainer: {
+    flex: 1,
+    alignItems: 'center',
+    flexDirection: 'row',
+    flexWrap: 'nowrap',
+    justifyContent: 'center',
+  },
+  elevatedView: {
+    padding: 5
   },
   text: {
-    fontSize: 16,
+    color: '#111',
+    fontSize: 14,
     paddingHorizontal: 10,
-    paddingVertical: 6,
-    color: '#111'
+    paddingTop: 3,
+  },
+  title: {
+    color: '#111',
+    fontSize: 24,
+    paddingBottom: 3,
+    paddingHorizontal: 10,
   }
 });

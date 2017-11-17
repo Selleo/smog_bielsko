@@ -4,173 +4,39 @@ import React                          from 'react';
 import { shallow }                    from 'enzyme';
 import chai, { expect }               from 'chai';
 import dirtyChai                      from 'dirty-chai';
-import fetchMock                      from 'fetch-mock'
 
+import { data }                       from './mock/data'
 import StationDataRenderer            from '../StationDataRenderer';
-import Env                            from '../../env'
 
 const originalExpect = global.expect;
 
 chai.use(dirtyChai);
 
 let wrapper, props;
+props = { stationId: 1, dataStations: data };
 
 describe('StationDataRenderer', () => {
   it('renders correctly', () => {
-    props = { stationId: 1 };
-    fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
-      data: {
-        city: { name: 'Zywiec, ul. Rynek 2' },
-        aqi: 2,
-        iaqi: {
-          co: {
-            v: 0.1
-          },
-          h: {
-            v: 88.2461
-          }
-        }
-      }
-    });
     wrapper = shallow(<StationDataRenderer {...props}/>);
 
     originalExpect(wrapper).toMatchSnapshot();
     expect(wrapper).to.exist();
-
-    fetchMock.restore();
   });
 
-  it('set in state fetched data', (done) => {
-    props = { stationId: 1 };
-    fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
-      data: {
-        city: { name: 'Zywiec, ul. Rynek 2' },
-        aqi: 2,
-        iaqi: {
-          co: {
-            v: 0.1
-          },
-          h: {
-            v: 88.2461
-          }
-        }
-      }
-    });
+  it("it has child 'ScrollViewMock'", () => {
     wrapper = shallow(<StationDataRenderer {...props}/>);
 
-    expect(wrapper.state().data).to.be.an('undefined');
-    expect(wrapper.state().pending).to.equal(true);
-
-    setTimeout(() => {
-      expect(wrapper.state().data).to.be.an('object');
-      expect(wrapper.state().data).to.eql({ city: { name: 'Zywiec, ul. Rynek 2' }, aqi: 2, iaqi: {co: {v: 0.1},h: {v: 88.2461}} });
-      done();
-    }, 1);
-
-    fetchMock.restore();
+    expect(wrapper.children().length).to.equal(1);
+    expect(wrapper.children().type().name).to.equal('ScrollViewMock');
   });
 
-  describe('pending is false', () => {
-    it('is false after download data', (done) => {
-      props = { stationId: 1 };
-      fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
-        data: {
-          city: { name: 'Zywiec, ul. Rynek 2' },
-          aqi: 2,
-          iaqi: {
-            co: {
-              v: 0.1
-            },
-            h: {
-              v: 88.2461
-            }
-          }
-        }
-      });
-      wrapper = shallow(<StationDataRenderer {...props}/>);
+  it("it has on child 'CityInfo', 'AirQualityIndex', 'PollutionValues' components", () => {
+    wrapper = shallow(<StationDataRenderer {...props}/>);
 
-      expect(wrapper.state().pending).to.equal(true);
-
-      setTimeout(() => {
-        expect(wrapper.state().pending).to.equal(false);
-        done();
-      }, 1);
-
-      fetchMock.restore();
-    });
-
-    it('return text "Loading"', (done) => {
-      props = { stationId: 1 };
-      fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
-        data: {
-          city: { name: 'Zywiec, ul. Rynek 2' },
-          aqi: 2,
-          iaqi: {
-            co: {
-              v: 0.1
-            },
-            h: {
-              v: 88.2461
-            }
-          }
-        }
-      });
-      wrapper = shallow(<StationDataRenderer {...props}/>);
-
-      expect(wrapper.state().pending).to.equal(true);
-      expect(wrapper.children().length).to.equal(1);
-
-      setTimeout(() => {
-        wrapper.update();
-        expect(wrapper.state().pending).to.equal(false);
-        wrapper.setState({ pending: true });
-        expect(wrapper.children().children().text()).to.equal('Loading');
-        expect(wrapper.children().type().name).to.equal('Component');
-        done();
-      }, 1);
-
-      fetchMock.restore();
-    });
-  });
-
-  describe('pending is true', () => {
-    it('return text "Loading"', (done) => {
-
-      props = { stationId: 1 };
-      fetchMock.get('http://api.waqi.info/feed/@1/?token=' + Env.API_KEY, {
-        data: {
-          city: { name: 'Zywiec, ul. Rynek 2' },
-          aqi: 2,
-          iaqi: {
-            co: {
-              v: 0.1
-            },
-            h: {
-              v: 88.2461
-            }
-          }
-        }
-      });
-
-      wrapper = shallow(<StationDataRenderer {...props}/>);
-
-      expect(wrapper.state().pending).to.equal(true);
-      expect(wrapper.children().length).to.equal(1);
-
-      setTimeout(() => {
-        expect(wrapper.state().pending).to.equal(false);
-        wrapper.update();
-
-        expect(wrapper.children().nodes.length).to.equal(3);
-        expect(wrapper.children().nodes[0].type.name).to.equal('CityInfo');
-        expect(wrapper.children().nodes[1].type.name).to.equal('AirQualityIndex');
-        expect(wrapper.children().nodes[2].type.name).to.equal('PollutionValues');
-
-        done();
-      }, 1);
-
-      fetchMock.restore();
-    });
+    expect(wrapper.children().children().length).to.equal(3);
+    expect(wrapper.children().children().first().type().name).to.equal('CityInfo');
+    expect(wrapper.children().children().nodes[1].type.name).to.equal('AirQualityIndex');
+    expect(wrapper.children().children().last().type().name).to.equal('PollutionValues');
   });
 });
 

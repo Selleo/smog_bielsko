@@ -1,11 +1,11 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes }          from 'react';
 import { StyleSheet, TouchableHighlight, Text } from 'react-native';
 
 export default class DrawerCityLink extends Component {
   render() {
     return (
       <TouchableHighlight
-        onPress={() => this.props.closeDrawer(this.props.station.id) }
+        onPress={() => this.props.closeDrawer(this.props.station.id, this.props.station.name) }
         style={this.isActive() ? styles.active : null}
         underlayColor='#aca'
       >
