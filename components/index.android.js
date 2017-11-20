@@ -68,7 +68,7 @@ export default class SmogBielsko extends Component {
     if (this.state.pendingApp) {
       return (
         <View style={loading.loadingContainer}>
-          <Text style={loading.loadingText}>Loading</Text>
+          <Text style={loading.loadingText}>Wczytuje..</Text>
         </View>
       )
     } else {

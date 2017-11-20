@@ -25,7 +25,7 @@ ShallowWrapper {
                 "textAlign": "center",
               }
         }>
-        Loading
+        Wczytuje..
     </Text>
 </View>,
   "nodes": Array [

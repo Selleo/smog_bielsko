@@ -228,7 +228,7 @@ describe('smog_bielsko', () => {
       expect(wrapper.children().length).to.equal(1);
       expect(wrapper.children().type().name).to.equal('Component');
       expect(wrapper.children().children().length).to.equal(1);
-      expect(wrapper.children().children().text()).to.equal('Loading');
+      expect(wrapper.children().children().text()).to.equal('Wczytuje..');
 
       setTimeout(() => { done() }, .1);
       fetchMock.restore();
